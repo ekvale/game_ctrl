@@ -25,7 +25,6 @@ services:
     volumes:
       - ./static:/var/www/static
       - ./media:/var/www/media
-      - ./logs:/app/logs:rw
     env_file:
       - .env.prod
     depends_on:
@@ -62,7 +61,6 @@ services:
       - ./static:/var/www/static
       - ./media:/var/www/media
       - ./nginx:/etc/nginx/conf.d
-      - ./logs/nginx:/var/log/nginx
     ports:
       - "80:80"
       - "443:443"
