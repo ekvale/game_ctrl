@@ -4,27 +4,13 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
-# Import all settings from base except TEMPLATES
-from .base import (  # noqa: F403
-    INSTALLED_APPS,
-    MIDDLEWARE,
-    ROOT_URLCONF,
-    WSGI_APPLICATION,
-    LANGUAGE_CODE,
-    TIME_ZONE,
-    USE_I18N,
-    USE_TZ,
-    CRISPY_ALLOWED_TEMPLATE_PACKS,
-    CRISPY_TEMPLATE_PACK,
-    DEFAULT_AUTO_FIELD,
-    AUTH_USER_MODEL,
-    # Add other settings you need from base, but don't import *
-)
+# Import specific settings from base, but not TEMPLATES
+from .base import *  # noqa: F403
 
 import sentry_sdk
 from sentry_sdk.integrations.django import DjangoIntegration
 
-# Template configuration - Production setup
+# Override TEMPLATES setting completely
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
