@@ -3,6 +3,14 @@ version: '3.8'
 services:
   web:
     build: .
+    user: app
+    command: >
+      bash -c "
+        echo 'Waiting for database...' &&
+        while ! nc -z db 5432; do sleep 1; done &&
+        echo 'Database is ready!' &&
+        gunicorn game_ctrl.wsgi:application --bind 0.0.0.0:8000 --workers 3
+      "
     environment:
       - DJANGO_SETTINGS_MODULE=game_ctrl.settings.production
       - PYTHONUNBUFFERED=1
