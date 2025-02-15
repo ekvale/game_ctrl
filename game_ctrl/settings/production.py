@@ -172,11 +172,12 @@ X_FRAME_OPTIONS = 'DENY'
 SECURE_BROWSER_XSS_FILTER = True
 SECURE_CONTENT_TYPE_NOSNIFF = True
 
-# Template configuration - Override base settings completely
+# Template configuration - Simple production setup
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        'APP_DIRS': False,  # Explicitly disable app_dirs
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
@@ -185,10 +186,8 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
             ],
             'loaders': [
-                ('django.template.loaders.cached.Loader', [
-                    'django.template.loaders.filesystem.Loader',
-                    'django.template.loaders.app_directories.Loader',
-                ]),
+                'django.template.loaders.filesystem.Loader',
+                'django.template.loaders.app_directories.Loader',
             ],
         },
     },
