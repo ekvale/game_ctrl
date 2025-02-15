@@ -179,10 +179,11 @@ STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/static/'
 MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/media/'
 
 # Sentry Configuration
-sentry_sdk.init(
-    dsn=os.environ['SENTRY_DSN'],
-    integrations=[DjangoIntegration()],
-    traces_sample_rate=0.5,
-    send_default_pii=True,
-    environment="production",
-) 
+if 'SENTRY_DSN' in os.environ:  # Only initialize if DSN is provided
+    sentry_sdk.init(
+        dsn=os.environ['SENTRY_DSN'],
+        integrations=[DjangoIntegration()],
+        traces_sample_rate=0.5,
+        send_default_pii=True,
+        environment="production",
+    ) 
