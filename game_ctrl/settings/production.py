@@ -4,8 +4,33 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
-# Import specific settings from base, but not TEMPLATES
+# Import base settings
 from .base import *  # noqa: F403
+
+# Template configuration - Simple setup
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [str(BASE_DIR / 'templates')],  # Convert Path to string
+        'OPTIONS': {
+            'debug': DEBUG,  # Use the DEBUG setting from above
+            'context_processors': [
+                'django.template.context_processors.debug',
+                'django.template.context_processors.request',
+                'django.contrib.auth.context_processors.auth',
+                'django.contrib.messages.context_processors.messages',
+            ],
+            'loaders': [
+                ('django.template.loaders.cached.Loader', [
+                    'django.template.loaders.filesystem.Loader',
+                    'django.template.loaders.app_directories.Loader',
+                ]),
+            ],
+        },
+    },
+]
+
+print("Initial TEMPLATES:", TEMPLATES)
 
 import sentry_sdk
 from sentry_sdk.integrations.django import DjangoIntegration
@@ -29,6 +54,8 @@ TEMPLATES = [
         },
     },
 ]
+
+print("Final TEMPLATES:", TEMPLATES)
 
 # Security Settings
 DEBUG = False
