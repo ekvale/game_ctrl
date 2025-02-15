@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>{{ controller.name }}</h1>
+<div class="controller-details">
+    <p>Price: {{ controller.price }}</p>
+    <p>{{ controller.description }}</p>
+    {% if controller.image %}
+        <img src="{{ controller.image.url }}" alt="{{ controller.name }}">
+    {% endif %}
+</div>
+{% endblock %} 

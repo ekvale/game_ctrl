@@ -1,0 +1,5 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Shield design -->
+  <path d="M32 4L8 12v20c0 18 24 28 24 28s24-10 24-28V12L32 4z" stroke="#2D3436" stroke-width="2"/>
+  <path d="M24 32l6 6 12-12" stroke="#2D3436" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg> 

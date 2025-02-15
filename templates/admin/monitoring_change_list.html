@@ -1,0 +1,28 @@
+{% extends "admin/change_list.html" %}
+
+{% block content_title %}
+    <h1>{{ title }} Statistics</h1>
+{% endblock %}
+
+{% block result_list %}
+    <div class="results">
+        <div class="module">
+            <h2>Last 24 Hours</h2>
+            <table>
+                <tr>
+                    <th>Total Items</th>
+                    <td>{{ summary.total }}</td>
+                </tr>
+                <tr>
+                    <th>New Items (24h)</th>
+                    <td>{{ summary.last_24h }}</td>
+                </tr>
+                <tr>
+                    <th>Revenue (24h)</th>
+                    <td>${{ summary.revenue_24h|floatformat:2 }}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    {{ block.super }}
+{% endblock %} 

@@ -1,0 +1,7 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gear icon with tools -->
+  <circle cx="32" cy="32" r="24" stroke="#00B894" stroke-width="2"/>
+  <path d="M32 16v32M16 32h32" stroke="#00B894" stroke-width="2"/>
+  <circle cx="32" cy="32" r="8" fill="#00B894"/>
+  <path d="M44.5 19.5l-25 25M19.5 19.5l25 25" stroke="#00B894" stroke-width="2"/>
+</svg> 

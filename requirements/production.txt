@@ -1,0 +1,10 @@
+-r base.txt
+
+gunicorn>=20.1.0
+psycopg2-binary>=2.9.6
+boto3>=1.26.0
+django-storages>=1.13.0
+sentry-sdk>=1.14.0  # for error tracking 
+django-csp==3.7
+django-ratelimit==3.0.1
+django-secure==1.0.2 

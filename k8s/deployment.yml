@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: game-ctrl
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: game-ctrl
+  template:
+    metadata:
+      labels:
+        app: game-ctrl
+    spec:
+      containers:
+      - name: web
+        image: registry.digitalocean.com/game-ctrl/web
+        ports:
+        - containerPort: 8000
+        envFrom:
+        - secretRef:
+            name: game-ctrl-secrets
+        resources:
+          requests:
+            memory: "256Mi"
+            cpu: "250m"
+          limits:
+            memory: "512Mi"
+            cpu: "500m" 

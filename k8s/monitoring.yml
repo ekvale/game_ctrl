@@ -1,0 +1,14 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: game-ctrl-monitor
+  labels:
+    release: prometheus
+spec:
+  selector:
+    matchLabels:
+      app: game-ctrl
+  endpoints:
+  - port: web
+    interval: 30s
+    path: /metrics 

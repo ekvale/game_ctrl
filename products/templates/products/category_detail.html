@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>{{ category.name }}</h1>
+<div class="controllers">
+    {% for controller in controllers %}
+        <div class="controller-card">
+            <h2>{{ controller.name }}</h2>
+            <p>{{ controller.price }}</p>
+        </div>
+    {% endfor %}
+</div>
+{% endblock %} 

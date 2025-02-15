@@ -1,0 +1,8 @@
+-r base.txt  # Include base requirements
+pytest>=7.0.0
+pytest-django>=4.5.0
+pytest-cov>=4.0.0
+pytest-mock>=3.10.0
+pyyaml>=6.0.0
+freezegun>=1.2.0  # for time-based tests
+responses>=0.23.0  # for mocking HTTP requests 

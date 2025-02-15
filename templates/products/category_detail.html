@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}{{ category.name }}{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+    <h1 class="mb-4">{{ category.name }}</h1>
+    
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        {% if category.controllers.all %}
+            {% for controller in category.controllers.all %}
+                <div class="col">
+                    {% include "products/includes/product_card.html" with controller=controller %}
+                </div>
+            {% endfor %}
+        {% else %}
+            <div class="col-12">
+                <div class="alert alert-info">
+                    No controllers available in this category
+                </div>
+            </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %} 
