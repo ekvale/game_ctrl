@@ -8,7 +8,7 @@ services:
     volumes:
       - ./static:/var/www/static
       - ./media:/var/www/media
-      - ./logs:/var/log/django
+      - ./logs:/app/logs
     env_file:
       - .env.prod
     depends_on:

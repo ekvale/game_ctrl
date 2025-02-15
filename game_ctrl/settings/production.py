@@ -128,7 +128,7 @@ LOGGING = {
         },
         'file': {
             'class': 'logging.handlers.RotatingFileHandler',
-            'filename': '/var/log/django/game_ctrl.log',
+            'filename': './logs/game_ctrl.log',
             'maxBytes': 1024 * 1024 * 10,  # 10 MB
             'backupCount': 5,
             'formatter': 'verbose',
