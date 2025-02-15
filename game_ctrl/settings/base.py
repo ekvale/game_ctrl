@@ -7,8 +7,10 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+# Build paths inside the project
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
+# Application definition
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -67,15 +69,19 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+# Internationalization
 LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'UTC'
 USE_I18N = True
 USE_TZ = True
 
+# Static files
 STATIC_URL = 'static/'
 MEDIA_URL = 'media/'
 
+# Crispy Forms
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 CRISPY_TEMPLATE_PACK = "bootstrap5"
 
+# Default primary key field type
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField' 

@@ -1,5 +1,10 @@
+"""
+Production settings for game_ctrl project.
+"""
 import os
 from pathlib import Path
+import sentry_sdk
+from sentry_sdk.integrations.django import DjangoIntegration
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
@@ -9,11 +14,14 @@ from .base import *  # noqa: F403
 
 print("DJANGO_SETTINGS_MODULE:", os.environ.get('DJANGO_SETTINGS_MODULE'))
 
-# Template configuration - Simple setup
+# Debug settings
+DEBUG = False
+
+# Template configuration
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [str(BASE_DIR / 'templates')],  # Convert Path to string
+        'DIRS': [str(BASE_DIR / 'templates')],
         'OPTIONS': {
             'debug': DEBUG,
             'context_processors': [
@@ -34,35 +42,9 @@ TEMPLATES = [
 
 print("TEMPLATES configuration:", TEMPLATES)
 
-import sentry_sdk
-from sentry_sdk.integrations.django import DjangoIntegration
-
-# Override TEMPLATES setting completely
-TEMPLATES = [
-    {
-        'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates'],
-        'OPTIONS': {
-            'context_processors': [
-                'django.template.context_processors.debug',
-                'django.template.context_processors.request',
-                'django.contrib.auth.context_processors.auth',
-                'django.contrib.messages.context_processors.messages',
-            ],
-            'loaders': [
-                'django.template.loaders.filesystem.Loader',
-                'django.template.loaders.app_directories.Loader',
-            ],
-        },
-    },
-]
-
-print("Final TEMPLATES:", TEMPLATES)
-
-# Security Settings
-DEBUG = False
+# Security settings
 SECURE_SSL_REDIRECT = False  # Temporarily disable until SSL is set up
-SECURE_HSTS_SECONDS = 31536000  # 1 year
+SECURE_HSTS_SECONDS = 31536000
 SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 SECURE_HSTS_PRELOAD = True
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
