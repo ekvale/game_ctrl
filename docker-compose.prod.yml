@@ -3,19 +3,13 @@ version: '3.8'
 services:
   web:
     build: .
-    command: >
-      bash -c "python -c 'import sys; print(sys.path)' &&
-               python manage.py showmigrations"
     environment:
       - DJANGO_SETTINGS_MODULE=game_ctrl.settings.production
       - PYTHONUNBUFFERED=1
-      - PYTHONVERBOSE=1
-      - PYTHONPATH=/app
     volumes:
       - ./static:/var/www/static
       - ./media:/var/www/media
       - ./logs:/app/logs
-      - .:/app
     env_file:
       - .env.prod
     depends_on:
