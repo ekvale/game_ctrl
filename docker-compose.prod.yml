@@ -9,6 +9,7 @@ services:
     environment:
       - DJANGO_SETTINGS_MODULE=game_ctrl.settings.production
       - PYTHONUNBUFFERED=1
+      - PYTHONPATH=/app
     volumes:
       - ./static:/var/www/static
       - ./media:/var/www/media

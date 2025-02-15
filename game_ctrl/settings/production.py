@@ -6,15 +6,16 @@ from pathlib import Path
 import sentry_sdk
 from sentry_sdk.integrations.django import DjangoIntegration
 
+print("\n=== Loading production settings ===")
+print("Current working directory:", os.getcwd())
+print("DJANGO_SETTINGS_MODULE:", os.environ.get('DJANGO_SETTINGS_MODULE'))
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
+print("BASE_DIR:", BASE_DIR)
 
-print("Before base import")
 # Import base settings
 from .base import *  # noqa: F403
-print("After base import")
-
-print("DJANGO_SETTINGS_MODULE:", os.environ.get('DJANGO_SETTINGS_MODULE'))
 
 # Debug settings
 DEBUG = False
@@ -40,7 +41,8 @@ TEMPLATES = [
     },
 ]
 
-print("TEMPLATES configuration:", TEMPLATES)
+print("Final TEMPLATES configuration:", TEMPLATES)
+print("=== End loading production settings ===\n")
 
 # Security settings
 SECURE_SSL_REDIRECT = False  # Temporarily disable until SSL is set up
