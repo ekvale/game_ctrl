@@ -9,8 +9,11 @@ services:
         echo 'Waiting for database...' &&
         while ! nc -z db 5432; do sleep 1; done &&
         echo 'Database is ready!' &&
+        mkdir -p /app/logs &&
+        touch /app/logs/game_ctrl.log &&
+        chmod 666 /app/logs/game_ctrl.log &&
         python manage.py migrate --noinput &&
-        gunicorn game_ctrl.wsgi:application --bind 0.0.0.0:8000 --workers 3 --timeout 120
+        gunicorn game_ctrl.wsgi:application --bind 0.0.0.0:8000 --workers 3 --timeout 120 --access-logfile /app/logs/gunicorn-access.log --error-logfile /app/logs/gunicorn-error.log
       "
     environment:
       - DJANGO_SETTINGS_MODULE=game_ctrl.settings.production
@@ -25,10 +28,11 @@ services:
       - db
       - redis
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8000"]
-      interval: 30s
-      timeout: 10s
-      retries: 3
+      test: ["CMD", "curl", "-f", "http://localhost:8000/admin/login/"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
 
   db:
     image: postgres:13
@@ -57,6 +61,11 @@ services:
     depends_on:
       web:
         condition: service_healthy
+    healthcheck:
+      test: ["CMD", "nginx", "-t"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
 
   certbot:
     image: certbot/certbot

@@ -32,7 +32,7 @@ COPY --chown=app:app . .
 # Set proper permissions
 RUN mkdir -p /var/www/static /var/www/media /var/log/django /app/logs \
     && chown -R app:app /var/www/static /var/www/media /var/log/django /app/logs \
-    && chmod -R 755 /var/www/static /var/www/media /var/log/django /app/logs
+    && chmod -R 777 /app/logs  # Temporarily more permissive for debugging
 
 # Switch to non-root user
 USER app
