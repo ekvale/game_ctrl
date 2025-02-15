@@ -31,7 +31,6 @@ services:
 
   nginx:
     image: nginx:1.21-alpine
-    user: nginx
     volumes:
       - ./static:/var/www/static
       - ./media:/var/www/media
