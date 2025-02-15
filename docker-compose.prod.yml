@@ -13,7 +13,7 @@ services:
         gunicorn game_ctrl.wsgi:application --bind 0.0.0.0:8000 --workers 3 --timeout 120 --access-logfile /app/logs/gunicorn-access.log --error-logfile /app/logs/gunicorn-error.log
       "
     networks:
-      - game_ctrl_network
+      - default
     environment:
       - DJANGO_SETTINGS_MODULE=game_ctrl.settings.production
       - PYTHONUNBUFFERED=1
@@ -40,12 +40,16 @@ services:
       - postgres_data:/var/lib/postgresql/data
     env_file:
       - .env.prod.db
+    networks:
+      - default
 
   redis:
     image: redis:6-alpine
     user: redis
     volumes:
       - redis_data:/data
+    networks:
+      - default
 
   nginx:
     image: nginx:1.21-alpine
@@ -66,7 +70,7 @@ services:
       timeout: 5s
       retries: 3
     networks:
-      - game_ctrl_network
+      - default
 
   certbot:
     image: certbot/certbot
@@ -82,5 +86,5 @@ volumes:
   redis_data:
 
 networks:
-  game_ctrl_network:
+  default:
     driver: bridge 

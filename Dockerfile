@@ -38,6 +38,13 @@ RUN mkdir -p /var/www/static /var/www/media /var/log/django /app/logs \
     && chown app:app /app/logs/game_ctrl.log \
     && chmod 666 /app/logs/game_ctrl.log
 
+# After copying files
+COPY --chown=app:app healthcheck.sh /app/
+RUN chmod +x /app/healthcheck.sh
+
+# Update healthcheck
+HEALTHCHECK --interval=30s --timeout=10s --start-period=30s --retries=3 CMD ["/app/healthcheck.sh"]
+
 # Switch to non-root user
 USER app
 
