@@ -10,8 +10,13 @@ services:
         while ! nc -z db 5432; do sleep 1; done &&
         echo 'Database is ready!' &&
         python manage.py migrate --noinput &&
-        gunicorn game_ctrl.wsgi:application --bind 0.0.0.0:8000 --workers 3 --timeout 120 --access-logfile /app/logs/gunicorn-access.log --error-logfile /app/logs/gunicorn-error.log
+        gunicorn game_ctrl.wsgi:application --bind 0.0.0.0:8000 --workers 3 --timeout 120
       "
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
     networks:
       - default
     environment:
@@ -65,12 +70,18 @@ services:
       web:
         condition: service_healthy
     healthcheck:
-      test: ["CMD", "nginx", "-t"]
+      test: ["CMD", "curl", "-f", "http://web:8000/admin/login/"]
       interval: 10s
       timeout: 5s
       retries: 3
+      start_period: 30s
     networks:
       - default
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
 
   certbot:
     image: certbot/certbot
