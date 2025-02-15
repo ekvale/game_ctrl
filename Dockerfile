@@ -42,5 +42,5 @@ RUN python manage.py collectstatic --noinput
 RUN echo "Testing settings module..." && \
     DJANGO_SETTINGS_MODULE=game_ctrl.settings.production python -c "import django; django.setup(); from django.conf import settings; print('TEMPLATES:', settings.TEMPLATES)"
 
-# Change the CMD to help us debug
-CMD ["bash", "-c", "echo 'DJANGO_SETTINGS_MODULE:' $DJANGO_SETTINGS_MODULE && python -c 'import sys; print(sys.path)' && python manage.py showmigrations"] 
+# Change the CMD to use gunicorn with debug output
+CMD ["bash", "-c", "PYTHONVERBOSE=1 DJANGO_SETTINGS_MODULE=game_ctrl.settings.production gunicorn game_ctrl.wsgi:application --bind 0.0.0.0:8000 --workers 3 --log-level debug"] 
