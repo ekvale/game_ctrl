@@ -3,6 +3,28 @@ from .base import *  # noqa: F403
 import sentry_sdk
 from sentry_sdk.integrations.django import DjangoIntegration
 
+# At the very top of the file, before importing from base
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        'OPTIONS': {
+            'context_processors': [
+                'django.template.context_processors.debug',
+                'django.template.context_processors.request',
+                'django.contrib.auth.context_processors.auth',
+                'django.contrib.messages.context_processors.messages',
+            ],
+            'loaders': [
+                ('django.template.loaders.cached.Loader', [
+                    'django.template.loaders.filesystem.Loader',
+                    'django.template.loaders.app_directories.Loader',
+                ]),
+            ],
+        },
+    },
+]
+
 # Security Settings
 DEBUG = False
 SECURE_SSL_REDIRECT = False  # Temporarily disable until SSL is set up
@@ -173,26 +195,7 @@ SECURE_BROWSER_XSS_FILTER = True
 SECURE_CONTENT_TYPE_NOSNIFF = True
 
 # Template configuration - Production setup with cached loaders
-TEMPLATES = [
-    {
-        'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')],
-        'OPTIONS': {
-            'context_processors': [
-                'django.template.context_processors.debug',
-                'django.template.context_processors.request',
-                'django.contrib.auth.context_processors.auth',
-                'django.contrib.messages.context_processors.messages',
-            ],
-            'loaders': [
-                ('django.template.loaders.cached.Loader', [
-                    'django.template.loaders.filesystem.Loader',
-                    'django.template.loaders.app_directories.Loader',
-                ]),
-            ],
-        },
-    },
-]
+TEMPLATES = TEMPLATES  # This ensures our version is used
 
 # Sentry Configuration
 if 'SENTRY_DSN' in os.environ:  # Only initialize if DSN is provided
