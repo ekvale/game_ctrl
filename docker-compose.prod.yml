@@ -4,6 +4,7 @@ services:
   web:
     build: .
     command: gunicorn game_ctrl.wsgi:application --bind 0.0.0.0:8000 --workers 3
+    user: app
     volumes:
       - static_volume:/var/www/static
       - media_volume:/var/www/media
@@ -16,6 +17,7 @@ services:
 
   db:
     image: postgres:13
+    user: postgres
     volumes:
       - postgres_data:/var/lib/postgresql/data
     env_file:
@@ -23,11 +25,13 @@ services:
 
   redis:
     image: redis:6-alpine
+    user: redis
     volumes:
       - redis_data:/data
 
   nginx:
     image: nginx:1.21-alpine
+    user: nginx
     volumes:
       - static_volume:/var/www/static
       - media_volume:/var/www/media
