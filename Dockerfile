@@ -12,6 +12,7 @@ RUN apt-get update \
     build-essential \
     libpq-dev \
     netcat-traditional \
+    curl \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
