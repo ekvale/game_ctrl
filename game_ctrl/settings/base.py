@@ -42,7 +42,22 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'game_ctrl.urls'
 
-# TEMPLATES = [...]
+# Template configuration
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [BASE_DIR / 'templates'],
+        'APP_DIRS': True,  # Use APP_DIRS in base settings
+        'OPTIONS': {
+            'context_processors': [
+                'django.template.context_processors.debug',
+                'django.template.context_processors.request',
+                'django.contrib.auth.context_processors.auth',
+                'django.contrib.messages.context_processors.messages',
+            ],
+        },
+    },
+]
 
 WSGI_APPLICATION = 'game_ctrl.wsgi.application'
 

@@ -16,32 +16,34 @@ print("Python path:", sys.path)
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 print("BASE_DIR:", BASE_DIR)
 
-# Import base settings
+# Import base settings first
 from .base import *  # noqa: F403
 
 # Debug settings
 DEBUG = False
 
-# Template configuration
-TEMPLATES = [
-    {
-        'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [str(BASE_DIR / 'templates')],
-        'OPTIONS': {
-            'debug': DEBUG,
-            'context_processors': [
-                'django.template.context_processors.debug',
-                'django.template.context_processors.request',
-                'django.contrib.auth.context_processors.auth',
-                'django.contrib.messages.context_processors.messages',
-            ],
-            'loaders': [
-                'django.template.loaders.filesystem.Loader',
-                'django.template.loaders.app_directories.Loader',
-            ],
-        },
+# Get the base template configuration
+template_config = TEMPLATES[0].copy()
+
+# Update the template configuration for production
+template_config.update({
+    'OPTIONS': {
+        'context_processors': [
+            'django.template.context_processors.debug',
+            'django.template.context_processors.request',
+            'django.contrib.auth.context_processors.auth',
+            'django.contrib.messages.context_processors.messages',
+        ],
+        'loaders': [
+            'django.template.loaders.filesystem.Loader',
+            'django.template.loaders.app_directories.Loader',
+        ],
+        'debug': DEBUG,
     },
-]
+})
+
+# Override the template settings
+TEMPLATES = [template_config]
 
 print("=== Template Configuration ===")
 print("TEMPLATES:", TEMPLATES)
