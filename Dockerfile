@@ -15,15 +15,15 @@ RUN apt-get update \
 
 WORKDIR /app
 
-# Install Python dependencies
-COPY requirements/production.txt .
-RUN pip install -r production.txt
+# Copy requirements first for better caching
+COPY requirements/ requirements/
+RUN pip install -r requirements/production.txt
 
-# Copy project
+# Copy project files
 COPY . .
 
 # Collect static files
 RUN python manage.py collectstatic --noinput
 
 # Run gunicorn
-CMD ["gunicorn", "--bind", "0.0.0.0:8000", "game_ctrl.wsgi:application"] 
+CMD ["gunicorn", "game_ctrl.wsgi:application", "--bind", "0.0.0.0:8000"] 
