@@ -5,7 +5,7 @@ from sentry_sdk.integrations.django import DjangoIntegration
 
 # Security Settings
 DEBUG = False
-SECURE_SSL_REDIRECT = True
+SECURE_SSL_REDIRECT = False  # Temporarily disable until SSL is set up
 SECURE_HSTS_SECONDS = 31536000  # 1 year
 SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 SECURE_HSTS_PRELOAD = True
@@ -67,6 +67,8 @@ CSP_FONT_SRC = ("'self'",)
 ALLOWED_HOSTS = [
     'gamesctrls.com',
     'www.gamesctrls.com',
+    'localhost',
+    '127.0.0.1',
 ]
 
 # Database
@@ -107,9 +109,13 @@ AWS_S3_REGION_NAME = os.environ.get('AWS_S3_REGION_NAME', 'us-east-1')
 AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
 AWS_S3_OBJECT_PARAMETERS = {'CacheControl': 'max-age=86400'}
 
-# Use S3 for static and media in production
-STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+# Use local storage instead
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
+DEFAULT_FILE_STORAGE = 'django.core.files.storage.FileSystemStorage'
+
+# Update URLs to use local paths
+STATIC_URL = '/static/'
+MEDIA_URL = '/media/'
 
 # Logging Configuration
 LOGGING = {
@@ -173,10 +179,6 @@ TEMPLATES[0]['OPTIONS']['loaders'] = [
         'django.template.loaders.app_directories.Loader',
     ]),
 ]
-
-# Static/Media Files
-STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/static/'
-MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/media/'
 
 # Sentry Configuration
 if 'SENTRY_DSN' in os.environ:  # Only initialize if DSN is provided
