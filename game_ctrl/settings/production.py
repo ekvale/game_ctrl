@@ -1,25 +1,41 @@
 import os
-from .base import *  # noqa: F403
+from pathlib import Path
+
+# Build paths inside the project like this: BASE_DIR / 'subdir'.
+BASE_DIR = Path(__file__).resolve().parent.parent.parent
+
+# Import all settings from base except TEMPLATES
+from .base import (  # noqa: F403
+    INSTALLED_APPS,
+    MIDDLEWARE,
+    ROOT_URLCONF,
+    WSGI_APPLICATION,
+    LANGUAGE_CODE,
+    TIME_ZONE,
+    USE_I18N,
+    USE_TZ,
+    CRISPY_ALLOWED_TEMPLATE_PACKS,
+    CRISPY_TEMPLATE_PACK,
+    DEFAULT_AUTO_FIELD,
+    AUTH_USER_MODEL,
+    # Add other settings you need from base, but don't import *
+)
+
 import sentry_sdk
 from sentry_sdk.integrations.django import DjangoIntegration
 
-# At the very top of the file, before importing from base
+# Template configuration - Production setup
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        'DIRS': [BASE_DIR / 'templates'],  # Use same path format as base.py
+        'APP_DIRS': True,  # Keep this the same as base.py
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-            ],
-            'loaders': [
-                ('django.template.loaders.cached.Loader', [
-                    'django.template.loaders.filesystem.Loader',
-                    'django.template.loaders.app_directories.Loader',
-                ]),
             ],
         },
     },
