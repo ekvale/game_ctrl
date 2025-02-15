@@ -7,13 +7,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent.parent
 # Import base settings
 from .base import *  # noqa: F403
 
+print("DJANGO_SETTINGS_MODULE:", os.environ.get('DJANGO_SETTINGS_MODULE'))
+
 # Template configuration - Simple setup
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [str(BASE_DIR / 'templates')],  # Convert Path to string
         'OPTIONS': {
-            'debug': DEBUG,  # Use the DEBUG setting from above
+            'debug': DEBUG,
             'context_processors': [
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
@@ -30,7 +32,7 @@ TEMPLATES = [
     },
 ]
 
-print("Initial TEMPLATES:", TEMPLATES)
+print("TEMPLATES configuration:", TEMPLATES)
 
 import sentry_sdk
 from sentry_sdk.integrations.django import DjangoIntegration
