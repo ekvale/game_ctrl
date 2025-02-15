@@ -27,8 +27,7 @@ template_config = TEMPLATES[0].copy()
 
 # Update the template configuration for production
 template_config.update({
-    'BACKEND': 'django.template.backends.django.DjangoTemplates',
-    'DIRS': [BASE_DIR / 'templates'],
+    'APP_DIRS': False,  # Disable APP_DIRS since we're using loaders
     'OPTIONS': {
         'context_processors': [
             'django.template.context_processors.debug',
