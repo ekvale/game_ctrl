@@ -28,7 +28,7 @@ from sentry_sdk.integrations.django import DjangoIntegration
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates'],  # Use same path format as base.py
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,  # Keep this the same as base.py
         'OPTIONS': {
             'context_processors': [
@@ -209,9 +209,6 @@ DEFAULT_FROM_EMAIL = os.environ.get('DEFAULT_FROM_EMAIL', 'noreply@game-ctrl.exa
 X_FRAME_OPTIONS = 'DENY'
 SECURE_BROWSER_XSS_FILTER = True
 SECURE_CONTENT_TYPE_NOSNIFF = True
-
-# Template configuration - Production setup with cached loaders
-TEMPLATES = TEMPLATES  # This ensures our version is used
 
 # Sentry Configuration
 if 'SENTRY_DSN' in os.environ:  # Only initialize if DSN is provided
