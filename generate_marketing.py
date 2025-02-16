@@ -165,25 +165,33 @@ def run_test_mode():
     
     # Generate test videos using ffmpeg
     for video in test_videos:
+        print(f"Creating test video: {video}")
+        # Create a 5-second test video with solid color and text
+        cmd = (
+            f'ffmpeg -y -f lavfi -i color=c=blue:s=1280x720:d=5 '
+            f'-vf "drawtext=text=Test Video:fontsize=60:fontcolor=white:x=(w-text_w)/2:y=(h-text_h)/2" '
+            f'-c:v libx264 -preset medium -pix_fmt yuv420p {video}'
+        )
+        print(f"Running command: {cmd}")
+        result = os.system(cmd)
+        if result != 0:
+            raise Exception(f"Failed to create test video: {video}")
         if not os.path.exists(video):
-            print(f"Creating test video: {video}")
-            # Create a 5-second test video with solid color
-            cmd = f'ffmpeg -y -f lavfi -i color=c=blue:s=1280x720:d=5 -c:v libx264 -pix_fmt yuv420p {video}'
-            result = os.system(cmd)
-            if result != 0:
-                raise Exception(f"Failed to create test video: {video}")
-            print(f"Created test video: {video}")
+            raise Exception(f"Test video was not created: {video}")
+        print(f"Created test video: {video} (size: {os.path.getsize(video)} bytes)")
     
     # Create test audio file
     test_audio = 'static/audio/test_assets/sample_voice.mp3'
+    print(f"Creating test audio: {test_audio}")
+    # Create a 5-second test audio tone
+    cmd = f'ffmpeg -y -f lavfi -i "sine=frequency=440:duration=5" -c:a libmp3lame {test_audio}'
+    print(f"Running command: {cmd}")
+    result = os.system(cmd)
+    if result != 0:
+        raise Exception(f"Failed to create test audio: {test_audio}")
     if not os.path.exists(test_audio):
-        print(f"Creating test audio: {test_audio}")
-        # Create a 5-second test audio tone
-        cmd = f'ffmpeg -y -f lavfi -i "sine=frequency=440:duration=5" -c:a libmp3lame {test_audio}'
-        result = os.system(cmd)
-        if result != 0:
-            raise Exception(f"Failed to create test audio: {test_audio}")
-        print(f"Created test audio: {test_audio}")
+        raise Exception(f"Test audio was not created: {test_audio}")
+    print(f"Created test audio: {test_audio} (size: {os.path.getsize(test_audio)} bytes)")
     
     # Copy test files to temp and marketing directories
     video_paths = []
@@ -194,12 +202,14 @@ def run_test_mode():
         if not os.path.exists(output_path):
             raise Exception(f"Failed to copy video to {output_path}")
         video_paths.append(output_path)
+        print(f"Copied video to {output_path} (size: {os.path.getsize(output_path)} bytes)")
     
     audio_path = 'static/audio/marketing/test_promo.mp3'
     print(f"Copying {test_audio} to {audio_path}")
     os.system(f'cp {test_audio} {audio_path}')
     if not os.path.exists(audio_path):
         raise Exception(f"Failed to copy audio to {audio_path}")
+    print(f"Copied audio to {audio_path} (size: {os.path.getsize(audio_path)} bytes)")
     
     return video_paths, audio_path
 
