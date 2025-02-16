@@ -91,8 +91,14 @@ USE_I18N = True
 USE_TZ = True
 
 # Static files
-STATIC_URL = 'static/'
-MEDIA_URL = 'media/'
+STATIC_URL = '/static/'
+STATIC_ROOT = '/var/www/static'
+STATICFILES_DIRS = [
+    BASE_DIR / 'static',
+]
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = '/var/www/media'
 
 # Crispy Forms
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
