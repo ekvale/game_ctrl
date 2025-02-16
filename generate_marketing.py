@@ -77,17 +77,20 @@ def generate_audio():
     print("Generating audio...")
     
     # Generate audio using the correct API
-    audio = client.text_to_speech.convert(
+    audio_generator = client.text_to_speech.convert(
         text=script,
         voice_id="Adam",
         model_id="eleven_monolingual_v1",
         output_format="mp3_44100_128"
     )
 
+    # Convert generator to bytes
+    audio_bytes = b''.join(audio_generator)
+
     # Save the audio
     audio_path = "static/audio/marketing/promo.mp3"
     with open(audio_path, 'wb') as f:
-        f.write(audio)
+        f.write(audio_bytes)
     
     # Verify audio file
     if os.path.exists(audio_path) and os.path.getsize(audio_path) > 0:
@@ -145,41 +148,87 @@ def create_final_video(video_paths, audio_path):
     else:
         raise Exception("Failed to create final video")
 
-def main():
+def test_mode():
+    """Run in test mode without using API tokens"""
+    print("Running in TEST MODE - no tokens will be used")
+    
+    # Create test directories
+    os.makedirs('static/video/test_assets', exist_ok=True)
+    os.makedirs('static/audio/test_assets', exist_ok=True)
+    
+    # Create sample video files if they don't exist
+    test_videos = [
+        'static/video/test_assets/sample_intro.mp4',
+        'static/video/test_assets/sample_product.mp4',
+        'static/video/test_assets/sample_tournament.mp4'
+    ]
+    
+    test_audio = 'static/audio/test_assets/sample_voice.mp3'
+    
+    # Create dummy files if they don't exist
+    for video in test_videos:
+        if not os.path.exists(video):
+            with open(video, 'wb') as f:
+                f.write(b'dummy video content')
+    
+    if not os.path.exists(test_audio):
+        with open(test_audio, 'wb') as f:
+            f.write(b'dummy audio content')
+    
+    # Copy test files to temp and marketing directories
+    video_paths = []
+    for i, video in enumerate(test_videos):
+        output_path = f'static/video/temp/test_{i}.mp4'
+        os.system(f'cp {video} {output_path}')
+        video_paths.append(output_path)
+    
+    audio_path = 'static/audio/marketing/test_promo.mp3'
+    os.system(f'cp {test_audio} {audio_path}')
+    
+    return video_paths, audio_path
+
+def main(test=False):
     video_paths = []
     try:
         # Setup directories
         setup_directories()
         
-        # Video segments with prompts
-        segments = [
-            {
-                "prompt": "Professional gaming controller floating in modern studio, dramatic lighting, product showcase, photorealistic, centered composition",
-                "output": "static/video/temp/intro.mp4"
-            },
-            {
-                "prompt": "Pro Fighter X8 arcade controller with LED lighting, premium buttons, professional product photography, dramatic lighting",
-                "output": "static/video/temp/pro_fighter.mp4"
-            },
-            {
-                "prompt": "Tournament gaming scene with players using arcade controllers, esports environment, dramatic lighting",
-                "output": "static/video/temp/tournament.mp4"
-            }
-        ]
+        if test:
+            # Run in test mode
+            video_paths, audio_path = test_mode()
+            final_path = create_final_video(video_paths, audio_path)
+            print(f"Test video created successfully at {final_path}")
+        else:
+            # Normal mode with API calls
+            # Video segments with prompts
+            segments = [
+                {
+                    "prompt": "Professional gaming controller floating in modern studio, dramatic lighting, product showcase, photorealistic, centered composition",
+                    "output": "static/video/temp/intro.mp4"
+                },
+                {
+                    "prompt": "Pro Fighter X8 arcade controller with LED lighting, premium buttons, professional product photography, dramatic lighting",
+                    "output": "static/video/temp/pro_fighter.mp4"
+                },
+                {
+                    "prompt": "Tournament gaming scene with players using arcade controllers, esports environment, dramatic lighting",
+                    "output": "static/video/temp/tournament.mp4"
+                }
+            ]
 
-        # Generate video segments
-        for segment in segments:
-            generate_video_segment(segment["prompt"], segment["output"])
-            video_paths.append(segment["output"])
-            print(f"Generated segment: {segment['output']}")
+            # Generate video segments
+            for segment in segments:
+                generate_video_segment(segment["prompt"], segment["output"])
+                video_paths.append(segment["output"])
+                print(f"Generated segment: {segment['output']}")
 
-        # Generate audio
-        audio_path = generate_audio()
+            # Generate audio
+            audio_path = generate_audio()
 
-        # Combine videos and add audio
-        final_path = create_final_video(video_paths, audio_path)
-        
-        print(f"Marketing video created successfully at {final_path}")
+            # Combine videos and add audio
+            final_path = create_final_video(video_paths, audio_path)
+            
+            print(f"Marketing video created successfully at {final_path}")
 
     except Exception as e:
         print(f"Error: {str(e)}")
@@ -193,4 +242,6 @@ def main():
                 print(f"Removed temp file: {path}")
 
 if __name__ == "__main__":
-    main()
+    import sys
+    test_mode = "--test" in sys.argv
+    main(test=test_mode)

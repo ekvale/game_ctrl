@@ -82,6 +82,7 @@ services:
       - ./nginx:/etc/nginx/conf.d
       - ./certbot/conf:/etc/letsencrypt
       - ./certbot/www:/var/www/certbot
+      - ./static/video/marketing:/var/www/video/marketing
     ports:
       - "80:80"
       - "443:443"

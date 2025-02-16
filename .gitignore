@@ -52,7 +52,6 @@ static/audio/temp/*
 # Video files
 static/video/temp/*
 !static/video/temp/.gitkeep
-*.mp4
 *.avi
 *.mov
 *.webm
@@ -89,3 +88,9 @@ venv/
 .venv/
 ENV/
 .env/
+
+# Test assets
+static/video/test_assets/*
+!static/video/test_assets/.gitkeep
+static/audio/test_assets/*
+!static/audio/test_assets/.gitkeep
