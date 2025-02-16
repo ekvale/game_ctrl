@@ -3,7 +3,8 @@ import replicate
 import requests
 from dotenv import load_dotenv
 from elevenlabs.client import ElevenLabs
-from moviepy.editor import VideoFileClip, AudioFileClip, concatenate_videoclips
+from moviepy.editor import VideoFileClip, AudioFileClip, concatenate_videoclips, TextClip, CompositeVideoClip, ColorClip
+import numpy as np
 
 # Load environment variables
 load_dotenv('.env.prod')
@@ -213,6 +214,33 @@ def run_test_mode():
     
     return video_paths, audio_path
 
+def create_marketing_video():
+    # Create a background
+    bg = ColorClip(size=(1920, 1080), color=(33, 37, 41))  # Dark background matching our theme
+    
+    # Create text clips
+    text1 = TextClip("Game Controllers", fontsize=70, color='white', font='Roboto')
+    text2 = TextClip("Professional Grade\nArcade Controls", fontsize=50, color='white', font='Roboto')
+    
+    # Position the text clips
+    text1 = text1.set_position('center').set_duration(5)
+    text2 = text2.set_position('center').set_duration(5).set_start(5)
+    
+    # Combine clips
+    video = CompositeVideoClip([
+        bg.set_duration(10),
+        text1,
+        text2
+    ])
+    
+    # Write the final video
+    video.write_videofile(
+        "static/video/marketing/final_promo.mp4",
+        fps=24,
+        codec='libx264',
+        audio=False
+    )
+
 def main(test=False):
     video_paths = []
     try:
@@ -248,8 +276,14 @@ def main(test=False):
                 video_paths.append(segment["output"])
                 print(f"Generated segment: {segment['output']}")
 
-            # Generate audio
-            audio_path = generate_audio()
+            try:
+                # Try to generate audio
+                audio_path = generate_audio()
+            except Exception as e:
+                print(f"Audio generation failed: {e}")
+                print("Falling back to test audio...")
+                # Fall back to test audio
+                _, audio_path = run_test_mode()
 
             # Combine videos and add audio
             final_path = create_final_video(video_paths, audio_path)
@@ -260,12 +294,13 @@ def main(test=False):
         print(f"Error: {str(e)}")
         raise
     finally:
-        # Clean up temp files
-        print("Cleaning up temporary files...")
-        for path in video_paths:
-            if os.path.exists(path):
-                os.remove(path)
-                print(f"Removed temp file: {path}")
+        # Only clean up if successful
+        if os.path.exists("static/video/marketing/final_promo.mp4"):
+            print("Cleaning up temporary files...")
+            for path in video_paths:
+                if os.path.exists(path):
+                    os.remove(path)
+                    print(f"Removed temp file: {path}")
 
 if __name__ == "__main__":
     import sys

@@ -20,7 +20,7 @@ print("BASE_DIR:", BASE_DIR)
 from .base import *  # noqa: F403
 
 # Debug settings
-DEBUG = False
+DEBUG = True  # Temporarily set to True
 
 # Get the base template configuration
 template_config = TEMPLATES[0].copy()

@@ -14,7 +14,7 @@
     <meta property="og:image" content="{% static 'images/og-image.jpg' %}">
     <meta property="og:url" content="{{ request.build_absolute_uri }}">
     
-    <title>GamesCtrls - Marketing</title>
+    <title>{% block title %}Game Controllers{% endblock %}</title>
     
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="{% static 'images/favicon.png' %}">
@@ -66,7 +66,8 @@
         </div>
     </nav>
 
-    <main>
+    <!-- Main Content -->
+    <main class="container mb-5">
         {% if messages %}
             <div class="messages">
                 {% for message in messages %}
@@ -77,8 +78,7 @@
             </div>
         {% endif %}
 
-        {% block content %}
-        {% endblock %}
+        {% block content %}{% endblock %}
     </main>
 
     <!-- Footer -->
