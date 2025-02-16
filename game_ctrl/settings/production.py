@@ -190,6 +190,11 @@ DEFAULT_FILE_STORAGE = 'django.core.files.storage.FileSystemStorage'
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 
+# Static files
+STATICFILES_DIRS = [
+    BASE_DIR / 'static',
+]
+
 # Logging Configuration
 LOGGING = {
     'version': 1,
