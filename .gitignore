@@ -1,30 +1,8 @@
-# Environment files
-.env
-.env.*
-!.env.example
-
-# Backup files
-*.bak
-
-# Local development
-.env.prod
-.env.prod.db
-.env.dev
-.env.dev.db
-
-# Media and static files
-media/
-staticfiles/
-static/admin/
-static/debug/
-static/*.json
-
-# Python
 __pycache__/
 *.py[cod]
+*$py.class
 *.so
 .Python
-env/
 build/
 develop-eggs/
 dist/
@@ -36,40 +14,17 @@ lib64/
 parts/
 sdist/
 var/
+wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+.env
+.env.prod
+.env.dev
+.venv
 venv/
+ENV/
 
-# Django
-*.log
-local_settings.py
-db.sqlite3
-db.sqlite3-journal
-
-# Docker
-docker-compose.override.yml
-
-# IDE
-.idea/
-.vscode/
-*.swp
-*.swo
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Keep ignoring general static files
-/static/admin/
-/staticfiles/
-/media/
-
-# But allow our custom static files
-!static/css/
-!static/images/
-!static/js/
-
-# Keep ignoring compiled Python files
-*.pyc
-__pycache__/ 
+# Certbot
+certbot/conf/
+certbot/www/
