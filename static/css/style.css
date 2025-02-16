@@ -80,14 +80,30 @@ body {
 
 /* Header styles */
 header {
-    background-color: #f8f9fa;
-    padding: 1rem;
+    background-color: var(--secondary-color);
+    padding: 1rem 0;
 }
 
-nav {
+header nav {
     display: flex;
-    gap: 1rem;
+    justify-content: space-between;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+header nav a:hover {
+    background-color: var(--primary-color);
+    color: white;
 }
 
 /* Main content styles */
