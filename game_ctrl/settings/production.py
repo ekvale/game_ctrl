@@ -90,9 +90,17 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 # Rate Limiting
-MIDDLEWARE += [
+MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.common.CommonMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.messages.middleware.MessageMiddleware',
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django_ratelimit.middleware.RatelimitMiddleware',
+    'csp.middleware.CSPMiddleware',
+    # Check if there's any custom middleware here
 ]
 
 RATELIMIT_VIEW = 'game_ctrl.views.rate_limit_view'

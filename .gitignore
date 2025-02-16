@@ -6,6 +6,17 @@
 # Backup files
 *.bak
 
+# Local development
+.env.prod
+.env.prod.db
+.env.dev
+.env.dev.db
+
+# Media and static files
+/media/
+/static/
+/staticfiles/
+
 # Python
 __pycache__/
 *.py[cod]
@@ -33,8 +44,6 @@ venv/
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
-media/
-static/
 
 # Docker
 docker-compose.override.yml
