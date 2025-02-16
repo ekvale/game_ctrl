@@ -163,17 +163,19 @@ def run_test_mode():
         'static/video/test_assets/sample_tournament.mp4'
     ]
     
-    test_audio = 'static/audio/test_assets/sample_voice.mp3'
-    
-    # Create dummy files if they don't exist
+    # Generate test videos using ffmpeg
     for video in test_videos:
         if not os.path.exists(video):
-            with open(video, 'wb') as f:
-                f.write(b'dummy video content')
+            print(f"Creating test video: {video}")
+            # Create a 5-second test video with color bars
+            os.system(f'ffmpeg -f lavfi -i testsrc=duration=5:size=1280x720:rate=30 -c:v libx264 {video}')
     
+    # Create test audio file
+    test_audio = 'static/audio/test_assets/sample_voice.mp3'
     if not os.path.exists(test_audio):
-        with open(test_audio, 'wb') as f:
-            f.write(b'dummy audio content')
+        print(f"Creating test audio: {test_audio}")
+        # Create a 5-second test audio tone
+        os.system(f'ffmpeg -f lavfi -i "sine=frequency=440:duration=5" -c:a libmp3lame {test_audio}')
     
     # Copy test files to temp and marketing directories
     video_paths = []
