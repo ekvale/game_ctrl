@@ -56,4 +56,18 @@ docker-compose.override.yml
 
 # OS
 .DS_Store
-Thumbs.db 
+Thumbs.db
+
+# Keep ignoring general static files
+/static/admin/
+/staticfiles/
+/media/
+
+# But allow our custom static files
+!/static/css/
+!/static/images/
+!/static/js/
+
+# Keep ignoring compiled Python files
+*.pyc
+__pycache__/ 
