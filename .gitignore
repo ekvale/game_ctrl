@@ -13,9 +13,11 @@
 .env.dev.db
 
 # Media and static files
-/media/
-/static/
-/staticfiles/
+media/
+staticfiles/
+static/admin/
+static/debug/
+static/*.json
 
 # Python
 __pycache__/
@@ -64,9 +66,9 @@ Thumbs.db
 /media/
 
 # But allow our custom static files
-!/static/css/
-!/static/images/
-!/static/js/
+!static/css/
+!static/images/
+!static/js/
 
 # Keep ignoring compiled Python files
 *.pyc
