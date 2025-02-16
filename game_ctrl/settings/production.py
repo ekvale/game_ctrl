@@ -61,7 +61,9 @@ CSRF_COOKIE_SECURE = True
 
 # CSRF Settings
 CSRF_TRUSTED_ORIGINS = [
+    'http://gamesctrls.com',
     'https://gamesctrls.com',
+    'http://www.gamesctrls.com',
     'https://www.gamesctrls.com',
 ]
 
@@ -123,7 +125,8 @@ ALLOWED_HOSTS = [
     'www.gamesctrls.com',
     'localhost',
     '127.0.0.1',
-    'web',  # Add this for internal Docker network communication
+    'web',
+    '137.184.8.118',  # Add your server IP
 ]
 
 # Database
