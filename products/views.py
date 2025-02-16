@@ -1,12 +1,14 @@
 from django.shortcuts import render, get_object_or_404
 from .models import Category, Controller
 
+from django.shortcuts import render
+from products.models import Product
+
 def home(request):
-    """Home page view"""
-    categories = Category.objects.all()
-    featured_controllers = Controller.objects.filter(
-        is_featured=True
-    )[:6]  # Limit to 6 featured controllers
+    featured_controllers = Product.objects.filter(is_featured=True)[:6]
+    return render(request, 'products/home.html', {
+        'featured_controllers': featured_controllers,
+    })
     
     return render(request, 'products/home.html', {
         'categories': categories,
