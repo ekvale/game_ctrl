@@ -28,3 +28,64 @@ ENV/
 # Certbot
 certbot/conf/
 certbot/www/
+
+# SSL/Certbot
+certbot/
+ssl/
+*.pem
+
+# Keep product images
+!static/images/products/
+!static/images/products/*.jpg
+!static/images/products/*.png
+
+# Audio files
+*.mp3
+*.wav
+*.m4a
+static/audio/temp/*
+!static/audio/temp/.gitkeep
+
+# Keep marketing audio
+!static/audio/marketing/*.mp3
+
+# Video files
+static/video/temp/*
+!static/video/temp/.gitkeep
+*.mp4
+*.avi
+*.mov
+*.webm
+
+# Keep marketing videos
+!static/video/marketing/*.mp4
+!static/video/marketing/final_promo.mp4
+
+# Audio files
+static/audio/temp/*
+!static/audio/temp/.gitkeep
+*.mp3
+*.wav
+*.m4a
+
+# Keep marketing audio
+!static/audio/marketing/*.mp3
+
+# Generated media
+static/video/temp/*
+!static/video/temp/.gitkeep
+static/audio/temp/*
+!static/audio/temp/.gitkeep
+
+# Keep marketing files
+!static/video/marketing/*.mp4
+!static/audio/marketing/*.mp3
+
+# Python scripts
+!generate_marketing.py
+
+# Virtual Environment
+venv/
+.venv/
+ENV/
+.env/
