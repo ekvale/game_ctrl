@@ -27,6 +27,9 @@ services:
     environment:
       - DJANGO_SETTINGS_MODULE=game_ctrl.settings.production
       - PYTHONUNBUFFERED=1
+      - DB_NAME=game_ctrl
+      - DB_USER=game_ctrl_user
+      - DB_PASSWORD=GameCtrl!2828
     volumes:
       - static_volume:/var/www/static
       - media_volume:/var/www/media
