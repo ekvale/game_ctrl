@@ -48,10 +48,14 @@ services:
       - postgres_data:/var/lib/postgresql/data
     env_file:
       - .env.prod.db
+    environment:
+      - POSTGRES_DB=${DB_NAME}
+      - POSTGRES_USER=${DB_USER}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
     networks:
       - default
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U game_ctrl_user"]
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER}"]
       interval: 5s
       timeout: 5s
       retries: 5
