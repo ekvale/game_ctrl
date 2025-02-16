@@ -148,7 +148,7 @@ def create_final_video(video_paths, audio_path):
     else:
         raise Exception("Failed to create final video")
 
-def test_mode():
+def run_test_mode():
     """Run in test mode without using API tokens"""
     print("Running in TEST MODE - no tokens will be used")
     
@@ -195,7 +195,7 @@ def main(test=False):
         
         if test:
             # Run in test mode
-            video_paths, audio_path = test_mode()
+            video_paths, audio_path = run_test_mode()
             final_path = create_final_video(video_paths, audio_path)
             print(f"Test video created successfully at {final_path}")
         else:
@@ -243,5 +243,5 @@ def main(test=False):
 
 if __name__ == "__main__":
     import sys
-    test_mode = "--test" in sys.argv
-    main(test=test_mode)
+    is_test_mode = "--test" in sys.argv
+    main(test=is_test_mode)
