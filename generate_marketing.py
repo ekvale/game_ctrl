@@ -167,25 +167,39 @@ def run_test_mode():
     for video in test_videos:
         if not os.path.exists(video):
             print(f"Creating test video: {video}")
-            # Create a 5-second test video with color bars
-            os.system(f'ffmpeg -f lavfi -i testsrc=duration=5:size=1280x720:rate=30 -c:v libx264 {video}')
+            # Create a 5-second test video with solid color
+            cmd = f'ffmpeg -y -f lavfi -i color=c=blue:s=1280x720:d=5 -c:v libx264 -pix_fmt yuv420p {video}'
+            result = os.system(cmd)
+            if result != 0:
+                raise Exception(f"Failed to create test video: {video}")
+            print(f"Created test video: {video}")
     
     # Create test audio file
     test_audio = 'static/audio/test_assets/sample_voice.mp3'
     if not os.path.exists(test_audio):
         print(f"Creating test audio: {test_audio}")
         # Create a 5-second test audio tone
-        os.system(f'ffmpeg -f lavfi -i "sine=frequency=440:duration=5" -c:a libmp3lame {test_audio}')
+        cmd = f'ffmpeg -y -f lavfi -i "sine=frequency=440:duration=5" -c:a libmp3lame {test_audio}'
+        result = os.system(cmd)
+        if result != 0:
+            raise Exception(f"Failed to create test audio: {test_audio}")
+        print(f"Created test audio: {test_audio}")
     
     # Copy test files to temp and marketing directories
     video_paths = []
     for i, video in enumerate(test_videos):
         output_path = f'static/video/temp/test_{i}.mp4'
+        print(f"Copying {video} to {output_path}")
         os.system(f'cp {video} {output_path}')
+        if not os.path.exists(output_path):
+            raise Exception(f"Failed to copy video to {output_path}")
         video_paths.append(output_path)
     
     audio_path = 'static/audio/marketing/test_promo.mp3'
+    print(f"Copying {test_audio} to {audio_path}")
     os.system(f'cp {test_audio} {audio_path}')
+    if not os.path.exists(audio_path):
+        raise Exception(f"Failed to copy audio to {audio_path}")
     
     return video_paths, audio_path
 
