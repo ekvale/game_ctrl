@@ -31,6 +31,7 @@ services:
       - DB_USER=game_ctrl_user
       - DB_PASSWORD=GameCtrl!2828
     volumes:
+      - .:/app
       - static_volume:/var/www/static
       - media_volume:/var/www/media
     env_file:
