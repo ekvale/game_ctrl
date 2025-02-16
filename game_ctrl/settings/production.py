@@ -115,6 +115,7 @@ ALLOWED_HOSTS = [
     'www.gamesctrls.com',
     'localhost',
     '127.0.0.1',
+    'web',  # Add this for internal Docker network communication
 ]
 
 # Database
