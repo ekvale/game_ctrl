@@ -56,8 +56,8 @@ SECURE_HSTS_SECONDS = 31536000
 SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 SECURE_HSTS_PRELOAD = True
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-SESSION_COOKIE_SECURE = True
-CSRF_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = False  # Temporarily set to False for testing
+CSRF_COOKIE_SECURE = False    # Temporarily set to False for testing
 
 # CSRF Settings
 CSRF_TRUSTED_ORIGINS = [
@@ -65,6 +65,7 @@ CSRF_TRUSTED_ORIGINS = [
     'https://gamesctrls.com',
     'http://www.gamesctrls.com',
     'https://www.gamesctrls.com',
+    'http://localhost:8000',  # Add this for testing
 ]
 
 # Session Settings
