@@ -29,7 +29,7 @@ RUN pip install -r requirements/production.txt
 # Copy project files
 COPY --chown=app:app . .
 
-# Set proper permissions (before switching to app user)
+# Create directories with correct permissions
 RUN mkdir -p /var/www/static /var/www/media \
     && chown -R app:app /var/www/static /var/www/media \
     && chmod -R 755 /var/www/static /var/www/media
