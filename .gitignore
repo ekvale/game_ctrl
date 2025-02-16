@@ -1,3 +1,11 @@
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Backup files
+*.bak
+
 # Python
 __pycache__/
 *.py[cod]
@@ -28,10 +36,8 @@ db.sqlite3-journal
 media/
 static/
 
-# Environment variables
-.env
-.env.prod
-.env.dev
+# Docker
+docker-compose.override.yml
 
 # IDE
 .idea/
