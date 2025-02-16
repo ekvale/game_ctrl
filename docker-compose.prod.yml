@@ -15,6 +15,7 @@ services:
         done &&
         echo "Database is ready!" &&
         python manage.py migrate --noinput &&
+        python manage.py collectstatic --noinput &&
         gunicorn game_ctrl.wsgi:application --bind 0.0.0.0:8000 --workers 3 --timeout 120
       '
     logging:
@@ -31,7 +32,7 @@ services:
       - DB_USER=game_ctrl_user
       - DB_PASSWORD=GameCtrl!2828
     volumes:
-      - .:/app
+      - ./:/app:ro
       - static_volume:/var/www/static
       - media_volume:/var/www/media
     env_file:
