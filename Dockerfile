@@ -29,7 +29,7 @@ RUN pip install -r requirements/production.txt
 # Copy project files
 COPY --chown=app:app . .
 
-# Create directories with correct permissions
+# Create directories and set permissions as root
 RUN mkdir -p /var/www/static /var/www/media \
     && chown -R app:app /var/www/static /var/www/media \
     && chmod -R 755 /var/www/static /var/www/media
@@ -45,7 +45,7 @@ HEALTHCHECK --interval=30s --timeout=10s --start-period=30s --retries=3 CMD ["/a
 USER app
 
 # Collect static files
-RUN python manage.py collectstatic --noinput
+RUN DJANGO_SETTINGS_MODULE=game_ctrl.settings.production python manage.py collectstatic --noinput
 
 # Add this before the final CMD
 RUN echo "Testing settings module..." && \

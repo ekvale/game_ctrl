@@ -2,7 +2,9 @@ version: '3.8'
 
 services:
   web:
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile
     user: app
     command: >
       bash -c "
@@ -23,8 +25,8 @@ services:
       - DJANGO_SETTINGS_MODULE=game_ctrl.settings.production
       - PYTHONUNBUFFERED=1
     volumes:
-      - ./static:/var/www/static
-      - ./media:/var/www/media
+      - static_volume:/var/www/static
+      - media_volume:/var/www/media
     env_file:
       - .env.prod
     depends_on:
@@ -56,10 +58,10 @@ services:
       - default
 
   nginx:
-    image: nginx:1.21-alpine
+    image: nginx:1.21
     volumes:
-      - ./static:/var/www/static
-      - ./media:/var/www/media
+      - static_volume:/var/www/static
+      - media_volume:/var/www/media
       - ./nginx:/etc/nginx/conf.d
     ports:
       - "80:80"
@@ -93,6 +95,10 @@ services:
 volumes:
   postgres_data:
   redis_data:
+  static_volume:
+    driver: local
+  media_volume:
+    driver: local
 
 networks:
   default:
