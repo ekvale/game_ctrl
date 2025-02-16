@@ -9,7 +9,10 @@ services:
     command: >
       bash -c "
         echo 'Waiting for database...' &&
-        while ! nc -z db 5432; do sleep 1; done &&
+        until PGPASSWORD=$DB_PASSWORD psql -h db -U $DB_USER -d $DB_NAME -c '\q'; do
+          >&2 echo "Postgres is unavailable - sleeping"
+          sleep 1
+        done &&
         echo 'Database is ready!' &&
         python manage.py migrate --noinput &&
         gunicorn game_ctrl.wsgi:application --bind 0.0.0.0:8000 --workers 3 --timeout 120
@@ -48,7 +51,7 @@ services:
     networks:
       - default
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      test: ["CMD-SHELL", "pg_isready -U game_ctrl_user"]
       interval: 5s
       timeout: 5s
       retries: 5
