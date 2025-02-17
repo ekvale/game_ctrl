@@ -61,7 +61,11 @@ DATABASES = {
 # Static files configuration
 STATIC_URL = '/static/'
 STATIC_ROOT = '/var/www/static'
-STATICFILES_DIRS = [BASE_DIR / 'static']
+STATICFILES_DIRS = [
+    BASE_DIR / 'static',
+    # Add admin static files explicitly
+    ('admin', '/usr/local/lib/python3.12/site-packages/django/contrib/admin/static/admin/'),
+]
 
 # Media files configuration
 MEDIA_URL = '/media/'
