@@ -63,18 +63,15 @@ DATABASES = {
 # Static files configuration
 STATIC_URL = '/static/'
 STATIC_ROOT = '/var/www/static'
-STATICFILES_DIRS = [BASE_DIR / 'static']
+STATICFILES_DIRS = [
+    BASE_DIR / 'static',
+]
 
 # Media files configuration
 MEDIA_URL = '/media/'
 MEDIA_ROOT = '/var/www/media'
 
-# Make sure these directories exist
-STATICFILES_DIRS = [
-    BASE_DIR / 'static',
-]
-
-# Ensure the static directory exists
+# Create static directory if it doesn't exist
 os.makedirs(BASE_DIR / 'static', exist_ok=True)
 
 # WhiteNoise Configuration
