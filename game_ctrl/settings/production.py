@@ -26,15 +26,7 @@ if not SECRET_KEY:
 DEBUG = False
 
 # Allowed Hosts - include development hosts temporarily
-ALLOWED_HOSTS = [
-    '137.184.8.118',
-    'gamesctrls.com',
-    'www.gamesctrls.com',
-    'localhost',
-    'localhost:8000',
-    '127.0.0.1',
-    '127.0.0.1:8000',
-]
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '').split(',')
 
 # CSRF Trusted Origins
 CSRF_TRUSTED_ORIGINS = [
@@ -60,16 +52,16 @@ X_FRAME_OPTIONS = 'DENY'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.getenv('POSTGRES_DB', 'game_ctrl_db'),
-        'USER': os.getenv('POSTGRES_USER', 'game_ctrl_user'),
+        'NAME': os.getenv('POSTGRES_DB'),
+        'USER': os.getenv('POSTGRES_USER'),
         'PASSWORD': os.getenv('POSTGRES_PASSWORD'),
-        'HOST': os.getenv('POSTGRES_HOST', 'db'),
+        'HOST': os.getenv('POSTGRES_HOST'),
         'PORT': os.getenv('POSTGRES_PORT', '5432'),
     }
 }
 
 # Static files configuration
-STATIC_URL = '/static/'  # Note the leading slash
+STATIC_URL = '/static/'
 STATIC_ROOT = '/var/www/static'
 STATICFILES_DIRS = [BASE_DIR / 'static']
 

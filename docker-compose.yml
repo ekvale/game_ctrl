@@ -36,6 +36,13 @@ services:
     ports:
       - "8000:8000"
 
+  nginx:
+    # ... nginx configuration ...
+    volumes:
+      - static_volume:/var/www/static
+      - media_volume:/var/www/media
+    # ... other configurations ...
+
 volumes:
   postgres_data:
   static_volume:
