@@ -2,6 +2,7 @@
 Development settings for game_ctrl project.
 """
 from .base import *  # noqa: F403
+import os
 
 # Debug settings
 DEBUG = True
@@ -36,4 +37,8 @@ STATICFILES_DIRS = [
 ]
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR / 'media' 
+MEDIA_ROOT = BASE_DIR / 'media'
+
+# Create directories if they don't exist
+os.makedirs(STATIC_ROOT, exist_ok=True)
+os.makedirs(MEDIA_ROOT, exist_ok=True) 
