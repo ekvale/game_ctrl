@@ -72,7 +72,12 @@ DATABASES = {
 STATIC_URL = '/static/'
 STATIC_ROOT = '/var/www/static'
 STATICFILES_DIRS = [BASE_DIR / 'static']
-STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+
+# Add WhiteNoise configuration
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+WHITENOISE_USE_FINDERS = True
+WHITENOISE_MANIFEST_STRICT = False
+WHITENOISE_ALLOW_ALL_ORIGINS = True
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = '/var/www/media'
@@ -133,4 +138,34 @@ if 'SENTRY_DSN' in os.environ:
         send_default_pii=True,
         environment="production",
     )
+
+# Make sure admin files are collected
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'whitenoise.runserver_nostatic',  # Add this before staticfiles
+    'django.contrib.staticfiles',
+    
+    # Third party
+    'crispy_forms',
+    'crispy_bootstrap5',
+    
+    # Local
+    'products.apps.ProductsConfig',
+    'cart.apps.CartConfig',
+]
+
+MIDDLEWARE = [
+    'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',  # Make sure this is after security and before other middleware
+    'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.common.CommonMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.messages.middleware.MessageMiddleware',
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+]
 

@@ -30,19 +30,17 @@ services:
       - .env.prod
     environment:
       - DJANGO_SETTINGS_MODULE=game_ctrl.settings.production
-      - POSTGRES_HOST=db
-      - POSTGRES_PASSWORD=your-secure-password
     command: >
       sh -c "
         python manage.py migrate &&
         python manage.py collectstatic --noinput &&
-        gunicorn game_ctrl.wsgi:application --bind 0.0.0.0:8000 --workers 3 --access-logfile /var/log/django/access.log --error-logfile /var/log/django/error.log"
-    ports:
-      - "8000:8000"
+        gunicorn game_ctrl.wsgi:application --bind 0.0.0.0:8000 --workers 3"
     volumes:
       - static_volume:/var/www/static
       - media_volume:/var/www/media
       - log_volume:/var/log/django
+    ports:
+      - "8000:8000"
 
 volumes:
   postgres_data:
