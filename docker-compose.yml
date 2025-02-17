@@ -28,9 +28,12 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      - /var/www/static:/var/www/static  # ✅ Ensures static files persist outside Docker
-      - /var/www/media:/var/www/media    # ✅ Ensures media files persist
+      - static_volume:/var/www/static
+      - media_volume:/var/www/media
+    user: "${UID}:${GID}"  # This will run the container with your user permissions
 
 volumes:
   postgres_data:
+  static_volume:
+  media_volume:
 
