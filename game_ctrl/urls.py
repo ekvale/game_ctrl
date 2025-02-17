@@ -6,6 +6,7 @@ from django.views.generic import RedirectView, TemplateView
 from .health_checks import health_check
 from django.contrib.auth import views as auth_views
 from django.shortcuts import render
+from products.views import home
 
 def test_video(request):
     return render(request, 'marketing/test_video.html')
@@ -13,6 +14,7 @@ def test_video(request):
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('health/', health_check, name='health_check'),
+    path('', home, name='home'),
     path('', include('products.urls')),
     path('cart/', include('cart.urls')),
     
@@ -21,4 +23,5 @@ urlpatterns = [
     path('logout/', auth_views.LogoutView.as_view(), name='logout'),
     path('register/', TemplateView.as_view(template_name='registration/register.html'), name='register'),
     path('test-video/', test_video, name='test_video'),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) 
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) \
+  + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) 
