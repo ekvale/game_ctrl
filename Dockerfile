@@ -25,9 +25,10 @@ WORKDIR /app
 RUN groupadd -r app && useradd -r -g app app
 
 # Create directories with proper permissions
-RUN mkdir -p /var/www/static /var/www/media && \
-    chown -R app:app /var/www/static /var/www/media && \
-    chmod -R 755 /var/www/static /var/www/media
+RUN mkdir -p /var/www/static /var/www/media /var/log/django && \
+    chown -R app:app /var/www/static /var/www/media /var/log/django && \
+    chmod -R 755 /var/www/static /var/www/media && \
+    chmod -R 777 /var/log/django
 
 # Copy requirements first
 COPY --chown=app:app requirements/ requirements/
@@ -57,4 +58,4 @@ RUN DJANGO_SETTINGS_MODULE=game_ctrl.settings.production python manage.py collec
 RUN echo "Testing settings module..." && \
     DJANGO_SETTINGS_MODULE=game_ctrl.settings.production python -c "import django; django.setup(); from django.conf import settings; print('TEMPLATES:', settings.TEMPLATES)"
 
-CMD ["gunicorn", "game_ctrl.wsgi:application", "--bind", "0.0.0.0:8000", "--workers", "3"] 
+CMD ["gunicorn", "game_ctrl.wsgi:application", "--bind", "0.0.0.0:8000", "--workers", "3", "--access-logfile", "/var/log/django/access.log", "--error-logfile", "/var/log/django/error.log"] 
