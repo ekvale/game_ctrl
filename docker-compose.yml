@@ -26,6 +26,7 @@ services:
       - DJANGO_SETTINGS_MODULE=game_ctrl.settings.production
     command: >
       sh -c "
+        mkdir -p /var/www/static /var/www/media &&
         python manage.py migrate &&
         python manage.py collectstatic --noinput &&
         gunicorn game_ctrl.wsgi:application --bind 0.0.0.0:8000 --workers 3"
