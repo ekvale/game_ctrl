@@ -40,8 +40,8 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      - /var/www/static:/var/www/static
-      - /var/www/media:/var/www/media
+      - static_volume:/var/www/static
+      - media_volume:/var/www/media
 
 volumes:
   postgres_data:

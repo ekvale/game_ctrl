@@ -21,13 +21,13 @@ RUN apt-get update \
 
 WORKDIR /app
 
-# Create app user first
+# Create app user and set permissions
 RUN groupadd -r app && useradd -r -g app app
 
-# Create directories and set permissions
-RUN mkdir -p /var/www/static /var/www/media \
-    && chown -R app:app /var/www/static /var/www/media \
-    && chmod -R 755 /var/www/static /var/www/media
+# Create directories with proper permissions
+RUN mkdir -p /var/www/static /var/www/media && \
+    chown -R app:app /var/www/static /var/www/media && \
+    chmod -R 755 /var/www/static /var/www/media
 
 # Copy requirements first
 COPY --chown=app:app requirements/ requirements/
