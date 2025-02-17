@@ -151,7 +151,7 @@ DATABASES = {
         'NAME': os.environ.get('DB_NAME'),
         'USER': os.environ.get('DB_USER'),
         'PASSWORD': os.environ.get('DB_PASSWORD'),
-        'HOST': os.environ.get('DB_HOST'),
+        'HOST': "db",
         'PORT': os.environ.get('DB_PORT', '5432'),
         'CONN_MAX_AGE': 600,  # 10 minute connection persistence
     }

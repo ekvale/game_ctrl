@@ -6,6 +6,9 @@ ENV PYTHONUNBUFFERED=1 \
     PIP_DISABLE_PIP_VERSION_CHECK=on \
     PIP_DEFAULT_TIMEOUT=100
 
+ENV DJANGO_SETTINGS_MODULE=game_ctrl.settings.production
+
+
 # Install system dependencies
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \

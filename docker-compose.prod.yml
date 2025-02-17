@@ -1,121 +1,28 @@
 version: '3.8'
 
 services:
-  web:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    user: app
-    command: >
-      bash -c '
-        echo "Waiting for database..." &&
-        while ! nc -z db 5432; do
-          sleep 1
-          echo "Waiting for db..."
-        done &&
-        echo "Database is ready!" &&
-        python manage.py migrate --noinput &&
-        python manage.py collectstatic --noinput &&
-        gunicorn game_ctrl.wsgi:application --bind 0.0.0.0:8000 --workers 3 --timeout 120
-      '
-    logging:
-      driver: "json-file"
-      options:
-        max-size: "10m"
-        max-file: "3"
-    networks:
-      - default
-    environment:
-      - DJANGO_SETTINGS_MODULE=game_ctrl.settings.production
-      - PYTHONUNBUFFERED=1
-      - DB_NAME=game_ctrl
-      - DB_USER=game_ctrl_user
-      - DB_PASSWORD=GameCtrl!2828
-    volumes:
-      - ./:/app:ro
-      - static_volume:/var/www/static
-      - media_volume:/var/www/media
-      - ./templates:/app/templates:ro
-      - ./static/video/marketing:/var/www/video/marketing
-    env_file:
-      - .env.prod
-    depends_on:
-      - db
-      - redis
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8000/admin/login/"]
-      interval: 10s
-      timeout: 5s
-      retries: 5
-      start_period: 30s
-    expose:
-      - 8000
-
   db:
     image: postgres:13
+    restart: always
+    env_file:
+      - .env.prod.db
+    ports:
+      - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
-    environment:
-      - POSTGRES_DB=game_ctrl
-      - POSTGRES_USER=game_ctrl_user
-      - POSTGRES_PASSWORD=GameCtrl!2828
-    networks:
-      - default
-    healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U game_ctrl_user"]
-      interval: 5s
-      timeout: 5s
-      retries: 5
+
+  web:
+    build: .
     restart: always
-
-  redis:
-    image: redis:6-alpine
-    user: redis
-    volumes:
-      - redis_data:/data
-    networks:
-      - default
-
-  nginx:
-    image: nginx:1.21
-    volumes:
-      - static_volume:/var/www/static
-      - media_volume:/var/www/media
-      - ./nginx:/etc/nginx/conf.d
-      - ./certbot/conf:/etc/letsencrypt
-      - ./certbot/www:/var/www/certbot
-      - ./static/video/marketing:/var/www/video/marketing
-    ports:
-      - "80:80"
-      - "443:443"
-    command: "/bin/sh -c 'while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"'"
+    env_file:
+      - .env.prod.db
     depends_on:
-      - web
-    networks:
-      - default
-    logging:
-      driver: "json-file"
-      options:
-        max-size: "10m"
-        max-file: "3"
-
-  certbot:
-    image: certbot/certbot
-    volumes:
-      - ./certbot/conf:/etc/letsencrypt
-      - ./certbot/www:/var/www/certbot
-    entrypoint: "/bin/sh -c 'trap exit TERM; while :; do certbot renew; sleep 12h & wait $${!}; done;'"
-    depends_on:
-      - nginx
-
+      - db
+    environment:
+      - POSTGRES_DB=game_ctrl_db
+      - POSTGRES_USER=game_ctrl_user
+      - POSTGRES_PASSWORD=Atheism!2828
+      - DJANGO_SETTINGS_MODULE=game_ctrl.settings.production
 volumes:
   postgres_data:
-  redis_data:
-  static_volume:
-    driver: local
-  media_volume:
-    driver: local
 
-networks:
-  default:
-    driver: bridge 
