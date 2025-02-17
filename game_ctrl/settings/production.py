@@ -65,15 +65,23 @@ STATIC_URL = '/static/'
 STATIC_ROOT = '/var/www/static'
 STATICFILES_DIRS = [BASE_DIR / 'static']
 
+# Media files configuration
+MEDIA_URL = '/media/'
+MEDIA_ROOT = '/var/www/media'
+
+# Make sure these directories exist
+STATICFILES_DIRS = [
+    BASE_DIR / 'static',
+]
+
+# Ensure the static directory exists
+os.makedirs(BASE_DIR / 'static', exist_ok=True)
+
 # WhiteNoise Configuration
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 WHITENOISE_USE_FINDERS = True
 WHITENOISE_MANIFEST_STRICT = False
 WHITENOISE_ALLOW_ALL_ORIGINS = True
-
-# Media files
-MEDIA_URL = '/media/'
-MEDIA_ROOT = '/var/www/media'
 
 # Email Configuration
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
