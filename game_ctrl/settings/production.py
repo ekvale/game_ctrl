@@ -68,17 +68,18 @@ DATABASES = {
     }
 }
 
-# Static & Media Files
-STATIC_URL = '/static/'
+# Static files configuration
+STATIC_URL = '/static/'  # Note the leading slash
 STATIC_ROOT = '/var/www/static'
 STATICFILES_DIRS = [BASE_DIR / 'static']
 
-# Add WhiteNoise configuration
+# WhiteNoise Configuration
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 WHITENOISE_USE_FINDERS = True
 WHITENOISE_MANIFEST_STRICT = False
 WHITENOISE_ALLOW_ALL_ORIGINS = True
 
+# Media files
 MEDIA_URL = '/media/'
 MEDIA_ROOT = '/var/www/media'
 
@@ -139,7 +140,7 @@ if 'SENTRY_DSN' in os.environ:
         environment="production",
     )
 
-# Make sure admin files are collected
+# Make sure these are in INSTALLED_APPS
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -160,7 +161,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',  # Make sure this is after security and before other middleware
+    'whitenoise.middleware.WhiteNoiseMiddleware',  # Make sure this is second
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
