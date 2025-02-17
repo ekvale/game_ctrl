@@ -1,5 +1,5 @@
 """
-Settings initialization
+Settings initialization for game_ctrl project.
 """
 import os
 

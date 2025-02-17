@@ -25,8 +25,16 @@ if not SECRET_KEY:
 # Debug settings
 DEBUG = False
 
-# Allowed Hosts
-ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', 'localhost,localhost:8000,127.0.0.1,127.0.0.1:8000').split(',')
+# Allowed Hosts - include development hosts temporarily
+ALLOWED_HOSTS = [
+    '137.184.8.118',
+    'gamesctrls.com',
+    'www.gamesctrls.com',
+    'localhost',
+    'localhost:8000',
+    '127.0.0.1',
+    '127.0.0.1:8000',
+]
 
 # CSRF Trusted Origins
 CSRF_TRUSTED_ORIGINS = [
@@ -36,14 +44,14 @@ CSRF_TRUSTED_ORIGINS = [
     'http://127.0.0.1:8000',
 ]
 
-# Security settings
-SECURE_SSL_REDIRECT = False  # Temporarily disable for debugging
+# Security settings - disable SSL temporarily for local testing
+SECURE_SSL_REDIRECT = False
 SECURE_HSTS_SECONDS = 31536000
 SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 SECURE_HSTS_PRELOAD = True
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-SESSION_COOKIE_SECURE = False  # Temporarily disable for debugging
-CSRF_COOKIE_SECURE = False  # Temporarily disable for debugging
+SESSION_COOKIE_SECURE = False
+CSRF_COOKIE_SECURE = False
 SECURE_BROWSER_XSS_FILTER = True
 SECURE_CONTENT_TYPE_NOSNIFF = True
 X_FRAME_OPTIONS = 'DENY'
