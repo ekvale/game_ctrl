@@ -25,12 +25,30 @@ if not SECRET_KEY:
 # Debug settings
 DEBUG = False
 
-# Allowed Hosts
+# Allowed Hosts - include both production and development hosts
 ALLOWED_HOSTS = [
     '137.184.8.118',
     'gamesctrls.com',
     'www.gamesctrls.com',
+    'localhost',
+    'localhost:8000',
+    '127.0.0.1',
+    '127.0.0.1:8000',
 ]
+
+# CSRF Trusted Origins - include both production and development URLs
+CSRF_TRUSTED_ORIGINS = [
+    'https://gamesctrls.com',
+    'https://www.gamesctrls.com',
+    'http://localhost:8000',
+    'http://127.0.0.1:8000',
+]
+
+# Security settings - conditionally enable SSL
+SECURE_SSL_REDIRECT = not any(host in ['localhost', 'localhost:8000', '127.0.0.1', '127.0.0.1:8000'] 
+                            for host in ALLOWED_HOSTS)
+SESSION_COOKIE_SECURE = SECURE_SSL_REDIRECT
+CSRF_COOKIE_SECURE = SECURE_SSL_REDIRECT
 
 # Database Configuration
 DATABASES = {
@@ -45,22 +63,13 @@ DATABASES = {
 }
 
 # Security settings
-SECURE_SSL_REDIRECT = True
 SECURE_HSTS_SECONDS = 31536000  # 1 year
 SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 SECURE_HSTS_PRELOAD = True
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-SESSION_COOKIE_SECURE = True
-CSRF_COOKIE_SECURE = True
 SECURE_BROWSER_XSS_FILTER = True
 SECURE_CONTENT_TYPE_NOSNIFF = True
 X_FRAME_OPTIONS = 'DENY'
-
-# CSRF Trusted Origins
-CSRF_TRUSTED_ORIGINS = [
-    'https://gamesctrls.com',
-    'https://www.gamesctrls.com',
-]
 
 # Static & Media Files
 STATIC_URL = '/static/'
