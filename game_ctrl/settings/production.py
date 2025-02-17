@@ -35,7 +35,7 @@ DATABASES = {
         'NAME': os.getenv('DB_NAME', 'game_ctrl_db'),
         'USER': os.getenv('DB_USER', 'game_ctrl_user'),
         'PASSWORD': os.getenv('DB_PASSWORD'),
-        'HOST': os.getenv('DB_HOST', 'db'),
+        'HOST': os.getenv('DB_HOST', 'db'),  # This should match the service name in docker-compose
         'PORT': os.getenv('DB_PORT', '5432'),
     }
 }
