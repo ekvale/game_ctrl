@@ -13,6 +13,12 @@ services:
       interval: 5s
       timeout: 5s
       retries: 5
+    environment:
+      - POSTGRES_DB=game_ctrl_db
+      - POSTGRES_USER=game_ctrl_user
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_HOST=db
+      - POSTGRES_PORT=5432
 
   web:
     build: .
@@ -24,6 +30,7 @@ services:
       - .env.prod
     environment:
       - DJANGO_SETTINGS_MODULE=game_ctrl.settings.production
+      - POSTGRES_HOST=db
     command: >
       sh -c "
         python manage.py migrate &&
