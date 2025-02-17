@@ -26,14 +26,7 @@ if not SECRET_KEY:
 DEBUG = False  # Ensure Debug is OFF in production
 
 # Allowed Hosts
-ALLOWED_HOSTS = [
-    'gamesctrls.com',
-    'www.gamesctrls.com',
-    'localhost',
-    '127.0.0.1',
-    'web',
-    os.getenv("SERVER_IP", "137.184.8.118"),  # Ensure your server IP is included
-]
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '').split(',')
 
 # Database Configuration
 DATABASES = {
@@ -55,6 +48,9 @@ SECURE_HSTS_PRELOAD = True
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
+SECURE_BROWSER_XSS_FILTER = True
+SECURE_CONTENT_TYPE_NOSNIFF = True
+X_FRAME_OPTIONS = 'DENY'
 
 # CSRF Trusted Origins
 CSRF_TRUSTED_ORIGINS = [
@@ -64,7 +60,7 @@ CSRF_TRUSTED_ORIGINS = [
 
 # Static & Media Files
 STATIC_URL = '/static/'
-STATIC_ROOT = '/var/www/static'  # Ensure this is correctly mapped in Nginx
+STATIC_ROOT = '/var/www/static'
 STATICFILES_DIRS = [BASE_DIR / 'static']
 MEDIA_URL = '/media/'
 MEDIA_ROOT = '/var/www/media'

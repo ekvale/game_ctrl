@@ -17,9 +17,9 @@ services:
     depends_on:
       - db
     env_file:
-      - .env.prod  # ✅ Correct file for Django environment variables
+      - .env.prod
     environment:
-      DJANGO_SETTINGS_MODULE: game_ctrl.settings.production
+      - DJANGO_SETTINGS_MODULE=game_ctrl.settings.production
     command: >
       sh -c "
         python manage.py migrate &&
@@ -28,9 +28,8 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      - static_volume:/var/www/static
-      - media_volume:/var/www/media
-    user: "${UID}:${GID}"  # This will run the container with your user permissions
+      - /var/www/static:/var/www/static
+      - /var/www/media:/var/www/media
 
 volumes:
   postgres_data:
