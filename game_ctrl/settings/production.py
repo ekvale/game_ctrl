@@ -63,22 +63,15 @@ STATIC_URL = '/static/'
 STATIC_ROOT = '/var/www/static'
 STATICFILES_DIRS = [
     BASE_DIR / 'static',
-    # Add admin static files explicitly
-    ('admin', '/usr/local/lib/python3.12/site-packages/django/contrib/admin/static/admin/'),
 ]
 
 # Media files configuration
 MEDIA_URL = '/media/'
 MEDIA_ROOT = '/var/www/media'
 
-# Create static directory if it doesn't exist
-os.makedirs(BASE_DIR / 'static', exist_ok=True)
-
-# WhiteNoise Configuration
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-WHITENOISE_USE_FINDERS = True
-WHITENOISE_MANIFEST_STRICT = False
-WHITENOISE_ALLOW_ALL_ORIGINS = True
+# Create directories
+os.makedirs(STATIC_ROOT, exist_ok=True)
+os.makedirs(MEDIA_ROOT, exist_ok=True)
 
 # Email Configuration
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
@@ -166,8 +159,4 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-
-# Static/Media files for production
-os.makedirs(STATIC_ROOT, exist_ok=True)
-os.makedirs(MEDIA_ROOT, exist_ok=True)
 
