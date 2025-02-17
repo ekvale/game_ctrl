@@ -14,15 +14,23 @@ services:
   web:
     build: .
     restart: always
-    env_file:
-      - .env.prod.db
     depends_on:
       - db
+    env_file:
+      - .env.prod
     environment:
-      - POSTGRES_DB=game_ctrl_db
-      - POSTGRES_USER=game_ctrl_user
-      - POSTGRES_PASSWORD=Atheism!2828
-      - DJANGO_SETTINGS_MODULE=game_ctrl.settings.production
+      DJANGO_SETTINGS_MODULE: game_ctrl.settings.production
+    command: >
+      sh -c "
+        python manage.py migrate &&
+        python manage.py collectstatic --noinput &&
+        gunicorn game_ctrl.wsgi:application --bind 0.0.0.0:8000 --workers 3"
+    ports:
+      - "8000:8000"
+    volumes:
+      - /var/www/static:/var/www/static  # ✅ Static files persist
+      - /var/www/media:/var/www/media    # ✅ Media files persist
+
 volumes:
   postgres_data:
 

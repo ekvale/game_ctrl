@@ -10,6 +10,20 @@ load_dotenv()
 # Build paths inside the project
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
+# ✅ Explicitly load .env.prod inside the container
+if os.getenv("DJANGO_SECRET_KEY") is None:
+    env_path = BASE_DIR / ".env.prod"
+    print(f"Loading environment variables from: {env_path}")  # Debugging
+    load_dotenv(env_path)
+
+# Debugging
+print(f"Django Secret Key (from env): {os.getenv('DJANGO_SECRET_KEY')}")
+
+# Make sure `SECRET_KEY` is always set
+SECRET_KEY = os.getenv("DJANGO_SECRET_KEY")
+if not SECRET_KEY:
+    raise RuntimeError("DJANGO_SECRET_KEY is missing!")    
+
 # Application definition
 INSTALLED_APPS = [
     'django.contrib.admin',

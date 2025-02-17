@@ -21,6 +21,11 @@ RUN apt-get update \
 
 WORKDIR /app
 
+# Copy env file inside the container
+COPY .env.prod .env.prod
+
+# Load environment variables at runtime
+RUN echo "export $(grep -v '^#' /app/.env.prod | xargs)" >> /etc/environment
 # Create non-root user with specific UID/GID
 RUN groupadd -r app --gid=999 && \
     useradd -r -g app --uid=999 --create-home app && \

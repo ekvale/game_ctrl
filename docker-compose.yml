@@ -1,26 +1,36 @@
 version: '3.8'
 
 services:
-  web:
-    build: .
-    command: python manage.py runserver 0.0.0.0:8000
-    volumes:
-      - .:/app
-    ports:
-      - "8000:8000"
-    env_file:
-      - .env
-    depends_on:
-      - db
-  
   db:
     image: postgres:13
+    restart: always
+    env_file:
+      - .env.prod.db
+    ports:
+      - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
+
+  web:
+    build: .
+    restart: always
+    depends_on:
+      - db
+    env_file:
+      - .env.prod  # ✅ Correct file for Django environment variables
     environment:
-      - POSTGRES_DB=game_ctrl
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
+      DJANGO_SETTINGS_MODULE: game_ctrl.settings.production
+    command: >
+      sh -c "
+        python manage.py migrate &&
+        python manage.py collectstatic --noinput &&
+        gunicorn game_ctrl.wsgi:application --bind 0.0.0.0:8000 --workers 3"
+    ports:
+      - "8000:8000"
+    volumes:
+      - /var/www/static:/var/www/static  # ✅ Ensures static files persist outside Docker
+      - /var/www/media:/var/www/media    # ✅ Ensures media files persist
 
 volumes:
-  postgres_data: 
+  postgres_data:
+
