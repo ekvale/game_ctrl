@@ -109,4 +109,11 @@ class TestProductionSettings(TestCase):
         self.assertEqual(
             settings.LOGGING['root']['level'],
             'INFO'
-        ) 
+        )
+
+class ProductionSettingsTest(TestCase):
+    @override_settings(DJANGO_SETTINGS_MODULE='game_ctrl.settings.production')
+    def test_production_settings(self):
+        self.assertFalse(settings.DEBUG)
+        self.assertEqual(settings.STATIC_ROOT, '/var/www/static')
+        # ... other production-specific tests 

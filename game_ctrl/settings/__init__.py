@@ -1,5 +1,6 @@
 """
-Settings initialization for game_ctrl project.
+Settings package initialization.
+This file can be empty, but it's required for Python to treat the directory as a package.
 """
 import os
 
