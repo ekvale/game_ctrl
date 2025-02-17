@@ -9,7 +9,7 @@ from sentry_sdk.integrations.django import DjangoIntegration
 from dotenv import load_dotenv
 
 # Load environment variables
-load_dotenv('/app/.env.prod')  # Ensure this path is correct
+load_dotenv('/app/.env.prod')
 
 # Base directory
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
@@ -23,13 +23,15 @@ if not SECRET_KEY:
     raise RuntimeError("DJANGO_SECRET_KEY is missing!")
 
 # Debug settings
-DEBUG = False  # Ensure Debug is OFF in production
+DEBUG = False
 
-# Allowed Hosts - make this more permissive during initial setup
+# Allowed Hosts
 ALLOWED_HOSTS = [
+    '137.184.8.118',
+    'gamesctrls.com',
+    'www.gamesctrls.com',
     'localhost',
     '127.0.0.1',
-    '*',  # temporarily allow all hosts during setup
 ]
 
 # Database Configuration
@@ -39,7 +41,7 @@ DATABASES = {
         'NAME': os.getenv('POSTGRES_DB', 'game_ctrl_db'),
         'USER': os.getenv('POSTGRES_USER', 'game_ctrl_user'),
         'PASSWORD': os.getenv('POSTGRES_PASSWORD'),
-        'HOST': os.getenv('POSTGRES_HOST', 'db'),  # This must match the service name in docker-compose
+        'HOST': os.getenv('POSTGRES_HOST', 'db'),
         'PORT': os.getenv('POSTGRES_PORT', '5432'),
     }
 }
@@ -72,7 +74,6 @@ MEDIA_ROOT = '/var/www/media'
 # Enable WhiteNoise for serving static files
 INSTALLED_APPS += ["whitenoise.runserver_nostatic"]
 MIDDLEWARE.insert(1, "whitenoise.middleware.WhiteNoiseMiddleware")
-
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 # Caching (Redis)
