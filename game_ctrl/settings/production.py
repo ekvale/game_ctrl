@@ -30,10 +30,6 @@ ALLOWED_HOSTS = [
     '137.184.8.118',
     'gamesctrls.com',
     'www.gamesctrls.com',
-    'localhost',
-    'localhost:8000',
-    '127.0.0.1',
-    '127.0.0.1:8000',
 ]
 
 # Database Configuration
@@ -70,15 +66,21 @@ CSRF_TRUSTED_ORIGINS = [
 STATIC_URL = '/static/'
 STATIC_ROOT = '/var/www/static'
 STATICFILES_DIRS = [BASE_DIR / 'static']
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+
 MEDIA_URL = '/media/'
 MEDIA_ROOT = '/var/www/media'
 
-# Enable WhiteNoise for serving static files
-INSTALLED_APPS += ["whitenoise.runserver_nostatic"]
-MIDDLEWARE.insert(1, "whitenoise.middleware.WhiteNoiseMiddleware")
-STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+# Email Configuration
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = os.getenv('EMAIL_HOST', 'smtp.gmail.com')
+EMAIL_PORT = int(os.getenv('EMAIL_PORT', 587))
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
+DEFAULT_FROM_EMAIL = os.getenv('DEFAULT_FROM_EMAIL')
 
-# Caching (Redis)
+# Cache Configuration
 CACHES = {
     'default': {
         'BACKEND': 'django.core.cache.backends.redis.RedisCache',
@@ -104,14 +106,19 @@ LOGGING = {
             'class': 'logging.StreamHandler',
             'formatter': 'verbose',
         },
+        'file': {
+            'class': 'logging.FileHandler',
+            'filename': '/var/log/django/game_ctrl.log',
+            'formatter': 'verbose',
+        },
     },
     'root': {
-        'handlers': ['console'],
+        'handlers': ['console', 'file'],
         'level': 'INFO',
     },
 }
 
-# Sentry Configuration (Optional)
+# Sentry Configuration
 if 'SENTRY_DSN' in os.environ:
     sentry_sdk.init(
         dsn=os.environ['SENTRY_DSN'],

@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# Build paths inside the project
+# Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 # ✅ Explicitly load .env.prod inside the container
@@ -36,7 +36,7 @@ INSTALLED_APPS = [
     # Third party
     'crispy_forms',
     'crispy_bootstrap5',
-    'storages',
+    'whitenoise.runserver_nostatic',
     
     # Local
     'products.apps.ProductsConfig',
@@ -45,22 +45,24 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',  # Add this after security middleware
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'game_ctrl.middleware.ErrorHandlingMiddleware',
 ]
 
 ROOT_URLCONF = 'game_ctrl.urls'
 
-# Template configuration
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates'],
+        'DIRS': [
+            BASE_DIR / 'templates',
+            BASE_DIR / 'templates' / 'registration',
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -83,6 +85,7 @@ DATABASES = {
     }
 }
 
+# Password validation
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
@@ -119,4 +122,8 @@ CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 # Default primary key field type
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField' 
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Authentication
+LOGIN_URL = 'login'
+LOGIN_REDIRECT_URL = '/'
