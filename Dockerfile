@@ -21,25 +21,26 @@ RUN apt-get update \
 
 WORKDIR /app
 
-# Copy env file inside the container
-COPY .env.prod .env.prod
-
-# Load environment variables at runtime
-RUN echo "export $(grep -v '^#' /app/.env.prod | xargs)" >> /etc/environment
-# Create app user and set permissions
+# Create app user first
 RUN groupadd -r app && useradd -r -g app app
+
+# Create directories and set permissions
 RUN mkdir -p /var/www/static /var/www/media \
     && chown -R app:app /var/www/static /var/www/media \
     && chmod -R 755 /var/www/static /var/www/media
 
-# Copy application code
-COPY --chown=app:app . .
-
-# Copy requirements first for better caching
+# Copy requirements first
 COPY --chown=app:app requirements/ requirements/
 RUN pip install -r requirements/production.txt
 
-# After copying files
+# Copy env file and set permissions
+COPY --chown=app:app .env.prod .env.prod
+RUN chmod 644 .env.prod
+
+# Copy the rest of the application code
+COPY --chown=app:app . .
+
+# Copy and set up healthcheck
 COPY --chown=app:app healthcheck.sh /app/
 RUN chmod +x /app/healthcheck.sh
 
@@ -52,9 +53,8 @@ USER app
 # Collect static files
 RUN DJANGO_SETTINGS_MODULE=game_ctrl.settings.production python manage.py collectstatic --noinput
 
-# Add this before the final CMD
+# Test settings
 RUN echo "Testing settings module..." && \
     DJANGO_SETTINGS_MODULE=game_ctrl.settings.production python -c "import django; django.setup(); from django.conf import settings; print('TEMPLATES:', settings.TEMPLATES)"
 
-# Change the CMD to use gunicorn directly
 CMD ["gunicorn", "game_ctrl.wsgi:application", "--bind", "0.0.0.0:8000", "--workers", "3"] 
