@@ -25,8 +25,12 @@ if not SECRET_KEY:
 # Debug settings
 DEBUG = False  # Ensure Debug is OFF in production
 
-# Allowed Hosts
-ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '').split(',')
+# Allowed Hosts - make this more permissive during initial setup
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+    '*',  # temporarily allow all hosts during setup
+]
 
 # Database Configuration
 DATABASES = {
