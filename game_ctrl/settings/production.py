@@ -31,7 +31,9 @@ ALLOWED_HOSTS = [
     'gamesctrls.com',
     'www.gamesctrls.com',
     'localhost',
+    'localhost:8000',
     '127.0.0.1',
+    '127.0.0.1:8000',
 ]
 
 # Database Configuration
