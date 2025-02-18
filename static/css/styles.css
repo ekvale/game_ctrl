@@ -23,12 +23,9 @@ body {
 
 /* Product Cards */
 .product-card {
-    transition: transform 0.2s, box-shadow 0.2s;
-    border: 1px solid rgba(0,0,0,.125);
-    background-color: #fff;
     height: 100%;
-    display: flex;
-    flex-direction: column;
+    border: 1px solid rgba(0,0,0,.125);
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .product-card:hover {
@@ -45,86 +42,35 @@ body {
 
 .product-card .card-body {
     padding: 1.5rem;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
 }
 
 .product-card .card-title {
     font-weight: 600;
-    margin-bottom: 0.75rem;
     font-size: 1.25rem;
+    margin-bottom: 1rem;
 }
 
 .product-card .card-text {
     color: #6c757d;
     font-size: 0.9rem;
-    flex-grow: 1;
-}
-
-.product-card .actions {
-    margin-top: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    align-items: stretch;
 }
 
 .product-card .price {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 600;
     color: #0d6efd;
-    display: block;
-    text-align: center;
 }
 
-.product-card .buttons {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-}
-
-/* Product card buttons */
-.product-card .buttons .btn {
-    padding: 0.5rem 1rem;
+.product-card .btn {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
 }
 
-.product-card .buttons .btn-outline-primary {
-    background-color: transparent;
-    border-color: #0d6efd;
-    color: #0d6efd;
-}
-
-.product-card .buttons .btn-outline-primary:hover {
-    background-color: #0d6efd;
-    color: #fff;
-}
-
-.product-card .buttons .btn-primary {
-    background-color: #0d6efd;
-    border-color: #0d6efd;
-    color: #fff;
-}
-
-.product-card .buttons .btn-primary:hover {
-    background-color: #0b5ed7;
-    border-color: #0a58ca;
-}
-
-/* Form controls within product cards */
 .product-card .form-control {
-    display: inline-block;
-    width: 60px;
-    margin-right: 0.5rem;
     text-align: center;
-    padding: 0.375rem;
-    height: auto;
+    padding: 0.5rem;
 }
 
 /* Category Cards */
