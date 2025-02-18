@@ -23,16 +23,15 @@ body {
 
 /* Game Card */
 .game-card {
-    border: 5px solid red !important;  /* Test style */
-    background: yellow !important;      /* Test style */
-    background: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+    border: 5px solid red !important;
+    background: yellow !important;
+    border-radius: 12px !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+    overflow: hidden !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+    height: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
 }
 
 .game-card:hover {
@@ -41,22 +40,22 @@ body {
 }
 
 .game-card__image {
-    height: 200px;
-    background: #f8f9fa;
-    padding: 1rem;
+    height: 200px !important;
+    background: #f8f9fa !important;
+    padding: 1rem !important;
 }
 
 .game-card__image img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
 }
 
 .game-card__content {
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
+    padding: 1.5rem !important;
+    display: flex !important;
+    flex-direction: column !important;
+    flex-grow: 1 !important;
 }
 
 .game-card__title {
