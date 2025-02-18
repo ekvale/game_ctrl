@@ -62,22 +62,27 @@ body {
     flex-grow: 1;
 }
 
+.product-card .actions {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: stretch;
+}
+
 .product-card .price {
     font-size: 1.25rem;
     font-weight: 600;
     color: #0d6efd;
-}
-
-.product-card .actions {
-    margin-top: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: block;
+    text-align: center;
 }
 
 .product-card .buttons {
     display: flex;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
     gap: 0.5rem;
 }
 
@@ -147,8 +152,9 @@ body {
 
 /* Add to cart form styling */
 .add-to-cart-form {
-    display: inline-flex;
+    display: flex;
     align-items: center;
+    justify-content: center;
     gap: 0.5rem;
 }
 
@@ -158,6 +164,12 @@ body {
     padding: 0.375rem;
     border: 1px solid #ced4da;
     border-radius: 0.25rem;
+    margin: 0;
+}
+
+/* Button sizes */
+.product-card .btn {
+    min-width: 100px;
 }
 
 .navbar-brand {
