@@ -10,13 +10,24 @@ def home(request):
     """Homepage view with featured controllers"""
     template = get_template('home.html')
     logger.info(f"Using template from: {template.origin.name}")
-    featured_controllers = Controller.objects.filter(is_featured=True)
-    categories = Category.objects.all()
     
+    # Add debug info to context
     context = {
-        'featured_controllers': featured_controllers,
-        'categories': categories,
+        'debug_info': {
+            'template_path': template.origin.name,
+            'template_exists': template.origin.exists,
+            'template_content': open(template.origin.name).read()[:100]  # First 100 chars
+        }
     }
+    
+    # Add your existing context
+    context.update({
+        'featured_controllers': Controller.objects.filter(is_featured=True),
+        'categories': Category.objects.all(),
+    })
+    
+    # Print debug info to console
+    print("DEBUG: Template Info:", context['debug_info'])
     
     # Add cart to context if user is authenticated
     if request.user.is_authenticated:
