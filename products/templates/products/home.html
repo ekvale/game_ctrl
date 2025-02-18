@@ -3,14 +3,15 @@
 {% block content %}
 <h1>Featured Controllers</h1>
 <div class="controllers">
-    {% for controller in featured_controllers %}
-    <div class="controller">
-        <h2>{{ controller.name }}</h2>
-        <p>{{ controller.description }}</p>
-        <p>Price: ${{ controller.price }}</p>
-        <a href="{{ controller.get_absolute_url }}">View Details</a>
-    </div>
-    {% endfor %}
+    {% if featured_controllers %}
+        {% for controller in featured_controllers %}
+        <div class="controller">
+            <h2>{{ controller }}</h2>
+        </div>
+        {% endfor %}
+    {% else %}
+        <p>No featured controllers available.</p>
+    {% endif %}
 </div>
 
 <h2>Categories</h2>
