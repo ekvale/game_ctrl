@@ -70,37 +70,32 @@
         <div class="row">
             {% for controller in featured_controllers %}
             <div class="col-md-4 mb-4">
-                <div class="product-card">
+                <div class="game-card">
                     {% if controller.image %}
-                    <img src="{{ controller.image.url }}" 
-                         class="card-img-top" 
-                         alt="{{ controller.name }}">
+                    <div class="game-card__image">
+                        <img src="{{ controller.image.url }}" alt="{{ controller.name }}">
+                    </div>
                     {% endif %}
-                    <div class="card-body">
-                        <h5 class="card-title">{{ controller.name }}</h5>
-                        <p class="card-text">{{ controller.description|truncatewords:20 }}</p>
-                        
-                        <div class="price-section">
-                            <span class="price">${{ controller.price }}</span>
-                        </div>
-                        
-                        <div class="action-section">
-                            <a href="{{ controller.get_absolute_url }}" 
-                               class="btn btn-outline-primary">
+                    <div class="game-card__content">
+                        <h3 class="game-card__title">{{ controller.name }}</h3>
+                        <p class="game-card__description">{{ controller.description|truncatewords:20 }}</p>
+                        <div class="game-card__price">${{ controller.price }}</div>
+                        <div class="game-card__actions">
+                            <a href="{{ controller.get_absolute_url }}" class="game-card__btn game-card__btn--outline">
                                 <i class="bi bi-info-circle"></i> Details
                             </a>
                             {% if user.is_authenticated %}
-                                <form action="{% url 'cart:add_to_cart' %}" method="post">
+                                <form action="{% url 'cart:add_to_cart' %}" method="post" class="game-card__form">
                                     {% csrf_token %}
                                     <input type="hidden" name="controller_id" value="{{ controller.id }}">
                                     <input type="number" name="quantity" value="1" min="1" max="10" 
-                                           class="form-control">
-                                    <button type="submit" class="btn btn-primary">
+                                           class="game-card__input">
+                                    <button type="submit" class="game-card__btn game-card__btn--primary">
                                         <i class="bi bi-cart-plus"></i> Add
                                     </button>
                                 </form>
                             {% else %}
-                                <a href="{% url 'login' %}?next={{ request.path }}" class="btn btn-primary">
+                                <a href="{% url 'login' %}?next={{ request.path }}" class="game-card__btn game-card__btn--primary">
                                     <i class="bi bi-cart-plus"></i> Add to Cart
                                 </a>
                             {% endif %}
