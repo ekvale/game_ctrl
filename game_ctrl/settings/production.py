@@ -30,7 +30,9 @@ ALLOWED_HOSTS = [
     'gamesctrls.com',
     'www.gamesctrls.com',
     'localhost',
+    'localhost:8080',
     '127.0.0.1',
+    '127.0.0.1:8080',
 ]
 
 # CSRF settings
@@ -38,6 +40,7 @@ CSRF_TRUSTED_ORIGINS = [
     'https://gamesctrls.com',
     'https://www.gamesctrls.com',
     'http://localhost:8080',
+    'http://127.0.0.1:8080',
 ]
 
 # Security settings - disable SSL temporarily for local testing
