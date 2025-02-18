@@ -42,9 +42,9 @@ COPY --chown=app:app .env.prod .env.prod
 RUN chmod 644 .env.prod
 
 # Before copying the application code, add:
-RUN rm -rf /app/products/migrations/*
-RUN mkdir -p /app/products/migrations
-RUN touch /app/products/migrations/__init__.py
+RUN rm -rf /app/products/migrations/* /app/cart/migrations/*
+RUN mkdir -p /app/products/migrations /app/cart/migrations
+RUN touch /app/products/migrations/__init__.py /app/cart/migrations/__init__.py
 
 # Copy the rest of the application code
 COPY --chown=app:app . .
