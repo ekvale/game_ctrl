@@ -86,56 +86,80 @@ body {
     margin-top: auto !important;
 }
 
-/* Details Button */
+/* Product Card Buttons */
+.product-card .card-body .action-section .btn {
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 0.5rem !important;
+    min-width: 120px !important;
+    padding: 8px 16px !important;
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+    border-radius: 4px !important;
+    text-transform: none !important;
+    font-weight: 500 !important;
+    margin: 0 !important;
+    cursor: pointer !important;
+}
+
+/* Primary Button */
+.product-card .card-body .action-section .btn-primary {
+    background-color: #0d6efd !important;
+    border: 1px solid #0d6efd !important;
+    color: #ffffff !important;
+}
+
+.product-card .card-body .action-section .btn-primary:hover {
+    background-color: #0b5ed7 !important;
+    border-color: #0a58ca !important;
+}
+
+/* Outline Button */
 .product-card .card-body .action-section .btn-outline-primary {
     background-color: transparent !important;
     border: 1px solid #0d6efd !important;
     color: #0d6efd !important;
-    padding: 0.5rem 1rem !important;
-    display: inline-flex !important;
-    align-items: center !important;
-    gap: 0.5rem !important;
-    min-width: 120px !important;
-    justify-content: center !important;
 }
 
-/* Add to Cart Button */
-.product-card .card-body .action-section .btn-primary {
+.product-card .card-body .action-section .btn-outline-primary:hover {
     background-color: #0d6efd !important;
-    border: 1px solid #0d6efd !important;
-    color: white !important;
-    padding: 0.5rem 1rem !important;
+    color: #ffffff !important;
+}
+
+/* Form and Input */
+.product-card .card-body .action-section form {
     display: inline-flex !important;
     align-items: center !important;
     gap: 0.5rem !important;
-    min-width: 120px !important;
-    justify-content: center !important;
-}
-
-/* Form Layout */
-.product-card .card-body .action-section form {
-    display: flex !important;
-    align-items: center !important;
-    gap: 0.5rem !important;
     margin: 0 !important;
 }
 
-/* Quantity Input */
-.product-card .card-body .action-section form input[type="number"] {
+.product-card .card-body .action-section input[type="number"] {
     width: 70px !important;
-    text-align: center !important;
-    padding: 0.5rem !important;
     height: 38px !important;
-    margin: 0 !important;
+    padding: 8px !important;
     border: 1px solid #dee2e6 !important;
-    border-radius: 0.25rem !important;
-    background-color: white !important;
+    border-radius: 4px !important;
+    text-align: center !important;
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+    background-color: #ffffff !important;
+    appearance: none !important;
+    -moz-appearance: textfield !important;
+}
+
+.product-card .card-body .action-section input[type="number"]::-webkit-outer-spin-button,
+.product-card .card-body .action-section input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none !important;
+    margin: 0 !important;
 }
 
 /* Button Icons */
 .product-card .card-body .action-section .btn i {
-    font-size: 1rem !important;
-    margin-right: 0.25rem !important;
+    font-size: 16px !important;
 }
 
 .product-card .btn {
