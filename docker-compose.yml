@@ -35,8 +35,8 @@ services:
       - static_volume:/var/www/static
       - media_volume:/var/www/media
       - log_volume:/var/log/django
-    ports:
-      - "8000:8000"
+    expose:
+      - 8000
 
   nginx:
     image: nginx:alpine
