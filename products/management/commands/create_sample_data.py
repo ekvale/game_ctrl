@@ -14,7 +14,7 @@ class Command(BaseCommand):
         Controller.objects.all().delete()
         Category.objects.all().delete()
         
-        # Create Category (removed description field)
+        # Create Category
         arcade_category = Category.objects.create(
             name='Arcade Controllers',
             slug='arcade-controllers'
