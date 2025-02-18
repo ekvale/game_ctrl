@@ -96,9 +96,32 @@ def cart_detail(request):
         return render(request, 'cart/detail.html', {'cart': None})
 
 @login_required
+def add_to_cart(request):
+    if request.method == 'POST':
+        controller_id = request.POST.get('controller_id')
+        quantity = int(request.POST.get('quantity', 1))
+        
+        controller = get_object_or_404(Controller, id=controller_id)
+        cart, created = Cart.objects.get_or_create(user=request.user)
+        
+        cart_item, created = CartItem.objects.get_or_create(
+            cart=cart,
+            controller=controller,
+            defaults={'quantity': quantity}
+        )
+        
+        if not created:
+            cart_item.quantity += quantity
+            cart_item.save()
+            
+        return redirect('cart:cart_detail')
+        
+    return redirect('products:home')
+
+@login_required
 @require_http_methods(["POST"])
 @ratelimit(key='user', rate='10/m', method=['POST'])
-def add_to_cart(request):
+def add_to_cart_old(request):
     """Add item to cart"""
     try:
         # Sanitize and validate inputs
