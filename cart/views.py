@@ -129,14 +129,6 @@ def add_to_cart(request):
             cart_item.quantity = new_quantity
             cart_item.save()
             
-        logger.info(
-            'Item added to cart: user=%s (ID: %s), controller=%s, quantity=%s', 
-            sanitize_input(request.user.username), 
-            request.user.id,
-            controller.id,
-            quantity
-        )
-            
     except ValidationError as e:
         logger.warning(
             'Validation error for user %s (ID: %s): %s', 
