@@ -219,8 +219,4 @@ def cart_remove(request, controller_id):
     cart = Cart(request)
     controller = get_object_or_404(Controller, id=controller_id)
     cart.remove(controller)
-    return redirect('cart:cart_detail')
-
-def add_to_cart(request):
-    # Add your cart logic here
-    return redirect('products:home')  # or wherever you want to redirect after adding to cart 
+    return redirect('cart:cart_detail') 
