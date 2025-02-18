@@ -138,6 +138,12 @@ LOGGING = {
         'handlers': ['console', 'file'],
         'level': 'INFO',
     },
+    'loggers': {
+        'django.template': {
+            'handlers': ['console'],
+            'level': 'DEBUG',
+        },
+    },
 }
 
 # Sentry Configuration

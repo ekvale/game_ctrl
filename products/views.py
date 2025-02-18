@@ -8,35 +8,30 @@ logger = logging.getLogger(__name__)
 
 def home(request):
     """Homepage view with featured controllers"""
+    # Try both possible locations
+    possible_templates = [
+        '/app/templates/home.html',
+        '/app/products/templates/home.html'
+    ]
+    
+    print("DEBUG: Checking template locations:")
+    for path in possible_templates:
+        try:
+            with open(path, 'r') as f:
+                print(f"Found template at {path}")
+                print("Content preview:", f.read()[:100])
+        except FileNotFoundError:
+            print(f"No template at {path}")
+    
+    # Use Django's template loader
     template = get_template('home.html')
-    logger.info(f"Using template from: {template.origin.name}")
+    print(f"Django chose template: {template.origin.name}")
     
-    # Add debug info to context
     context = {
-        'debug_info': {
-            'template_path': template.origin.name,
-            'template_exists': template.origin.exists,
-            'template_content': open(template.origin.name).read()[:100]  # First 100 chars
-        }
-    }
-    
-    # Add your existing context
-    context.update({
         'featured_controllers': Controller.objects.filter(is_featured=True),
         'categories': Category.objects.all(),
-    })
+    }
     
-    # Print debug info to console
-    print("DEBUG: Template Info:", context['debug_info'])
-    
-    # Add cart to context if user is authenticated
-    if request.user.is_authenticated:
-        try:
-            cart = Cart.objects.get(user=request.user)
-            context['cart'] = cart
-        except Cart.DoesNotExist:
-            pass
-            
     return render(request, 'home.html', context)
 
 def category_detail(request, slug):
