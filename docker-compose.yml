@@ -47,7 +47,6 @@ services:
       - media_volume:/var/www/media:ro
       - ./nginx/logs:/var/log/nginx
       - /etc/letsencrypt:/etc/letsencrypt:ro
-      - certbot_www:/var/www/certbot:ro
     ports:
       - "80:80"
       - "443:443"
@@ -55,26 +54,9 @@ services:
       web:
         condition: service_started
 
-  certbot:
-    image: certbot/certbot
-    volumes:
-      - certbot_conf:/etc/letsencrypt
-      - certbot_www:/var/www/certbot
-      - ./nginx/logs:/var/log/letsencrypt
-    command: certonly --webroot --webroot-path=/var/www/certbot 
-      --staging
-      -d gamesctrls.com 
-      -d www.gamesctrls.com 
-      --email your@email.com 
-      --agree-tos 
-      --no-eff-email
-      --force-renewal
-
 volumes:
   postgres_data:
   static_volume:
   media_volume:
   log_volume:
-  certbot_conf:
-  certbot_www:
 
