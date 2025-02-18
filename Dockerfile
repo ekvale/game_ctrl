@@ -60,6 +60,9 @@ RUN chmod +x /app/healthcheck.sh
 # Update healthcheck
 HEALTHCHECK --interval=30s --timeout=10s --start-period=30s --retries=3 CMD ["/app/healthcheck.sh"]
 
+# Before copying the application code
+COPY --chown=app:app templates /app/templates/
+
 # Switch to app user
 USER app
 
