@@ -26,8 +26,8 @@ body {
     width: 100%;
 }
 
-/* Game Card */
-.container .row .col-md-4 .game-card {
+/* Game Card - New Design */
+.game-card {
     background: #ffffff !important;
     border-radius: 12px !important;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
@@ -39,9 +39,86 @@ body {
     border: 1px solid #e2e8f0 !important;
 }
 
-.container .row .col-md-4 .game-card:hover {
-    transform: translateY(-5px) !important;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15) !important;
+/* Legacy Support */
+.card {
+    background: #ffffff !important;
+    border-radius: 12px !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+    overflow: hidden !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+    height: 100% !important;
+    border: 1px solid #e2e8f0 !important;
+}
+
+.card-body {
+    padding: 1.5rem !important;
+    display: flex !important;
+    flex-direction: column !important;
+    flex-grow: 1 !important;
+}
+
+.card-title {
+    font-size: 1.25rem !important;
+    font-weight: 600 !important;
+    color: #2d3748 !important;
+    margin-bottom: 0.75rem !important;
+}
+
+.card-text {
+    color: #718096 !important;
+    font-size: 0.9rem !important;
+    line-height: 1.5 !important;
+    margin-bottom: 1rem !important;
+}
+
+.text-primary {
+    font-size: 1.5rem !important;
+    font-weight: 700 !important;
+    color: #3182ce !important;
+}
+
+.btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 0.5rem !important;
+    padding: 0.5rem 1rem !important;
+    font-size: 0.9rem !important;
+    font-weight: 500 !important;
+    border-radius: 6px !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease !important;
+    text-decoration: none !important;
+    min-width: 120px !important;
+}
+
+.btn-primary {
+    background-color: #3182ce !important;
+    color: white !important;
+    border: 2px solid #3182ce !important;
+}
+
+.btn-outline-primary {
+    background-color: transparent !important;
+    color: #3182ce !important;
+    border: 2px solid #3182ce !important;
+}
+
+.btn-outline-primary:hover {
+    background-color: #3182ce !important;
+    color: white !important;
+}
+
+input[type="number"] {
+    width: 70px !important;
+    height: 38px !important;
+    padding: 0.5rem !important;
+    border: 2px solid #e2e8f0 !important;
+    border-radius: 6px !important;
+    text-align: center !important;
+    font-size: 0.9rem !important;
+    color: #4a5568 !important;
+    background: #fff !important;
 }
 
 .container .row .col-md-4 .game-card__image {
