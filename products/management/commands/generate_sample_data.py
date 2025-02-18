@@ -2,6 +2,7 @@ from django.core.management.base import BaseCommand
 from django.contrib.auth.models import User
 from products.models import Product, Category
 from decimal import Decimal
+from django.utils.text import slugify
 import random
 
 class Command(BaseCommand):
@@ -20,7 +21,12 @@ class Command(BaseCommand):
         ]
 
         for cat_name in categories:
-            Category.objects.get_or_create(name=cat_name)
+            Category.objects.get_or_create(
+                name=cat_name,
+                defaults={
+                    'slug': slugify(cat_name)
+                }
+            )
 
         # Create sample products
         sample_products = [
@@ -29,18 +35,21 @@ class Command(BaseCommand):
                 'category': 'RPG Games',
                 'price': Decimal('29.99'),
                 'description': 'Epic fantasy RPG with dragons and magic.',
+                'slug': 'the-elder-scrolls-v-skyrim',
             },
             {
                 'name': 'FIFA 24',
                 'category': 'Sports Games',
                 'price': Decimal('59.99'),
                 'description': 'Latest football simulation game.',
+                'slug': 'fifa-24',
             },
             {
                 'name': 'Red Dead Redemption 2',
                 'category': 'Action Games',
                 'price': Decimal('49.99'),
                 'description': 'Wild West action-adventure game.',
+                'slug': 'red-dead-redemption-2',
             },
             # Add more products as needed
         ]
@@ -54,6 +63,7 @@ class Command(BaseCommand):
                     'price': product_data['price'],
                     'description': product_data['description'],
                     'stock': random.randint(10, 100),
+                    'slug': product_data['slug'],
                 }
             )
 
