@@ -33,8 +33,8 @@ ALLOWED_HOSTS = [
     'localhost:8080',
     '127.0.0.1',
     '127.0.0.1:8080',
-    'your.server.ip.address',  # Add your server's IP
-    'your.server.ip.address:8080',  # Add your server's IP with port
+    '137.184.8.118',  # Your server's IP
+    '137.184.8.118:8080',  # Your server's IP with port
 ]
 
 # CSRF settings
@@ -43,7 +43,7 @@ CSRF_TRUSTED_ORIGINS = [
     'https://www.gamesctrls.com',
     'http://localhost:8080',
     'http://127.0.0.1:8080',
-    'http://your.server.ip.address:8080',  # Add your server's IP
+    'http://137.184.8.118:8080',  # Your server's IP
 ]
 
 # Security settings - disable SSL temporarily for local testing
