@@ -6,12 +6,15 @@
 {% block content %}
 <!-- Hero Section -->
 <div class="relative overflow-hidden">
-    <iframe 
+    <video 
         class="w-full h-[600px] object-cover"
-        src="https://sora.com/g/gen_01jmbvmmpzeyjvbg0g8c2gzw7g"
-        frameborder="0"
-        allowfullscreen
-    ></iframe>
+        autoplay 
+        loop 
+        muted 
+        playsinline
+    >
+        <source src="https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+    </video>
     
     <!-- Optional overlay text -->
     <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40">
