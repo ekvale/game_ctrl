@@ -17,8 +17,7 @@ class Command(BaseCommand):
         # Create Category
         arcade_category = Category.objects.create(
             name='Arcade Controllers',
-            slug='arcade-controllers',
-            description='Professional arcade-style gaming controllers'
+            slug='arcade-controllers'
         )
         self.stdout.write(f'Created category: {arcade_category.name}')
 
