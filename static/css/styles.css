@@ -1,13 +1,6 @@
-/* Test style - should be visible */
+/* Remove the test styles */
 body::before {
-    content: 'CSS LOADED' !important;
-    position: fixed !important;
-    top: 0 !important;
-    left: 0 !important;
-    background: red !important;
-    color: white !important;
-    padding: 10px !important;
-    z-index: 9999 !important;
+    display: none;
 }
 
 /* Base styles */
@@ -34,9 +27,8 @@ body {
 }
 
 /* Game Card */
-.game-card {
-    border: 5px solid red !important;
-    background: yellow !important;
+.container .row .col-md-4 .game-card {
+    background: #ffffff !important;
     border-radius: 12px !important;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
     overflow: hidden !important;
@@ -44,129 +36,130 @@ body {
     height: 100% !important;
     display: flex !important;
     flex-direction: column !important;
+    border: 1px solid #e2e8f0 !important;
 }
 
-.game-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+.container .row .col-md-4 .game-card:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15) !important;
 }
 
-.game-card__image {
+.container .row .col-md-4 .game-card__image {
     height: 200px !important;
     background: #f8f9fa !important;
     padding: 1rem !important;
 }
 
-.game-card__image img {
+.container .row .col-md-4 .game-card__image img {
     width: 100% !important;
     height: 100% !important;
     object-fit: contain !important;
 }
 
-.game-card__content {
+.container .row .col-md-4 .game-card__content {
     padding: 1.5rem !important;
     display: flex !important;
     flex-direction: column !important;
     flex-grow: 1 !important;
 }
 
-.game-card__title {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: #2d3748;
-    margin-bottom: 0.75rem;
+.container .row .col-md-4 .game-card__title {
+    font-size: 1.25rem !important;
+    font-weight: 600 !important;
+    color: #2d3748 !important;
+    margin-bottom: 0.75rem !important;
 }
 
-.game-card__description {
-    color: #718096;
-    font-size: 0.9rem;
-    line-height: 1.5;
-    margin-bottom: 1rem;
-    flex-grow: 1;
+.container .row .col-md-4 .game-card__description {
+    color: #718096 !important;
+    font-size: 0.9rem !important;
+    line-height: 1.5 !important;
+    margin-bottom: 1rem !important;
+    flex-grow: 1 !important;
 }
 
-.game-card__price {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #3182ce;
-    text-align: center;
-    margin-bottom: 1.25rem;
+.container .row .col-md-4 .game-card__price {
+    font-size: 1.5rem !important;
+    font-weight: 700 !important;
+    color: #3182ce !important;
+    text-align: center !important;
+    margin-bottom: 1.25rem !important;
 }
 
-.game-card__actions {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    align-items: center;
+.container .row .col-md-4 .game-card__actions {
+    display: flex !important;
+    gap: 1rem !important;
+    justify-content: center !important;
+    align-items: center !important;
 }
 
-.game-card__form {
-    display: flex;
-    gap: 0.5rem;
-    align-items: center;
+.container .row .col-md-4 .game-card__form {
+    display: flex !important;
+    gap: 0.5rem !important;
+    align-items: center !important;
 }
 
-.game-card__input {
-    width: 70px;
-    height: 38px;
-    padding: 0.5rem;
-    border: 2px solid #e2e8f0;
-    border-radius: 6px;
-    text-align: center;
-    font-size: 0.9rem;
-    color: #4a5568;
-    background: #fff;
+.container .row .col-md-4 .game-card__input {
+    width: 70px !important;
+    height: 38px !important;
+    padding: 0.5rem !important;
+    border: 2px solid #e2e8f0 !important;
+    border-radius: 6px !important;
+    text-align: center !important;
+    font-size: 0.9rem !important;
+    color: #4a5568 !important;
+    background: #fff !important;
 }
 
-.game-card__input:focus {
+.container .row .col-md-4 .game-card__input:focus {
     outline: none;
     border-color: #3182ce;
 }
 
-.game-card__input::-webkit-inner-spin-button,
-.game-card__input::-webkit-outer-spin-button {
+.container .row .col-md-4 .game-card__input::-webkit-inner-spin-button,
+.container .row .col-md-4 .game-card__input::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
 
-.game-card__btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    padding: 0.5rem 1rem;
-    font-size: 0.9rem;
-    font-weight: 500;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    text-decoration: none;
-    min-width: 120px;
+.container .row .col-md-4 .game-card__btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 0.5rem !important;
+    padding: 0.5rem 1rem !important;
+    font-size: 0.9rem !important;
+    font-weight: 500 !important;
+    border-radius: 6px !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease !important;
+    text-decoration: none !important;
+    min-width: 120px !important;
 }
 
-.game-card__btn--primary {
-    background-color: #3182ce;
-    color: white;
-    border: 2px solid #3182ce;
+.container .row .col-md-4 .game-card__btn--primary {
+    background-color: #3182ce !important;
+    color: white !important;
+    border: 2px solid #3182ce !important;
 }
 
-.game-card__btn--primary:hover {
-    background-color: #2c5282;
-    border-color: #2c5282;
+.container .row .col-md-4 .game-card__btn--primary:hover {
+    background-color: #2c5282 !important;
+    border-color: #2c5282 !important;
 }
 
-.game-card__btn--outline {
-    background-color: transparent;
-    color: #3182ce;
-    border: 2px solid #3182ce;
+.container .row .col-md-4 .game-card__btn--outline {
+    background-color: transparent !important;
+    color: #3182ce !important;
+    border: 2px solid #3182ce !important;
 }
 
-.game-card__btn--outline:hover {
-    background-color: #3182ce;
-    color: white;
+.container .row .col-md-4 .game-card__btn--outline:hover {
+    background-color: #3182ce !important;
+    color: white !important;
 }
 
-.game-card__btn i {
+.container .row .col-md-4 .game-card__btn i {
     font-size: 1rem;
 }
 
@@ -244,11 +237,4 @@ body {
     .navbar .nav-link {
         padding: 0.5rem 0 !important;
     }
-}
-
-/* More specific selector */
-.container .row .col-md-4 .game-card {
-    border: 5px solid red !important;
-    background: yellow !important;
-    /* ... rest of the styles ... */
 } 
