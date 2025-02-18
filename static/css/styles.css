@@ -73,6 +73,12 @@ body {
     align-items: center;
 }
 
+.product-card .buttons {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
 /* Form controls within product cards */
 .product-card .form-control {
     display: inline-block;
@@ -84,6 +90,13 @@ body {
 
 .product-card .btn {
     padding: 0.375rem 0.75rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.product-card .btn i {
+    font-size: 1rem;
 }
 
 .product-card .btn-primary {
