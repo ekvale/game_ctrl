@@ -1,6 +1,6 @@
 from django.core.management.base import BaseCommand
 from django.contrib.auth.models import User
-from products.models import Product, Category
+from products.models import Controller, Category
 from decimal import Decimal
 from django.utils.text import slugify
 import random
@@ -13,11 +13,11 @@ class Command(BaseCommand):
 
         # Create categories
         categories = [
-            'Action Games',
-            'RPG Games',
-            'Strategy Games',
-            'Sports Games',
-            'Adventure Games',
+            'PlayStation',
+            'Xbox',
+            'Nintendo',
+            'PC',
+            'Retro',
         ]
 
         for cat_name in categories:
@@ -28,42 +28,42 @@ class Command(BaseCommand):
                 }
             )
 
-        # Create sample products
-        sample_products = [
+        # Create sample controllers
+        sample_controllers = [
             {
-                'name': 'The Elder Scrolls V: Skyrim',
-                'category': 'RPG Games',
-                'price': Decimal('29.99'),
-                'description': 'Epic fantasy RPG with dragons and magic.',
-                'slug': 'the-elder-scrolls-v-skyrim',
+                'name': 'DualSense Wireless Controller',
+                'category_name': 'PlayStation',
+                'price': Decimal('69.99'),
+                'description': 'Next-gen PlayStation 5 controller with haptic feedback.',
+                'is_featured': True,
             },
             {
-                'name': 'FIFA 24',
-                'category': 'Sports Games',
-                'price': Decimal('59.99'),
-                'description': 'Latest football simulation game.',
-                'slug': 'fifa-24',
+                'name': 'Xbox Elite Controller Series 2',
+                'category_name': 'Xbox',
+                'price': Decimal('179.99'),
+                'description': 'Premium Xbox controller with customizable components.',
+                'is_featured': True,
             },
             {
-                'name': 'Red Dead Redemption 2',
-                'category': 'Action Games',
-                'price': Decimal('49.99'),
-                'description': 'Wild West action-adventure game.',
-                'slug': 'red-dead-redemption-2',
+                'name': 'Nintendo Switch Pro Controller',
+                'category_name': 'Nintendo',
+                'price': Decimal('69.99'),
+                'description': 'Professional controller for Nintendo Switch.',
+                'is_featured': False,
             },
-            # Add more products as needed
         ]
 
-        for product_data in sample_products:
-            category = Category.objects.get(name=product_data['category'])
-            Product.objects.get_or_create(
-                name=product_data['name'],
+        for controller_data in sample_controllers:
+            category = Category.objects.get(name=controller_data['category_name'])
+            Controller.objects.get_or_create(
+                name=controller_data['name'],
                 defaults={
                     'category': category,
-                    'price': product_data['price'],
-                    'description': product_data['description'],
-                    'stock': random.randint(10, 100),
-                    'slug': product_data['slug'],
+                    'price': controller_data['price'],
+                    'description': controller_data['description'],
+                    'is_featured': controller_data['is_featured'],
+                    'slug': slugify(controller_data['name']),
+                    'available': True,
                 }
             )
 
