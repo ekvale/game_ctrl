@@ -6,19 +6,15 @@
 {% block content %}
 <!-- Hero Section -->
 <div class="relative overflow-hidden">
-    <!-- TEST MESSAGE -->
-    <h1 class="text-center">TEST - TEMPLATE UPDATE</h1>
-    
-    <div class="w-full h-[600px]">
-        <iframe 
-            class="w-full h-full"
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1&loop=1&playlist=dQw4w9WgXcQ"
-            title="Game Controllers Showcase"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-        ></iframe>
-    </div>
+    <video 
+        class="w-full h-[600px] object-cover"
+        autoplay 
+        loop 
+        muted 
+        playsinline
+    >
+        <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" type="video/mp4">
+    </video>
     
     <!-- Optional overlay text -->
     <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40">

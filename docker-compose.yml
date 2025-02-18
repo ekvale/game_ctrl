@@ -39,8 +39,6 @@ services:
       - log_volume:/var/log/django
     expose:
       - 8000
-    networks:
-      - game_ctrl_network
 
   nginx:
     image: nginx:alpine
@@ -58,16 +56,10 @@ services:
     depends_on:
       web:
         condition: service_started
-    networks:
-      - game_ctrl_network
 
 volumes:
   postgres_data:
   static_volume:
   media_volume:
   log_volume:
-
-networks:
-  game_ctrl_network:
-    driver: bridge
 

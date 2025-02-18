@@ -73,8 +73,4 @@ RUN DJANGO_SETTINGS_MODULE=game_ctrl.settings.production python manage.py collec
 RUN echo "Testing settings module..." && \
     DJANGO_SETTINGS_MODULE=game_ctrl.settings.production python -c "import django; django.setup(); from django.conf import settings; print('STATIC_ROOT:', settings.STATIC_ROOT)"
 
-# Instead, let's add a debug step to verify template location
-RUN echo "Checking template location..." && \
-    ls -la /app/templates/
-
 CMD ["gunicorn", "game_ctrl.wsgi:application", "--bind", "0.0.0.0:8000", "--workers", "3", "--access-logfile", "/var/log/django/access.log", "--error-logfile", "/var/log/django/error.log"] 
