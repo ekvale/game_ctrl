@@ -9,12 +9,16 @@
         <p>{{ controller.description }}</p>
         <p>Price: ${{ controller.price }}</p>
         <a href="{{ controller.get_absolute_url }}">View Details</a>
-        <form action="{% url 'cart:add_to_cart' %}" method="post">
-            {% csrf_token %}
-            <input type="hidden" name="controller_id" value="{{ controller.id }}">
-            <input type="number" name="quantity" value="1" min="1" max="20">
-            <input type="submit" value="Add to Cart">
-        </form>
+        {% if user.is_authenticated %}
+            <form action="{% url 'cart:add_to_cart' %}" method="post">
+                {% csrf_token %}
+                <input type="hidden" name="controller_id" value="{{ controller.id }}">
+                <input type="number" name="quantity" value="1" min="1" max="20">
+                <input type="submit" value="Add to Cart">
+            </form>
+        {% else %}
+            <p><a href="{% url 'login' %}?next={{ request.path }}">Log in to add to cart</a></p>
+        {% endif %}
     </div>
     {% endfor %}
 </div>
