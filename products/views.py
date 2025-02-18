@@ -1,9 +1,15 @@
 from django.shortcuts import render, get_object_or_404
 from .models import Category, Controller
 from cart.models import Cart
+from django.template.loader import get_template
+import logging
+
+logger = logging.getLogger(__name__)
 
 def home(request):
     """Homepage view with featured controllers"""
+    template = get_template('home.html')
+    logger.info(f"Using template from: {template.origin.name}")
     featured_controllers = Controller.objects.filter(is_featured=True)
     categories = Category.objects.all()
     
