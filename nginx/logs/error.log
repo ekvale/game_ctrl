@@ -369,3 +369,1433 @@
 2025/02/18 01:18:49 [notice] 1#1: start worker processes
 2025/02/18 01:18:49 [notice] 1#1: start worker process 21
 2025/02/18 01:18:49 [notice] 1#1: start worker process 22
+2025/02/18 01:26:08 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 01:26:08 [notice] 22#22: gracefully shutting down
+2025/02/18 01:26:08 [notice] 21#21: gracefully shutting down
+2025/02/18 01:26:08 [notice] 22#22: exiting
+2025/02/18 01:26:08 [notice] 21#21: exiting
+2025/02/18 01:26:08 [notice] 22#22: exit
+2025/02/18 01:26:08 [notice] 21#21: exit
+2025/02/18 01:26:08 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 01:26:08 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 01:26:08 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 01:26:08 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/02/18 01:26:08 [notice] 1#1: worker process 22 exited with code 0
+2025/02/18 01:26:08 [notice] 1#1: exit
+2025/02/18 01:26:26 [notice] 1#1: using the "epoll" event method
+2025/02/18 01:26:26 [notice] 1#1: nginx/1.27.4
+2025/02/18 01:26:26 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 01:26:26 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 01:26:26 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 01:26:26 [notice] 1#1: start worker processes
+2025/02/18 01:26:26 [notice] 1#1: start worker process 21
+2025/02/18 01:26:26 [notice] 1#1: start worker process 22
+2025/02/18 01:27:43 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 01:27:43 [notice] 21#21: gracefully shutting down
+2025/02/18 01:27:43 [notice] 22#22: gracefully shutting down
+2025/02/18 01:27:43 [notice] 21#21: exiting
+2025/02/18 01:27:43 [notice] 22#22: exiting
+2025/02/18 01:27:43 [notice] 22#22: exit
+2025/02/18 01:27:43 [notice] 21#21: exit
+2025/02/18 01:27:43 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/02/18 01:27:43 [notice] 1#1: worker process 22 exited with code 0
+2025/02/18 01:27:43 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 01:27:43 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 01:27:43 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 01:27:43 [notice] 1#1: exit
+2025/02/18 01:28:02 [notice] 1#1: using the "epoll" event method
+2025/02/18 01:28:02 [notice] 1#1: nginx/1.27.4
+2025/02/18 01:28:02 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 01:28:02 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 01:28:02 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 01:28:02 [notice] 1#1: start worker processes
+2025/02/18 01:28:02 [notice] 1#1: start worker process 21
+2025/02/18 01:28:02 [notice] 1#1: start worker process 22
+2025/02/18 01:28:59 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 01:28:59 [notice] 21#21: gracefully shutting down
+2025/02/18 01:28:59 [notice] 21#21: exiting
+2025/02/18 01:28:59 [notice] 21#21: exit
+2025/02/18 01:28:59 [notice] 22#22: gracefully shutting down
+2025/02/18 01:29:00 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 01:29:00 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 01:29:00 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 01:29:27 [notice] 1#1: using the "epoll" event method
+2025/02/18 01:29:27 [notice] 1#1: nginx/1.27.4
+2025/02/18 01:29:27 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 01:29:27 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 01:29:27 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 01:29:27 [notice] 1#1: start worker processes
+2025/02/18 01:29:27 [notice] 1#1: start worker process 20
+2025/02/18 01:29:27 [notice] 1#1: start worker process 21
+2025/02/18 01:31:07 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 01:31:07 [notice] 21#21: gracefully shutting down
+2025/02/18 01:31:07 [notice] 21#21: exiting
+2025/02/18 01:31:07 [notice] 21#21: exit
+2025/02/18 01:31:07 [notice] 20#20: gracefully shutting down
+2025/02/18 01:31:07 [notice] 20#20: exiting
+2025/02/18 01:31:07 [notice] 20#20: exit
+2025/02/18 01:31:07 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 01:31:07 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 01:31:07 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 01:31:07 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2025/02/18 01:31:07 [notice] 1#1: worker process 20 exited with code 0
+2025/02/18 01:31:07 [notice] 1#1: exit
+2025/02/18 01:31:46 [notice] 1#1: using the "epoll" event method
+2025/02/18 01:31:46 [notice] 1#1: nginx/1.27.4
+2025/02/18 01:31:46 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 01:31:46 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 01:31:46 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 01:31:46 [notice] 1#1: start worker processes
+2025/02/18 01:31:46 [notice] 1#1: start worker process 21
+2025/02/18 01:31:46 [notice] 1#1: start worker process 22
+2025/02/18 01:33:25 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 01:33:25 [notice] 22#22: gracefully shutting down
+2025/02/18 01:33:25 [notice] 21#21: gracefully shutting down
+2025/02/18 01:33:25 [notice] 22#22: exiting
+2025/02/18 01:33:25 [notice] 21#21: exiting
+2025/02/18 01:33:25 [notice] 22#22: exit
+2025/02/18 01:33:25 [notice] 21#21: exit
+2025/02/18 01:33:25 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/02/18 01:33:25 [notice] 1#1: worker process 22 exited with code 0
+2025/02/18 01:33:25 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 01:33:25 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 01:33:25 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 01:33:25 [notice] 1#1: exit
+2025/02/18 01:34:09 [notice] 1#1: using the "epoll" event method
+2025/02/18 01:34:09 [notice] 1#1: nginx/1.27.4
+2025/02/18 01:34:09 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 01:34:09 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 01:34:09 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 01:34:09 [notice] 1#1: start worker processes
+2025/02/18 01:34:09 [notice] 1#1: start worker process 21
+2025/02/18 01:34:09 [notice] 1#1: start worker process 22
+2025/02/18 01:39:36 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 01:39:36 [notice] 21#21: gracefully shutting down
+2025/02/18 01:39:36 [notice] 21#21: exiting
+2025/02/18 01:39:36 [notice] 21#21: exit
+2025/02/18 01:39:36 [notice] 22#22: gracefully shutting down
+2025/02/18 01:39:36 [notice] 22#22: exiting
+2025/02/18 01:39:36 [notice] 22#22: exit
+2025/02/18 01:39:36 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/02/18 01:39:36 [notice] 1#1: worker process 22 exited with code 0
+2025/02/18 01:39:36 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 01:39:36 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 01:39:36 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 01:39:36 [notice] 1#1: exit
+2025/02/18 01:39:54 [notice] 1#1: using the "epoll" event method
+2025/02/18 01:39:54 [notice] 1#1: nginx/1.27.4
+2025/02/18 01:39:54 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 01:39:54 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 01:39:54 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 01:39:54 [notice] 1#1: start worker processes
+2025/02/18 01:39:54 [notice] 1#1: start worker process 20
+2025/02/18 01:39:54 [notice] 1#1: start worker process 21
+2025/02/18 01:41:50 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 01:41:50 [notice] 21#21: gracefully shutting down
+2025/02/18 01:41:50 [notice] 20#20: gracefully shutting down
+2025/02/18 01:41:50 [notice] 21#21: exiting
+2025/02/18 01:41:50 [notice] 20#20: exiting
+2025/02/18 01:41:50 [notice] 21#21: exit
+2025/02/18 01:41:50 [notice] 20#20: exit
+2025/02/18 01:41:50 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2025/02/18 01:41:50 [notice] 1#1: worker process 20 exited with code 0
+2025/02/18 01:41:50 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 01:41:50 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 01:41:50 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 01:41:50 [notice] 1#1: exit
+2025/02/18 01:42:42 [notice] 1#1: using the "epoll" event method
+2025/02/18 01:42:42 [notice] 1#1: nginx/1.27.4
+2025/02/18 01:42:42 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 01:42:42 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 01:42:42 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 01:42:42 [notice] 1#1: start worker processes
+2025/02/18 01:42:42 [notice] 1#1: start worker process 21
+2025/02/18 01:42:42 [notice] 1#1: start worker process 22
+2025/02/18 01:57:46 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 01:57:46 [notice] 21#21: gracefully shutting down
+2025/02/18 01:57:46 [notice] 21#21: exiting
+2025/02/18 01:57:46 [notice] 21#21: exit
+2025/02/18 01:57:46 [notice] 22#22: gracefully shutting down
+2025/02/18 01:57:46 [notice] 22#22: exiting
+2025/02/18 01:57:46 [notice] 22#22: exit
+2025/02/18 01:57:46 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/02/18 01:57:46 [notice] 1#1: worker process 22 exited with code 0
+2025/02/18 01:57:46 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 01:57:46 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 01:57:46 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 01:57:46 [notice] 1#1: exit
+2025/02/18 02:00:17 [notice] 1#1: using the "epoll" event method
+2025/02/18 02:00:17 [notice] 1#1: nginx/1.27.4
+2025/02/18 02:00:17 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 02:00:17 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 02:00:17 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 02:00:17 [notice] 1#1: start worker processes
+2025/02/18 02:00:17 [notice] 1#1: start worker process 21
+2025/02/18 02:00:17 [notice] 1#1: start worker process 22
+2025/02/18 02:03:41 [error] 21#21: *8 open() "/var/www/certbot/.well-known/acme-challenge/fiYFACi6KZnesAV47Cm7a6rCVLGVoLUQ5Ej4oMyMW0M" failed (2: No such file or directory), client: 34.235.48.77, server: gamesctrls.com, request: "GET /.well-known/acme-challenge/fiYFACi6KZnesAV47Cm7a6rCVLGVoLUQ5Ej4oMyMW0M HTTP/1.1", host: "gamesctrls.com"
+2025/02/18 02:03:56 [error] 22#22: *9 open() "/var/www/certbot/.well-known/acme-challenge/CwQd7PzQPBCWyYaaPEo9ZadQ1Nnnk11d1dAr9gxVJ-4" failed (2: No such file or directory), client: 54.198.55.229, server: gamesctrls.com, request: "GET /.well-known/acme-challenge/CwQd7PzQPBCWyYaaPEo9ZadQ1Nnnk11d1dAr9gxVJ-4 HTTP/1.1", host: "www.gamesctrls.com"
+2025/02/18 02:04:02 [error] 21#21: *10 open() "/var/www/certbot/.well-known/acme-challenge/1xlZFTDUMM_RGInVqTde7rFGDn8bZAqn1NNLCEsHPos" failed (2: No such file or directory), client: 54.156.251.192, server: gamesctrls.com, request: "GET /.well-known/acme-challenge/1xlZFTDUMM_RGInVqTde7rFGDn8bZAqn1NNLCEsHPos HTTP/1.1", host: "gamesctrls.com"
+2025/02/18 02:04:10 [error] 21#21: *13 open() "/var/www/certbot/.well-known/acme-challenge/XBjDbS748F6lKk7PhOLf1NQD9U1FkyHW7H-ZzQ5kTVY" failed (2: No such file or directory), client: 54.198.55.229, server: gamesctrls.com, request: "GET /.well-known/acme-challenge/XBjDbS748F6lKk7PhOLf1NQD9U1FkyHW7H-ZzQ5kTVY HTTP/1.1", host: "www.gamesctrls.com"
+2025/02/18 02:05:20 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 02:05:20 [notice] 21#21: gracefully shutting down
+2025/02/18 02:05:20 [notice] 21#21: exiting
+2025/02/18 02:05:20 [notice] 21#21: exit
+2025/02/18 02:05:20 [notice] 22#22: gracefully shutting down
+2025/02/18 02:05:20 [notice] 22#22: exiting
+2025/02/18 02:05:20 [notice] 22#22: exit
+2025/02/18 02:05:20 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 02:05:20 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 02:05:20 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 02:05:20 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/02/18 02:05:20 [notice] 1#1: worker process 22 exited with code 0
+2025/02/18 02:05:20 [notice] 1#1: exit
+2025/02/18 02:05:37 [notice] 1#1: using the "epoll" event method
+2025/02/18 02:05:37 [notice] 1#1: nginx/1.27.4
+2025/02/18 02:05:37 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 02:05:37 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 02:05:37 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 02:05:37 [notice] 1#1: start worker processes
+2025/02/18 02:05:37 [notice] 1#1: start worker process 21
+2025/02/18 02:05:37 [notice] 1#1: start worker process 22
+2025/02/18 02:13:29 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 02:13:29 [notice] 22#22: gracefully shutting down
+2025/02/18 02:13:29 [notice] 22#22: exiting
+2025/02/18 02:13:29 [notice] 22#22: exit
+2025/02/18 02:13:29 [notice] 21#21: gracefully shutting down
+2025/02/18 02:13:29 [notice] 21#21: exiting
+2025/02/18 02:13:29 [notice] 21#21: exit
+2025/02/18 02:13:29 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 02:13:29 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 02:13:29 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 02:13:29 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/02/18 02:13:29 [notice] 1#1: worker process 22 exited with code 0
+2025/02/18 02:13:29 [notice] 1#1: exit
+2025/02/18 02:13:46 [notice] 1#1: using the "epoll" event method
+2025/02/18 02:13:46 [notice] 1#1: nginx/1.27.4
+2025/02/18 02:13:46 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 02:13:46 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 02:13:46 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 02:13:46 [notice] 1#1: start worker processes
+2025/02/18 02:13:46 [notice] 1#1: start worker process 21
+2025/02/18 02:13:46 [notice] 1#1: start worker process 22
+2025/02/18 02:20:53 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 02:20:53 [notice] 21#21: gracefully shutting down
+2025/02/18 02:20:53 [notice] 21#21: exiting
+2025/02/18 02:20:53 [notice] 22#22: gracefully shutting down
+2025/02/18 02:20:53 [notice] 22#22: exiting
+2025/02/18 02:20:53 [notice] 22#22: exit
+2025/02/18 02:20:53 [notice] 21#21: exit
+2025/02/18 02:20:53 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 02:20:53 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 02:20:53 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 02:20:53 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/02/18 02:20:53 [notice] 1#1: worker process 22 exited with code 0
+2025/02/18 02:20:53 [notice] 1#1: exit
+2025/02/18 02:21:11 [notice] 1#1: using the "epoll" event method
+2025/02/18 02:21:11 [notice] 1#1: nginx/1.27.4
+2025/02/18 02:21:11 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 02:21:11 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 02:21:11 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 02:21:11 [notice] 1#1: start worker processes
+2025/02/18 02:21:11 [notice] 1#1: start worker process 21
+2025/02/18 02:21:11 [notice] 1#1: start worker process 22
+2025/02/18 02:23:18 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 02:23:18 [notice] 21#21: gracefully shutting down
+2025/02/18 02:23:18 [notice] 21#21: exiting
+2025/02/18 02:23:18 [notice] 21#21: exit
+2025/02/18 02:23:18 [notice] 22#22: gracefully shutting down
+2025/02/18 02:23:18 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 02:23:18 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 02:23:18 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 02:23:54 [notice] 1#1: using the "epoll" event method
+2025/02/18 02:23:54 [notice] 1#1: nginx/1.27.4
+2025/02/18 02:23:54 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 02:23:54 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 02:23:54 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 02:23:54 [notice] 1#1: start worker processes
+2025/02/18 02:23:54 [notice] 1#1: start worker process 21
+2025/02/18 02:23:54 [notice] 1#1: start worker process 22
+2025/02/18 02:23:58 [error] 22#22: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 104.219.196.2, server: gamesctrls.com, request: "GET / HTTP/1.1", upstream: "http://192.168.16.3:8000/", host: "gamesctrls.com", referrer: "https://gamesctrls.com/"
+2025/02/18 02:25:04 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 02:25:04 [notice] 21#21: gracefully shutting down
+2025/02/18 02:25:04 [notice] 21#21: exiting
+2025/02/18 02:25:04 [notice] 21#21: exit
+2025/02/18 02:25:04 [notice] 22#22: gracefully shutting down
+2025/02/18 02:25:04 [notice] 22#22: exiting
+2025/02/18 02:25:04 [notice] 22#22: exit
+2025/02/18 02:25:04 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 02:25:04 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 02:25:04 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 02:25:04 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/02/18 02:25:04 [notice] 1#1: worker process 22 exited with code 0
+2025/02/18 02:25:04 [notice] 1#1: exit
+2025/02/18 02:25:22 [notice] 1#1: using the "epoll" event method
+2025/02/18 02:25:22 [notice] 1#1: nginx/1.27.4
+2025/02/18 02:25:22 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 02:25:22 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 02:25:22 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 02:25:22 [notice] 1#1: start worker processes
+2025/02/18 02:25:22 [notice] 1#1: start worker process 21
+2025/02/18 02:25:22 [notice] 1#1: start worker process 22
+2025/02/18 02:31:31 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 02:31:31 [notice] 22#22: gracefully shutting down
+2025/02/18 02:31:31 [notice] 22#22: exiting
+2025/02/18 02:31:31 [notice] 21#21: gracefully shutting down
+2025/02/18 02:31:31 [notice] 22#22: exit
+2025/02/18 02:31:31 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/02/18 02:31:31 [notice] 1#1: worker process 22 exited with code 0
+2025/02/18 02:31:31 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 02:31:32 [notice] 21#21: exiting
+2025/02/18 02:31:32 [notice] 21#21: exit
+2025/02/18 02:31:32 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 02:31:32 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 02:31:32 [notice] 1#1: exit
+2025/02/18 02:32:14 [notice] 1#1: using the "epoll" event method
+2025/02/18 02:32:14 [notice] 1#1: nginx/1.27.4
+2025/02/18 02:32:14 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 02:32:14 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 02:32:14 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 02:32:14 [notice] 1#1: start worker processes
+2025/02/18 02:32:14 [notice] 1#1: start worker process 21
+2025/02/18 02:32:14 [notice] 1#1: start worker process 22
+2025/02/18 02:34:06 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 02:34:06 [notice] 22#22: gracefully shutting down
+2025/02/18 02:34:06 [notice] 21#21: gracefully shutting down
+2025/02/18 02:34:06 [notice] 22#22: exiting
+2025/02/18 02:34:06 [notice] 22#22: exit
+2025/02/18 02:34:06 [notice] 21#21: exiting
+2025/02/18 02:34:06 [notice] 21#21: exit
+2025/02/18 02:34:06 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/02/18 02:34:06 [notice] 1#1: worker process 22 exited with code 0
+2025/02/18 02:34:06 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 02:34:06 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 02:34:06 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 02:34:06 [notice] 1#1: exit
+2025/02/18 02:34:28 [notice] 1#1: using the "epoll" event method
+2025/02/18 02:34:28 [notice] 1#1: nginx/1.27.4
+2025/02/18 02:34:28 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 02:34:28 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 02:34:28 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 02:34:28 [notice] 1#1: start worker processes
+2025/02/18 02:34:28 [notice] 1#1: start worker process 21
+2025/02/18 02:34:28 [notice] 1#1: start worker process 22
+2025/02/18 02:36:15 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 02:36:15 [notice] 21#21: gracefully shutting down
+2025/02/18 02:36:15 [notice] 22#22: gracefully shutting down
+2025/02/18 02:36:15 [notice] 21#21: exiting
+2025/02/18 02:36:15 [notice] 22#22: exiting
+2025/02/18 02:36:15 [notice] 21#21: exit
+2025/02/18 02:36:15 [notice] 22#22: exit
+2025/02/18 02:36:15 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 02:36:15 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 02:36:15 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 02:36:15 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/02/18 02:36:15 [notice] 1#1: worker process 22 exited with code 0
+2025/02/18 02:36:15 [notice] 1#1: exit
+2025/02/18 02:36:33 [notice] 1#1: using the "epoll" event method
+2025/02/18 02:36:33 [notice] 1#1: nginx/1.27.4
+2025/02/18 02:36:33 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 02:36:33 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 02:36:33 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 02:36:33 [notice] 1#1: start worker processes
+2025/02/18 02:36:33 [notice] 1#1: start worker process 21
+2025/02/18 02:36:33 [notice] 1#1: start worker process 22
+2025/02/18 02:42:01 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 02:42:01 [notice] 21#21: gracefully shutting down
+2025/02/18 02:42:01 [notice] 21#21: exiting
+2025/02/18 02:42:01 [notice] 22#22: gracefully shutting down
+2025/02/18 02:42:01 [notice] 22#22: exiting
+2025/02/18 02:42:01 [notice] 21#21: exit
+2025/02/18 02:42:01 [notice] 22#22: exit
+2025/02/18 02:42:01 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 02:42:01 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 02:42:01 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 02:42:01 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/02/18 02:42:01 [notice] 1#1: worker process 22 exited with code 0
+2025/02/18 02:42:01 [notice] 1#1: exit
+2025/02/18 02:42:19 [notice] 1#1: using the "epoll" event method
+2025/02/18 02:42:19 [notice] 1#1: nginx/1.27.4
+2025/02/18 02:42:19 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 02:42:19 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 02:42:19 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 02:42:19 [notice] 1#1: start worker processes
+2025/02/18 02:42:19 [notice] 1#1: start worker process 20
+2025/02/18 02:42:19 [notice] 1#1: start worker process 21
+2025/02/18 02:51:17 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 02:51:17 [notice] 20#20: gracefully shutting down
+2025/02/18 02:51:17 [notice] 20#20: exiting
+2025/02/18 02:51:17 [notice] 21#21: gracefully shutting down
+2025/02/18 02:51:17 [notice] 20#20: exit
+2025/02/18 02:51:17 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2025/02/18 02:51:17 [notice] 1#1: worker process 20 exited with code 0
+2025/02/18 02:51:17 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 02:51:57 [notice] 1#1: using the "epoll" event method
+2025/02/18 02:51:57 [notice] 1#1: nginx/1.27.4
+2025/02/18 02:51:57 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 02:51:57 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 02:51:57 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 02:51:57 [notice] 1#1: start worker processes
+2025/02/18 02:51:57 [notice] 1#1: start worker process 21
+2025/02/18 02:51:57 [notice] 1#1: start worker process 22
+2025/02/18 02:52:01 [error] 22#22: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 104.219.196.2, server: gamesctrls.com, request: "GET / HTTP/1.1", upstream: "http://192.168.112.3:8000/", host: "gamesctrls.com", referrer: "https://gamesctrls.com/test-video/"
+2025/02/18 02:52:27 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 02:52:27 [notice] 21#21: gracefully shutting down
+2025/02/18 02:52:27 [notice] 22#22: gracefully shutting down
+2025/02/18 02:52:27 [notice] 22#22: exiting
+2025/02/18 02:52:27 [notice] 22#22: exit
+2025/02/18 02:52:27 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/02/18 02:52:27 [notice] 1#1: worker process 22 exited with code 0
+2025/02/18 02:52:27 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 02:52:54 [notice] 1#1: using the "epoll" event method
+2025/02/18 02:52:54 [notice] 1#1: nginx/1.27.4
+2025/02/18 02:52:54 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 02:52:54 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 02:52:54 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 02:52:54 [notice] 1#1: start worker processes
+2025/02/18 02:52:54 [notice] 1#1: start worker process 21
+2025/02/18 02:52:54 [notice] 1#1: start worker process 22
+2025/02/18 02:59:24 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 02:59:24 [notice] 22#22: gracefully shutting down
+2025/02/18 02:59:24 [notice] 22#22: exiting
+2025/02/18 02:59:24 [notice] 22#22: exit
+2025/02/18 02:59:24 [notice] 21#21: gracefully shutting down
+2025/02/18 02:59:24 [notice] 21#21: exiting
+2025/02/18 02:59:24 [notice] 21#21: exit
+2025/02/18 02:59:24 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/02/18 02:59:24 [notice] 1#1: worker process 22 exited with code 0
+2025/02/18 02:59:24 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 02:59:24 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 02:59:24 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 02:59:24 [notice] 1#1: exit
+2025/02/18 02:59:41 [notice] 1#1: using the "epoll" event method
+2025/02/18 02:59:41 [notice] 1#1: nginx/1.27.4
+2025/02/18 02:59:41 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 02:59:41 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 02:59:41 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 02:59:41 [notice] 1#1: start worker processes
+2025/02/18 02:59:41 [notice] 1#1: start worker process 21
+2025/02/18 02:59:41 [notice] 1#1: start worker process 22
+2025/02/18 03:05:06 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 03:05:06 [notice] 21#21: gracefully shutting down
+2025/02/18 03:05:06 [notice] 21#21: exiting
+2025/02/18 03:05:06 [notice] 21#21: exit
+2025/02/18 03:05:06 [notice] 22#22: gracefully shutting down
+2025/02/18 03:05:06 [notice] 22#22: exiting
+2025/02/18 03:05:06 [notice] 22#22: exit
+2025/02/18 03:05:06 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/02/18 03:05:06 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 03:05:06 [notice] 1#1: worker process 22 exited with code 0
+2025/02/18 03:05:06 [notice] 1#1: exit
+2025/02/18 03:05:07 [notice] 1#1: using the "epoll" event method
+2025/02/18 03:05:07 [notice] 1#1: nginx/1.27.4
+2025/02/18 03:05:07 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 03:05:07 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 03:05:07 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 03:05:07 [notice] 1#1: start worker processes
+2025/02/18 03:05:07 [notice] 1#1: start worker process 21
+2025/02/18 03:05:07 [notice] 1#1: start worker process 22
+2025/02/18 03:07:49 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 03:07:49 [notice] 21#21: gracefully shutting down
+2025/02/18 03:07:49 [notice] 21#21: exiting
+2025/02/18 03:07:49 [notice] 21#21: exit
+2025/02/18 03:07:49 [notice] 22#22: gracefully shutting down
+2025/02/18 03:07:49 [notice] 22#22: exiting
+2025/02/18 03:07:49 [notice] 22#22: exit
+2025/02/18 03:07:49 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 03:07:49 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 03:07:49 [notice] 1#1: worker process 22 exited with code 0
+2025/02/18 03:07:49 [notice] 1#1: exit
+2025/02/18 03:07:50 [notice] 1#1: using the "epoll" event method
+2025/02/18 03:07:50 [notice] 1#1: nginx/1.27.4
+2025/02/18 03:07:50 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 03:07:50 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 03:07:50 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 03:07:50 [notice] 1#1: start worker processes
+2025/02/18 03:07:50 [notice] 1#1: start worker process 21
+2025/02/18 03:07:50 [notice] 1#1: start worker process 22
+2025/02/18 03:11:53 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 03:11:53 [notice] 22#22: gracefully shutting down
+2025/02/18 03:11:53 [notice] 22#22: exiting
+2025/02/18 03:11:53 [notice] 22#22: exit
+2025/02/18 03:11:53 [notice] 21#21: gracefully shutting down
+2025/02/18 03:11:53 [notice] 21#21: exiting
+2025/02/18 03:11:53 [notice] 21#21: exit
+2025/02/18 03:11:53 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 03:11:53 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 03:11:53 [notice] 1#1: worker process 22 exited with code 0
+2025/02/18 03:11:53 [notice] 1#1: exit
+2025/02/18 03:11:54 [notice] 1#1: using the "epoll" event method
+2025/02/18 03:11:54 [notice] 1#1: nginx/1.27.4
+2025/02/18 03:11:54 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 03:11:54 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 03:11:54 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 03:11:54 [notice] 1#1: start worker processes
+2025/02/18 03:11:54 [notice] 1#1: start worker process 21
+2025/02/18 03:11:54 [notice] 1#1: start worker process 22
+2025/02/18 03:14:57 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 03:14:57 [notice] 21#21: gracefully shutting down
+2025/02/18 03:14:57 [notice] 22#22: gracefully shutting down
+2025/02/18 03:14:57 [notice] 21#21: exiting
+2025/02/18 03:14:57 [notice] 22#22: exiting
+2025/02/18 03:14:57 [notice] 22#22: exit
+2025/02/18 03:14:57 [notice] 21#21: exit
+2025/02/18 03:14:57 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/02/18 03:14:57 [notice] 1#1: worker process 22 exited with code 0
+2025/02/18 03:14:57 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 03:14:57 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 03:14:57 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 03:14:57 [notice] 1#1: exit
+2025/02/18 03:14:57 [notice] 1#1: using the "epoll" event method
+2025/02/18 03:14:57 [notice] 1#1: nginx/1.27.4
+2025/02/18 03:14:57 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 03:14:57 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 03:14:57 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 03:14:57 [notice] 1#1: start worker processes
+2025/02/18 03:14:57 [notice] 1#1: start worker process 21
+2025/02/18 03:14:57 [notice] 1#1: start worker process 22
+2025/02/18 03:17:38 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 03:17:38 [notice] 21#21: gracefully shutting down
+2025/02/18 03:17:38 [notice] 21#21: exiting
+2025/02/18 03:17:38 [notice] 22#22: gracefully shutting down
+2025/02/18 03:17:38 [notice] 21#21: exit
+2025/02/18 03:17:38 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 03:17:38 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 03:17:38 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 03:17:39 [notice] 22#22: exiting
+2025/02/18 03:17:39 [notice] 22#22: exit
+2025/02/18 03:17:39 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/02/18 03:17:39 [notice] 1#1: worker process 22 exited with code 0
+2025/02/18 03:17:39 [notice] 1#1: exit
+2025/02/18 03:17:40 [notice] 1#1: using the "epoll" event method
+2025/02/18 03:17:40 [notice] 1#1: nginx/1.27.4
+2025/02/18 03:17:40 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 03:17:40 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 03:17:40 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 03:17:40 [notice] 1#1: start worker processes
+2025/02/18 03:17:40 [notice] 1#1: start worker process 21
+2025/02/18 03:17:40 [notice] 1#1: start worker process 22
+2025/02/18 03:19:25 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 03:19:25 [notice] 22#22: gracefully shutting down
+2025/02/18 03:19:25 [notice] 21#21: gracefully shutting down
+2025/02/18 03:19:25 [notice] 22#22: exiting
+2025/02/18 03:19:25 [notice] 21#21: exiting
+2025/02/18 03:19:25 [notice] 22#22: exit
+2025/02/18 03:19:25 [notice] 21#21: exit
+2025/02/18 03:19:25 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/02/18 03:19:25 [notice] 1#1: worker process 22 exited with code 0
+2025/02/18 03:19:25 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 03:19:25 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 03:19:25 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 03:19:25 [notice] 1#1: exit
+2025/02/18 03:19:26 [notice] 1#1: using the "epoll" event method
+2025/02/18 03:19:26 [notice] 1#1: nginx/1.27.4
+2025/02/18 03:19:26 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 03:19:26 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 03:19:26 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 03:19:26 [notice] 1#1: start worker processes
+2025/02/18 03:19:26 [notice] 1#1: start worker process 21
+2025/02/18 03:19:26 [notice] 1#1: start worker process 22
+2025/02/18 03:19:36 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 03:19:36 [notice] 22#22: gracefully shutting down
+2025/02/18 03:19:36 [notice] 22#22: exiting
+2025/02/18 03:19:36 [notice] 21#21: gracefully shutting down
+2025/02/18 03:19:36 [notice] 21#21: exiting
+2025/02/18 03:19:36 [notice] 22#22: exit
+2025/02/18 03:19:36 [notice] 21#21: exit
+2025/02/18 03:19:36 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 03:19:36 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 03:19:36 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 03:19:36 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/02/18 03:19:36 [notice] 1#1: worker process 22 exited with code 0
+2025/02/18 03:19:36 [notice] 1#1: exit
+2025/02/18 03:19:37 [notice] 1#1: using the "epoll" event method
+2025/02/18 03:19:37 [notice] 1#1: nginx/1.27.4
+2025/02/18 03:19:37 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 03:19:37 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 03:19:37 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 03:19:37 [notice] 1#1: start worker processes
+2025/02/18 03:19:37 [notice] 1#1: start worker process 21
+2025/02/18 03:19:37 [notice] 1#1: start worker process 22
+2025/02/18 03:21:11 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 03:21:11 [notice] 21#21: gracefully shutting down
+2025/02/18 03:21:11 [notice] 21#21: exiting
+2025/02/18 03:21:11 [notice] 22#22: gracefully shutting down
+2025/02/18 03:21:11 [notice] 21#21: exit
+2025/02/18 03:21:11 [notice] 22#22: exiting
+2025/02/18 03:21:11 [notice] 22#22: exit
+2025/02/18 03:21:11 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/02/18 03:21:11 [notice] 1#1: worker process 22 exited with code 0
+2025/02/18 03:21:11 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 03:21:11 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 03:21:11 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 03:21:11 [notice] 1#1: exit
+2025/02/18 03:21:12 [notice] 1#1: using the "epoll" event method
+2025/02/18 03:21:12 [notice] 1#1: nginx/1.27.4
+2025/02/18 03:21:12 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 03:21:12 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 03:21:12 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 03:21:12 [notice] 1#1: start worker processes
+2025/02/18 03:21:12 [notice] 1#1: start worker process 21
+2025/02/18 03:21:12 [notice] 1#1: start worker process 22
+2025/02/18 03:22:41 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 03:22:41 [notice] 21#21: gracefully shutting down
+2025/02/18 03:22:41 [notice] 21#21: exiting
+2025/02/18 03:22:41 [notice] 21#21: exit
+2025/02/18 03:22:41 [notice] 22#22: gracefully shutting down
+2025/02/18 03:22:41 [notice] 22#22: exiting
+2025/02/18 03:22:41 [notice] 22#22: exit
+2025/02/18 03:22:41 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/02/18 03:22:41 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 03:22:41 [notice] 1#1: worker process 22 exited with code 0
+2025/02/18 03:22:41 [notice] 1#1: exit
+2025/02/18 03:22:41 [notice] 1#1: using the "epoll" event method
+2025/02/18 03:22:41 [notice] 1#1: nginx/1.27.4
+2025/02/18 03:22:41 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 03:22:41 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 03:22:41 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 03:22:41 [notice] 1#1: start worker processes
+2025/02/18 03:22:41 [notice] 1#1: start worker process 21
+2025/02/18 03:22:41 [notice] 1#1: start worker process 22
+2025/02/18 03:24:21 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 03:24:21 [notice] 22#22: gracefully shutting down
+2025/02/18 03:24:21 [notice] 22#22: exiting
+2025/02/18 03:24:21 [notice] 22#22: exit
+2025/02/18 03:24:21 [notice] 21#21: gracefully shutting down
+2025/02/18 03:24:21 [notice] 21#21: exiting
+2025/02/18 03:24:21 [notice] 21#21: exit
+2025/02/18 03:24:21 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/02/18 03:24:21 [notice] 1#1: worker process 22 exited with code 0
+2025/02/18 03:24:21 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 03:24:21 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 03:24:21 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 03:24:21 [notice] 1#1: exit
+2025/02/18 03:24:22 [notice] 1#1: using the "epoll" event method
+2025/02/18 03:24:22 [notice] 1#1: nginx/1.27.4
+2025/02/18 03:24:22 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 03:24:22 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 03:24:22 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 03:24:22 [notice] 1#1: start worker processes
+2025/02/18 03:24:22 [notice] 1#1: start worker process 21
+2025/02/18 03:24:22 [notice] 1#1: start worker process 22
+2025/02/18 03:25:57 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 03:25:57 [notice] 22#22: gracefully shutting down
+2025/02/18 03:25:57 [notice] 21#21: gracefully shutting down
+2025/02/18 03:25:57 [notice] 22#22: exiting
+2025/02/18 03:25:57 [notice] 21#21: exiting
+2025/02/18 03:25:57 [notice] 21#21: exit
+2025/02/18 03:25:57 [notice] 22#22: exit
+2025/02/18 03:25:57 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 03:25:57 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 03:25:57 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 03:25:57 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/02/18 03:25:57 [notice] 1#1: worker process 22 exited with code 0
+2025/02/18 03:25:57 [notice] 1#1: exit
+2025/02/18 03:25:58 [notice] 1#1: using the "epoll" event method
+2025/02/18 03:25:58 [notice] 1#1: nginx/1.27.4
+2025/02/18 03:25:58 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 03:25:58 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 03:25:58 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 03:25:58 [notice] 1#1: start worker processes
+2025/02/18 03:25:58 [notice] 1#1: start worker process 21
+2025/02/18 03:25:58 [notice] 1#1: start worker process 22
+2025/02/18 03:26:10 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 03:26:10 [notice] 21#21: gracefully shutting down
+2025/02/18 03:26:10 [notice] 21#21: exiting
+2025/02/18 03:26:10 [notice] 22#22: gracefully shutting down
+2025/02/18 03:26:10 [notice] 22#22: exiting
+2025/02/18 03:26:10 [notice] 21#21: exit
+2025/02/18 03:26:10 [notice] 22#22: exit
+2025/02/18 03:26:10 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 03:26:10 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 03:26:10 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 03:26:10 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/02/18 03:26:10 [notice] 1#1: worker process 22 exited with code 0
+2025/02/18 03:26:10 [notice] 1#1: exit
+2025/02/18 03:26:11 [notice] 1#1: using the "epoll" event method
+2025/02/18 03:26:11 [notice] 1#1: nginx/1.27.4
+2025/02/18 03:26:11 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 03:26:11 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 03:26:11 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 03:26:11 [notice] 1#1: start worker processes
+2025/02/18 03:26:11 [notice] 1#1: start worker process 21
+2025/02/18 03:26:11 [notice] 1#1: start worker process 22
+2025/02/18 03:28:13 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 03:28:13 [notice] 21#21: gracefully shutting down
+2025/02/18 03:28:13 [notice] 22#22: gracefully shutting down
+2025/02/18 03:28:13 [notice] 22#22: exiting
+2025/02/18 03:28:13 [notice] 22#22: exit
+2025/02/18 03:28:13 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/02/18 03:28:13 [notice] 1#1: worker process 22 exited with code 0
+2025/02/18 03:28:13 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 03:29:10 [notice] 1#1: using the "epoll" event method
+2025/02/18 03:29:10 [notice] 1#1: nginx/1.27.4
+2025/02/18 03:29:10 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 03:29:10 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 03:29:10 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 03:29:10 [notice] 1#1: start worker processes
+2025/02/18 03:29:10 [notice] 1#1: start worker process 21
+2025/02/18 03:29:10 [notice] 1#1: start worker process 22
+2025/02/18 03:29:14 [error] 21#21: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 104.219.196.2, server: gamesctrls.com, request: "GET / HTTP/1.1", upstream: "http://192.168.160.3:8000/", host: "gamesctrls.com", referrer: "https://gamesctrls.com/products/controller/dualsense-wireless-controller/"
+2025/02/18 03:29:54 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 03:29:54 [notice] 22#22: gracefully shutting down
+2025/02/18 03:29:54 [notice] 21#21: gracefully shutting down
+2025/02/18 03:29:54 [notice] 21#21: exiting
+2025/02/18 03:29:54 [notice] 21#21: exit
+2025/02/18 03:29:54 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 03:29:54 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 03:29:54 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 03:30:36 [notice] 1#1: using the "epoll" event method
+2025/02/18 03:30:36 [notice] 1#1: nginx/1.27.4
+2025/02/18 03:30:36 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 03:30:36 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 03:30:36 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 03:30:36 [notice] 1#1: start worker processes
+2025/02/18 03:30:36 [notice] 1#1: start worker process 21
+2025/02/18 03:30:36 [notice] 1#1: start worker process 22
+2025/02/18 03:31:24 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 03:31:24 [notice] 21#21: gracefully shutting down
+2025/02/18 03:31:24 [notice] 21#21: exiting
+2025/02/18 03:31:24 [notice] 22#22: gracefully shutting down
+2025/02/18 03:31:24 [notice] 22#22: exiting
+2025/02/18 03:31:24 [notice] 22#22: exit
+2025/02/18 03:31:24 [notice] 21#21: exit
+2025/02/18 03:31:24 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/02/18 03:31:24 [notice] 1#1: worker process 22 exited with code 0
+2025/02/18 03:31:24 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 03:31:24 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 03:31:24 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 03:31:24 [notice] 1#1: exit
+2025/02/18 03:31:24 [notice] 1#1: using the "epoll" event method
+2025/02/18 03:31:24 [notice] 1#1: nginx/1.27.4
+2025/02/18 03:31:24 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 03:31:24 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 03:31:24 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 03:31:24 [notice] 1#1: start worker processes
+2025/02/18 03:31:24 [notice] 1#1: start worker process 21
+2025/02/18 03:31:24 [notice] 1#1: start worker process 22
+2025/02/18 03:32:47 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 03:32:47 [notice] 21#21: gracefully shutting down
+2025/02/18 03:32:47 [notice] 21#21: exiting
+2025/02/18 03:32:47 [notice] 21#21: exit
+2025/02/18 03:32:47 [notice] 22#22: gracefully shutting down
+2025/02/18 03:32:47 [notice] 22#22: exiting
+2025/02/18 03:32:47 [notice] 22#22: exit
+2025/02/18 03:32:47 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 03:32:47 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 03:32:47 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 03:32:47 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/02/18 03:32:47 [notice] 1#1: worker process 22 exited with code 0
+2025/02/18 03:32:47 [notice] 1#1: exit
+2025/02/18 03:32:47 [notice] 1#1: using the "epoll" event method
+2025/02/18 03:32:47 [notice] 1#1: nginx/1.27.4
+2025/02/18 03:32:47 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 03:32:47 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 03:32:47 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 03:32:47 [notice] 1#1: start worker processes
+2025/02/18 03:32:47 [notice] 1#1: start worker process 21
+2025/02/18 03:32:47 [notice] 1#1: start worker process 22
+2025/02/18 03:34:34 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 03:34:34 [notice] 21#21: gracefully shutting down
+2025/02/18 03:34:34 [notice] 21#21: exiting
+2025/02/18 03:34:34 [notice] 21#21: exit
+2025/02/18 03:34:34 [notice] 22#22: gracefully shutting down
+2025/02/18 03:34:34 [notice] 22#22: exiting
+2025/02/18 03:34:34 [notice] 22#22: exit
+2025/02/18 03:34:34 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 03:34:34 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 03:34:34 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 03:34:34 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/02/18 03:34:34 [notice] 1#1: worker process 22 exited with code 0
+2025/02/18 03:34:34 [notice] 1#1: exit
+2025/02/18 03:34:34 [notice] 1#1: using the "epoll" event method
+2025/02/18 03:34:34 [notice] 1#1: nginx/1.27.4
+2025/02/18 03:34:34 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 03:34:34 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 03:34:34 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 03:34:34 [notice] 1#1: start worker processes
+2025/02/18 03:34:34 [notice] 1#1: start worker process 21
+2025/02/18 03:34:34 [notice] 1#1: start worker process 22
+2025/02/18 03:36:12 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 03:36:12 [notice] 21#21: gracefully shutting down
+2025/02/18 03:36:12 [notice] 21#21: exiting
+2025/02/18 03:36:12 [notice] 22#22: gracefully shutting down
+2025/02/18 03:36:12 [notice] 21#21: exit
+2025/02/18 03:36:12 [notice] 22#22: exiting
+2025/02/18 03:36:12 [notice] 22#22: exit
+2025/02/18 03:36:12 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 03:36:12 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 03:36:12 [notice] 1#1: worker process 22 exited with code 0
+2025/02/18 03:36:12 [notice] 1#1: exit
+2025/02/18 03:36:12 [notice] 1#1: using the "epoll" event method
+2025/02/18 03:36:12 [notice] 1#1: nginx/1.27.4
+2025/02/18 03:36:12 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 03:36:12 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 03:36:12 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 03:36:12 [notice] 1#1: start worker processes
+2025/02/18 03:36:12 [notice] 1#1: start worker process 21
+2025/02/18 03:36:12 [notice] 1#1: start worker process 22
+2025/02/18 03:36:39 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 03:36:39 [notice] 21#21: gracefully shutting down
+2025/02/18 03:36:39 [notice] 21#21: exiting
+2025/02/18 03:36:39 [notice] 21#21: exit
+2025/02/18 03:36:39 [notice] 22#22: gracefully shutting down
+2025/02/18 03:36:39 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 03:36:39 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 03:36:39 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 03:36:42 [notice] 22#22: exiting
+2025/02/18 03:36:42 [notice] 22#22: exit
+2025/02/18 03:36:42 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/02/18 03:36:42 [notice] 1#1: worker process 22 exited with code 0
+2025/02/18 03:36:42 [notice] 1#1: exit
+2025/02/18 03:37:13 [notice] 1#1: using the "epoll" event method
+2025/02/18 03:37:13 [notice] 1#1: nginx/1.27.4
+2025/02/18 03:37:13 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 03:37:13 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 03:37:13 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 03:37:13 [notice] 1#1: start worker processes
+2025/02/18 03:37:13 [notice] 1#1: start worker process 21
+2025/02/18 03:37:13 [notice] 1#1: start worker process 22
+2025/02/18 03:37:17 [error] 22#22: *2 connect() failed (111: Connection refused) while connecting to upstream, client: 104.219.196.2, server: gamesctrls.com, request: "GET / HTTP/1.1", upstream: "http://192.168.192.3:8000/", host: "gamesctrls.com", referrer: "https://gamesctrls.com/products/controller/dualsense-wireless-controller/"
+2025/02/18 03:38:26 [error] 21#21: *11 open() "/var/www/media/wp-includes/wlwmanifest.xml" failed (2: No such file or directory), client: 34.85.234.63, server: gamesctrls.com, request: "GET //media/wp-includes/wlwmanifest.xml HTTP/1.1", host: "gamesctrls.com"
+2025/02/18 03:39:10 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 03:39:10 [notice] 21#21: gracefully shutting down
+2025/02/18 03:39:10 [notice] 21#21: exiting
+2025/02/18 03:39:10 [notice] 21#21: exit
+2025/02/18 03:39:10 [notice] 22#22: gracefully shutting down
+2025/02/18 03:39:10 [notice] 22#22: exiting
+2025/02/18 03:39:10 [notice] 22#22: exit
+2025/02/18 03:39:10 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 03:39:10 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 03:39:10 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 03:39:10 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/02/18 03:39:10 [notice] 1#1: worker process 22 exited with code 0
+2025/02/18 03:39:10 [notice] 1#1: exit
+2025/02/18 03:39:10 [notice] 1#1: using the "epoll" event method
+2025/02/18 03:39:10 [notice] 1#1: nginx/1.27.4
+2025/02/18 03:39:10 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 03:39:10 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 03:39:10 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 03:39:10 [notice] 1#1: start worker processes
+2025/02/18 03:39:10 [notice] 1#1: start worker process 20
+2025/02/18 03:39:10 [notice] 1#1: start worker process 21
+2025/02/18 03:39:55 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 03:39:55 [notice] 20#20: gracefully shutting down
+2025/02/18 03:39:55 [notice] 21#21: gracefully shutting down
+2025/02/18 03:39:55 [notice] 20#20: exiting
+2025/02/18 03:39:55 [notice] 21#21: exiting
+2025/02/18 03:39:55 [notice] 20#20: exit
+2025/02/18 03:39:55 [notice] 21#21: exit
+2025/02/18 03:39:55 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 03:39:55 [notice] 1#1: worker process 20 exited with code 0
+2025/02/18 03:39:55 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 03:39:55 [notice] 1#1: exit
+2025/02/18 03:39:56 [notice] 1#1: using the "epoll" event method
+2025/02/18 03:39:56 [notice] 1#1: nginx/1.27.4
+2025/02/18 03:39:56 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 03:39:56 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 03:39:56 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 03:39:56 [notice] 1#1: start worker processes
+2025/02/18 03:39:56 [notice] 1#1: start worker process 21
+2025/02/18 03:39:56 [notice] 1#1: start worker process 22
+2025/02/18 03:55:50 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 03:55:50 [notice] 22#22: gracefully shutting down
+2025/02/18 03:55:50 [notice] 22#22: exiting
+2025/02/18 03:55:50 [notice] 21#21: gracefully shutting down
+2025/02/18 03:55:50 [notice] 21#21: exiting
+2025/02/18 03:55:50 [notice] 22#22: exit
+2025/02/18 03:55:50 [notice] 21#21: exit
+2025/02/18 03:55:50 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 03:55:50 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 03:55:50 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 03:55:50 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/02/18 03:55:50 [notice] 1#1: worker process 22 exited with code 0
+2025/02/18 03:55:50 [notice] 1#1: exit
+2025/02/18 03:55:50 [notice] 1#1: using the "epoll" event method
+2025/02/18 03:55:50 [notice] 1#1: nginx/1.27.4
+2025/02/18 03:55:50 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 03:55:50 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 03:55:50 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 03:55:50 [notice] 1#1: start worker processes
+2025/02/18 03:55:50 [notice] 1#1: start worker process 20
+2025/02/18 03:55:50 [notice] 1#1: start worker process 21
+2025/02/18 03:57:58 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 03:57:58 [notice] 20#20: gracefully shutting down
+2025/02/18 03:57:58 [notice] 21#21: gracefully shutting down
+2025/02/18 03:57:58 [notice] 20#20: exiting
+2025/02/18 03:57:58 [notice] 21#21: exiting
+2025/02/18 03:57:58 [notice] 20#20: exit
+2025/02/18 03:57:58 [notice] 21#21: exit
+2025/02/18 03:57:58 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 03:57:58 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 03:57:58 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 03:57:58 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2025/02/18 03:57:58 [notice] 1#1: worker process 20 exited with code 0
+2025/02/18 03:57:58 [notice] 1#1: exit
+2025/02/18 03:57:58 [notice] 1#1: using the "epoll" event method
+2025/02/18 03:57:58 [notice] 1#1: nginx/1.27.4
+2025/02/18 03:57:58 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 03:57:58 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 03:57:58 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 03:57:58 [notice] 1#1: start worker processes
+2025/02/18 03:57:58 [notice] 1#1: start worker process 20
+2025/02/18 03:57:58 [notice] 1#1: start worker process 21
+2025/02/18 03:58:42 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 03:58:42 [notice] 20#20: gracefully shutting down
+2025/02/18 03:58:42 [notice] 21#21: gracefully shutting down
+2025/02/18 03:58:42 [notice] 21#21: exiting
+2025/02/18 03:58:42 [notice] 21#21: exit
+2025/02/18 03:58:42 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 03:58:42 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 03:58:42 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 04:00:54 [notice] 1#1: using the "epoll" event method
+2025/02/18 04:00:54 [notice] 1#1: nginx/1.27.4
+2025/02/18 04:00:54 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 04:00:54 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 04:00:54 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 04:00:54 [notice] 1#1: start worker processes
+2025/02/18 04:00:54 [notice] 1#1: start worker process 20
+2025/02/18 04:00:54 [notice] 1#1: start worker process 21
+2025/02/18 04:01:09 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 04:01:09 [notice] 21#21: gracefully shutting down
+2025/02/18 04:01:09 [notice] 21#21: exiting
+2025/02/18 04:01:09 [notice] 21#21: exit
+2025/02/18 04:01:09 [notice] 20#20: gracefully shutting down
+2025/02/18 04:01:09 [notice] 20#20: exiting
+2025/02/18 04:01:09 [notice] 20#20: exit
+2025/02/18 04:01:09 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 04:01:09 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 04:01:09 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 04:01:09 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2025/02/18 04:01:09 [notice] 1#1: worker process 20 exited with code 0
+2025/02/18 04:01:09 [notice] 1#1: exit
+2025/02/18 04:01:10 [notice] 1#1: using the "epoll" event method
+2025/02/18 04:01:10 [notice] 1#1: nginx/1.27.4
+2025/02/18 04:01:10 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 04:01:10 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 04:01:10 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 04:01:10 [notice] 1#1: start worker processes
+2025/02/18 04:01:10 [notice] 1#1: start worker process 21
+2025/02/18 04:01:10 [notice] 1#1: start worker process 22
+2025/02/18 04:01:27 [error] 22#22: *2 open() "/var/www/static/css/styles.css" failed (2: No such file or directory), client: 104.219.196.2, server: gamesctrls.com, request: "GET /static/css/styles.css?v=1739851287 HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/"
+2025/02/18 04:01:40 [error] 22#22: *2 open() "/var/www/static/css/styles.css" failed (2: No such file or directory), client: 104.219.196.2, server: gamesctrls.com, request: "GET /static/css/styles.css?v=1739851300 HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/products/category/arcade-controllers/"
+2025/02/18 04:01:42 [error] 22#22: *2 open() "/var/www/static/css/styles.css" failed (2: No such file or directory), client: 104.219.196.2, server: gamesctrls.com, request: "GET /static/css/styles.css?v=1739851302 HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/"
+2025/02/18 04:01:56 [error] 22#22: *2 open() "/var/www/static/css/styles.css" failed (2: No such file or directory), client: 104.219.196.2, server: gamesctrls.com, request: "GET /static/css/styles.css?v=1739851302 HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/"
+2025/02/18 04:02:19 [error] 22#22: *2 open() "/var/www/static/css/styles.css" failed (2: No such file or directory), client: 104.219.196.2, server: gamesctrls.com, request: "GET /static/css/styles.css?v=1739851339 HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/"
+2025/02/18 04:02:19 [error] 21#21: *1 open() "/var/www/static/images/precision.svg" failed (2: No such file or directory), client: 104.219.196.2, server: gamesctrls.com, request: "GET /static/images/precision.svg HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/"
+2025/02/18 04:02:19 [error] 22#22: *2 open() "/var/www/static/images/customizable.svg" failed (2: No such file or directory), client: 104.219.196.2, server: gamesctrls.com, request: "GET /static/images/customizable.svg HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/"
+2025/02/18 04:02:19 [error] 22#22: *2 open() "/var/www/static/images/durable.svg" failed (2: No such file or directory), client: 104.219.196.2, server: gamesctrls.com, request: "GET /static/images/durable.svg HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/"
+2025/02/18 04:04:47 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 04:04:47 [notice] 21#21: gracefully shutting down
+2025/02/18 04:04:47 [notice] 21#21: exiting
+2025/02/18 04:04:47 [notice] 22#22: gracefully shutting down
+2025/02/18 04:04:47 [notice] 22#22: exiting
+2025/02/18 04:04:47 [notice] 22#22: exit
+2025/02/18 04:04:47 [notice] 21#21: exit
+2025/02/18 04:04:47 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/02/18 04:04:47 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 04:04:47 [notice] 1#1: worker process 22 exited with code 0
+2025/02/18 04:04:47 [notice] 1#1: exit
+2025/02/18 04:04:48 [notice] 1#1: using the "epoll" event method
+2025/02/18 04:04:48 [notice] 1#1: nginx/1.27.4
+2025/02/18 04:04:48 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 04:04:48 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 04:04:48 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 04:04:48 [notice] 1#1: start worker processes
+2025/02/18 04:04:48 [notice] 1#1: start worker process 21
+2025/02/18 04:04:48 [notice] 1#1: start worker process 22
+2025/02/18 04:04:51 [error] 22#22: *2 open() "/var/www/static/css/styles.css" failed (2: No such file or directory), client: 104.219.196.2, server: gamesctrls.com, request: "GET /static/css/styles.css?v=1739851491 HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/"
+2025/02/18 04:04:51 [error] 22#22: *1 open() "/var/www/static/images/precision.svg" failed (2: No such file or directory), client: 104.219.196.2, server: gamesctrls.com, request: "GET /static/images/precision.svg HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/"
+2025/02/18 04:04:51 [error] 22#22: *2 open() "/var/www/static/images/customizable.svg" failed (2: No such file or directory), client: 104.219.196.2, server: gamesctrls.com, request: "GET /static/images/customizable.svg HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/"
+2025/02/18 04:04:52 [error] 22#22: *2 open() "/var/www/static/images/durable.svg" failed (2: No such file or directory), client: 104.219.196.2, server: gamesctrls.com, request: "GET /static/images/durable.svg HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/"
+2025/02/18 04:05:26 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 04:05:26 [notice] 21#21: gracefully shutting down
+2025/02/18 04:05:26 [notice] 22#22: gracefully shutting down
+2025/02/18 04:05:26 [notice] 22#22: exiting
+2025/02/18 04:05:26 [notice] 22#22: exit
+2025/02/18 04:05:26 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/02/18 04:05:26 [notice] 1#1: worker process 22 exited with code 0
+2025/02/18 04:05:26 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 04:05:37 [notice] 1#1: using the "epoll" event method
+2025/02/18 04:05:37 [notice] 1#1: nginx/1.27.4
+2025/02/18 04:05:37 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 04:05:37 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 04:05:37 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 04:05:37 [notice] 1#1: start worker processes
+2025/02/18 04:05:37 [notice] 1#1: start worker process 21
+2025/02/18 04:05:37 [notice] 1#1: start worker process 22
+2025/02/18 04:05:39 [error] 22#22: *2 open() "/var/www/static/css/styles.css" failed (2: No such file or directory), client: 104.219.196.2, server: gamesctrls.com, request: "GET /static/css/styles.css?v=1739851539 HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/"
+2025/02/18 04:05:39 [error] 21#21: *1 open() "/var/www/static/images/precision.svg" failed (2: No such file or directory), client: 104.219.196.2, server: gamesctrls.com, request: "GET /static/images/precision.svg HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/"
+2025/02/18 04:05:39 [error] 22#22: *2 open() "/var/www/static/images/customizable.svg" failed (2: No such file or directory), client: 104.219.196.2, server: gamesctrls.com, request: "GET /static/images/customizable.svg HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/"
+2025/02/18 04:05:39 [error] 21#21: *1 open() "/var/www/static/images/durable.svg" failed (2: No such file or directory), client: 104.219.196.2, server: gamesctrls.com, request: "GET /static/images/durable.svg HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/"
+2025/02/18 04:07:41 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 04:07:41 [notice] 21#21: gracefully shutting down
+2025/02/18 04:07:41 [notice] 21#21: exiting
+2025/02/18 04:07:41 [notice] 21#21: exit
+2025/02/18 04:07:41 [notice] 22#22: gracefully shutting down
+2025/02/18 04:07:41 [notice] 22#22: exiting
+2025/02/18 04:07:41 [notice] 22#22: exit
+2025/02/18 04:07:41 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 04:07:41 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 04:07:41 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 04:07:41 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/02/18 04:07:41 [notice] 1#1: worker process 22 exited with code 0
+2025/02/18 04:07:41 [notice] 1#1: exit
+2025/02/18 04:07:41 [notice] 1#1: using the "epoll" event method
+2025/02/18 04:07:41 [notice] 1#1: nginx/1.27.4
+2025/02/18 04:07:41 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 04:07:41 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 04:07:41 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 04:07:41 [notice] 1#1: start worker processes
+2025/02/18 04:07:41 [notice] 1#1: start worker process 21
+2025/02/18 04:07:41 [notice] 1#1: start worker process 22
+2025/02/18 04:07:48 [error] 22#22: *2 open() "/var/www/static/css/styles.css" failed (2: No such file or directory), client: 104.219.196.2, server: gamesctrls.com, request: "GET /static/css/styles.css?v=1739851668 HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/"
+2025/02/18 04:07:48 [error] 21#21: *1 open() "/var/www/static/images/precision.svg" failed (2: No such file or directory), client: 104.219.196.2, server: gamesctrls.com, request: "GET /static/images/precision.svg HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/"
+2025/02/18 04:07:48 [error] 22#22: *2 open() "/var/www/static/images/customizable.svg" failed (2: No such file or directory), client: 104.219.196.2, server: gamesctrls.com, request: "GET /static/images/customizable.svg HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/"
+2025/02/18 04:07:49 [error] 22#22: *2 open() "/var/www/static/images/durable.svg" failed (2: No such file or directory), client: 104.219.196.2, server: gamesctrls.com, request: "GET /static/images/durable.svg HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/"
+2025/02/18 04:09:41 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 04:09:41 [notice] 21#21: gracefully shutting down
+2025/02/18 04:09:41 [notice] 22#22: gracefully shutting down
+2025/02/18 04:09:41 [notice] 21#21: exiting
+2025/02/18 04:09:41 [notice] 22#22: exiting
+2025/02/18 04:09:41 [notice] 22#22: exit
+2025/02/18 04:09:41 [notice] 21#21: exit
+2025/02/18 04:09:41 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/02/18 04:09:41 [notice] 1#1: worker process 22 exited with code 0
+2025/02/18 04:09:41 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 04:09:41 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 04:09:41 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 04:09:41 [notice] 1#1: exit
+2025/02/18 04:10:17 [notice] 1#1: using the "epoll" event method
+2025/02/18 04:10:17 [notice] 1#1: nginx/1.27.4
+2025/02/18 04:10:17 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 04:10:17 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 04:10:17 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 04:10:17 [notice] 1#1: start worker processes
+2025/02/18 04:10:17 [notice] 1#1: start worker process 21
+2025/02/18 04:10:17 [notice] 1#1: start worker process 22
+2025/02/18 04:13:11 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 04:13:11 [notice] 22#22: gracefully shutting down
+2025/02/18 04:13:11 [notice] 21#21: gracefully shutting down
+2025/02/18 04:13:11 [notice] 22#22: exiting
+2025/02/18 04:13:11 [notice] 21#21: exiting
+2025/02/18 04:13:11 [notice] 21#21: exit
+2025/02/18 04:13:11 [notice] 22#22: exit
+2025/02/18 04:13:11 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/02/18 04:13:11 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 04:13:11 [notice] 1#1: worker process 22 exited with code 0
+2025/02/18 04:13:11 [notice] 1#1: exit
+2025/02/18 04:13:11 [notice] 1#1: using the "epoll" event method
+2025/02/18 04:13:11 [notice] 1#1: nginx/1.27.4
+2025/02/18 04:13:11 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 04:13:11 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 04:13:11 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 04:13:11 [notice] 1#1: start worker processes
+2025/02/18 04:13:11 [notice] 1#1: start worker process 21
+2025/02/18 04:13:11 [notice] 1#1: start worker process 22
+2025/02/18 04:14:18 [error] 22#22: *2 open() "/var/www/static/css/styles.css" failed (2: No such file or directory), client: 104.219.196.2, server: gamesctrls.com, request: "GET /static/css/styles.css?v=1739852058 HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/"
+2025/02/18 04:14:18 [error] 21#21: *1 open() "/var/www/static/images/precision.svg" failed (2: No such file or directory), client: 104.219.196.2, server: gamesctrls.com, request: "GET /static/images/precision.svg HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/"
+2025/02/18 04:14:18 [error] 22#22: *2 open() "/var/www/static/images/customizable.svg" failed (2: No such file or directory), client: 104.219.196.2, server: gamesctrls.com, request: "GET /static/images/customizable.svg HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/"
+2025/02/18 04:14:18 [error] 22#22: *2 open() "/var/www/static/images/durable.svg" failed (2: No such file or directory), client: 104.219.196.2, server: gamesctrls.com, request: "GET /static/images/durable.svg HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/"
+2025/02/18 04:15:19 [error] 22#22: *2 open() "/var/www/static/css/styles.css" failed (2: No such file or directory), client: 104.219.196.2, server: gamesctrls.com, request: "GET /static/css/styles.css?v=1739852119 HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/"
+2025/02/18 04:15:19 [error] 21#21: *1 open() "/var/www/static/images/precision.svg" failed (2: No such file or directory), client: 104.219.196.2, server: gamesctrls.com, request: "GET /static/images/precision.svg HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/"
+2025/02/18 04:15:19 [error] 22#22: *2 open() "/var/www/static/images/customizable.svg" failed (2: No such file or directory), client: 104.219.196.2, server: gamesctrls.com, request: "GET /static/images/customizable.svg HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/"
+2025/02/18 04:15:19 [error] 22#22: *2 open() "/var/www/static/images/durable.svg" failed (2: No such file or directory), client: 104.219.196.2, server: gamesctrls.com, request: "GET /static/images/durable.svg HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/"
+2025/02/18 04:19:08 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 04:19:08 [notice] 21#21: gracefully shutting down
+2025/02/18 04:19:08 [notice] 21#21: exiting
+2025/02/18 04:19:08 [notice] 21#21: exit
+2025/02/18 04:19:08 [notice] 22#22: gracefully shutting down
+2025/02/18 04:19:08 [notice] 22#22: exiting
+2025/02/18 04:19:08 [notice] 22#22: exit
+2025/02/18 04:19:08 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 04:19:08 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 04:19:08 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 04:19:08 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/02/18 04:19:08 [notice] 1#1: worker process 22 exited with code 0
+2025/02/18 04:19:08 [notice] 1#1: exit
+2025/02/18 04:19:41 [notice] 1#1: using the "epoll" event method
+2025/02/18 04:19:41 [notice] 1#1: nginx/1.27.4
+2025/02/18 04:19:41 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 04:19:41 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 04:19:41 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 04:19:41 [notice] 1#1: start worker processes
+2025/02/18 04:19:41 [notice] 1#1: start worker process 20
+2025/02/18 04:19:41 [notice] 1#1: start worker process 21
+2025/02/18 04:23:11 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 04:23:11 [notice] 20#20: gracefully shutting down
+2025/02/18 04:23:11 [notice] 20#20: exiting
+2025/02/18 04:23:11 [notice] 20#20: exit
+2025/02/18 04:23:11 [notice] 21#21: gracefully shutting down
+2025/02/18 04:23:11 [notice] 21#21: exiting
+2025/02/18 04:23:11 [notice] 21#21: exit
+2025/02/18 04:23:11 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2025/02/18 04:23:11 [notice] 1#1: worker process 20 exited with code 0
+2025/02/18 04:23:11 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 04:23:11 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 04:23:11 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 04:23:11 [notice] 1#1: exit
+2025/02/18 04:23:44 [notice] 1#1: using the "epoll" event method
+2025/02/18 04:23:44 [notice] 1#1: nginx/1.27.4
+2025/02/18 04:23:44 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 04:23:44 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 04:23:44 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 04:23:44 [notice] 1#1: start worker processes
+2025/02/18 04:23:44 [notice] 1#1: start worker process 21
+2025/02/18 04:23:44 [notice] 1#1: start worker process 22
+2025/02/18 04:40:02 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 04:40:02 [notice] 21#21: gracefully shutting down
+2025/02/18 04:40:02 [notice] 22#22: gracefully shutting down
+2025/02/18 04:40:02 [notice] 21#21: exiting
+2025/02/18 04:40:02 [notice] 22#22: exiting
+2025/02/18 04:40:02 [notice] 21#21: exit
+2025/02/18 04:40:02 [notice] 22#22: exit
+2025/02/18 04:40:02 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 04:40:02 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 04:40:02 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 04:40:03 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/02/18 04:40:03 [notice] 1#1: worker process 22 exited with code 0
+2025/02/18 04:40:03 [notice] 1#1: exit
+2025/02/18 04:40:20 [notice] 1#1: using the "epoll" event method
+2025/02/18 04:40:20 [notice] 1#1: nginx/1.27.4
+2025/02/18 04:40:20 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 04:40:20 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 04:40:20 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 04:40:20 [notice] 1#1: start worker processes
+2025/02/18 04:40:20 [notice] 1#1: start worker process 21
+2025/02/18 04:40:20 [notice] 1#1: start worker process 22
+2025/02/18 04:41:06 [error] 21#21: *1 open() "/var/www/media/controllers/controller1.jpg" failed (2: No such file or directory), client: 104.219.196.2, server: gamesctrls.com, request: "GET /media/controllers/controller1.jpg HTTP/1.1", host: "gamesctrls.com"
+2025/02/18 04:43:43 [error] 21#21: *7 open() "/var/www/media/controllers/controller1.jpg" failed (2: No such file or directory), client: 137.184.8.118, server: gamesctrls.com, request: "HEAD /media/controllers/controller1.jpg HTTP/1.1", host: "gamesctrls.com"
+2025/02/18 04:45:26 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 04:45:26 [notice] 21#21: gracefully shutting down
+2025/02/18 04:45:26 [notice] 21#21: exiting
+2025/02/18 04:45:26 [notice] 21#21: exit
+2025/02/18 04:45:26 [notice] 22#22: gracefully shutting down
+2025/02/18 04:45:26 [notice] 22#22: exiting
+2025/02/18 04:45:26 [notice] 22#22: exit
+2025/02/18 04:45:26 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 04:45:26 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 04:45:26 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 04:45:26 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/02/18 04:45:26 [notice] 1#1: worker process 22 exited with code 0
+2025/02/18 04:45:26 [notice] 1#1: exit
+2025/02/18 04:46:32 [notice] 1#1: using the "epoll" event method
+2025/02/18 04:46:32 [notice] 1#1: nginx/1.27.4
+2025/02/18 04:46:32 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 04:46:32 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 04:46:32 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 04:46:32 [notice] 1#1: start worker processes
+2025/02/18 04:46:32 [notice] 1#1: start worker process 22
+2025/02/18 04:46:32 [notice] 1#1: start worker process 23
+2025/02/18 04:46:43 [error] 22#22: *2 connect() failed (111: Connection refused) while connecting to upstream, client: 80.64.30.32, server: gamesctrls.com, request: "GET / HTTP/1.1", upstream: "http://172.20.0.3:8000/", host: "137.184.8.118"
+2025/02/18 04:48:38 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 04:48:38 [notice] 22#22: gracefully shutting down
+2025/02/18 04:48:38 [notice] 22#22: exiting
+2025/02/18 04:48:38 [notice] 22#22: exit
+2025/02/18 04:48:38 [notice] 23#23: gracefully shutting down
+2025/02/18 04:48:38 [notice] 23#23: exiting
+2025/02/18 04:48:38 [notice] 23#23: exit
+2025/02/18 04:48:38 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/02/18 04:48:38 [notice] 1#1: worker process 22 exited with code 0
+2025/02/18 04:48:38 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 04:48:38 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2025/02/18 04:48:38 [notice] 1#1: worker process 23 exited with code 0
+2025/02/18 04:48:38 [notice] 1#1: exit
+2025/02/18 04:48:59 [notice] 1#1: using the "epoll" event method
+2025/02/18 04:48:59 [notice] 1#1: nginx/1.27.4
+2025/02/18 04:48:59 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 04:48:59 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 04:48:59 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 04:48:59 [notice] 1#1: start worker processes
+2025/02/18 04:48:59 [notice] 1#1: start worker process 21
+2025/02/18 04:48:59 [notice] 1#1: start worker process 22
+2025/02/18 04:55:28 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 04:55:28 [notice] 21#21: gracefully shutting down
+2025/02/18 04:55:28 [notice] 21#21: exiting
+2025/02/18 04:55:28 [notice] 21#21: exit
+2025/02/18 04:55:28 [notice] 22#22: gracefully shutting down
+2025/02/18 04:55:28 [notice] 22#22: exiting
+2025/02/18 04:55:28 [notice] 22#22: exit
+2025/02/18 04:55:28 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 04:55:28 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 04:55:28 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 04:55:28 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/02/18 04:55:28 [notice] 1#1: worker process 22 exited with code 0
+2025/02/18 04:55:28 [notice] 1#1: exit
+2025/02/18 04:55:59 [notice] 1#1: using the "epoll" event method
+2025/02/18 04:55:59 [notice] 1#1: nginx/1.27.4
+2025/02/18 04:55:59 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 04:55:59 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 04:55:59 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 04:55:59 [notice] 1#1: start worker processes
+2025/02/18 04:55:59 [notice] 1#1: start worker process 21
+2025/02/18 04:55:59 [notice] 1#1: start worker process 22
+2025/02/18 05:25:42 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 05:25:42 [notice] 21#21: gracefully shutting down
+2025/02/18 05:25:42 [notice] 21#21: exiting
+2025/02/18 05:25:42 [notice] 21#21: exit
+2025/02/18 05:25:42 [notice] 22#22: gracefully shutting down
+2025/02/18 05:25:42 [notice] 22#22: exiting
+2025/02/18 05:25:42 [notice] 22#22: exit
+2025/02/18 05:25:42 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 05:25:42 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 05:25:42 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 05:25:42 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/02/18 05:25:42 [notice] 1#1: worker process 22 exited with code 0
+2025/02/18 05:25:42 [notice] 1#1: exit
+2025/02/18 05:26:15 [notice] 1#1: using the "epoll" event method
+2025/02/18 05:26:15 [notice] 1#1: nginx/1.27.4
+2025/02/18 05:26:15 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 05:26:15 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 05:26:15 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 05:26:15 [notice] 1#1: start worker processes
+2025/02/18 05:26:15 [notice] 1#1: start worker process 21
+2025/02/18 05:26:15 [notice] 1#1: start worker process 22
+2025/02/18 05:26:59 [error] 21#21: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 104.219.196.2, server: gamesctrls.com, request: "GET / HTTP/1.1", upstream: "http://172.24.0.3:8000/", host: "gamesctrls.com", referrer: "https://gamesctrls.com/cart/"
+2025/02/18 05:29:14 [error] 21#21: *11 connect() failed (113: Host is unreachable) while connecting to upstream, client: 143.198.137.83, server: gamesctrls.com, request: "GET /view-source: HTTP/1.1", upstream: "http://172.24.0.3:8000/view-source:", host: "gamesctrls.com"
+2025/02/18 05:29:18 [error] 21#21: *14 connect() failed (113: Host is unreachable) while connecting to upstream, client: 143.198.137.83, server: gamesctrls.com, request: "GET /misc/ajax.js HTTP/1.1", upstream: "http://172.24.0.3:8000/misc/ajax.js", host: "gamesctrls.com"
+2025/02/18 05:29:43 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 05:29:43 [notice] 21#21: gracefully shutting down
+2025/02/18 05:29:43 [notice] 22#22: gracefully shutting down
+2025/02/18 05:29:43 [notice] 22#22: exiting
+2025/02/18 05:29:43 [notice] 21#21: exiting
+2025/02/18 05:29:43 [notice] 21#21: exit
+2025/02/18 05:29:43 [notice] 22#22: exit
+2025/02/18 05:29:43 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 05:29:43 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 05:29:43 [notice] 1#1: worker process 22 exited with code 0
+2025/02/18 05:29:43 [notice] 1#1: exit
+2025/02/18 05:30:07 [notice] 1#1: using the "epoll" event method
+2025/02/18 05:30:07 [notice] 1#1: nginx/1.27.4
+2025/02/18 05:30:07 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 05:30:07 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 05:30:07 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 05:30:07 [notice] 1#1: start worker processes
+2025/02/18 05:30:07 [notice] 1#1: start worker process 21
+2025/02/18 05:30:07 [notice] 1#1: start worker process 22
+2025/02/18 05:41:25 [error] 21#21: *46 client intended to send too large body: 1709094 bytes, client: 104.219.196.2, server: gamesctrls.com, request: "POST /admin/products/controller/3/change/ HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/admin/products/controller/3/change/"
+2025/02/18 05:45:41 [warn] 21#21: *56 a client request body is buffered to a temporary file /var/cache/nginx/client_temp/0000000001, client: 104.219.196.2, server: gamesctrls.com, request: "POST /admin/products/controller/3/change/ HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/admin/products/controller/3/change/"
+2025/02/18 05:45:52 [error] 21#21: *57 open() "/var/www/static/images/default-controller.jpg" failed (2: No such file or directory), client: 104.219.196.2, server: gamesctrls.com, request: "GET /static/images/default-controller.jpg HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/"
+2025/02/18 05:51:43 [warn] 21#21: *70 a client request body is buffered to a temporary file /var/cache/nginx/client_temp/0000000002, client: 104.219.196.2, server: gamesctrls.com, request: "POST /admin/products/controller/6/change/ HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/admin/products/controller/6/change/"
+2025/02/18 05:52:05 [warn] 21#21: *70 a client request body is buffered to a temporary file /var/cache/nginx/client_temp/0000000003, client: 104.219.196.2, server: gamesctrls.com, request: "POST /admin/products/controller/6/change/ HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/admin/products/controller/6/change/"
+2025/02/18 05:56:08 [warn] 22#22: *91 a client request body is buffered to a temporary file /var/cache/nginx/client_temp/0000000004, client: 104.219.196.2, server: gamesctrls.com, request: "POST /admin/products/controller/9/change/ HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/admin/products/controller/9/change/"
+2025/02/18 05:57:24 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 05:57:24 [notice] 22#22: gracefully shutting down
+2025/02/18 05:57:24 [notice] 22#22: exiting
+2025/02/18 05:57:24 [notice] 22#22: exit
+2025/02/18 05:57:24 [notice] 21#21: gracefully shutting down
+2025/02/18 05:57:24 [notice] 21#21: exiting
+2025/02/18 05:57:24 [notice] 21#21: exit
+2025/02/18 05:57:24 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/02/18 05:57:24 [notice] 1#1: worker process 22 exited with code 0
+2025/02/18 05:57:24 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 05:57:24 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 05:57:24 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 05:57:24 [notice] 1#1: exit
+2025/02/18 05:57:42 [notice] 1#1: using the "epoll" event method
+2025/02/18 05:57:42 [notice] 1#1: nginx/1.27.4
+2025/02/18 05:57:42 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 05:57:42 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 05:57:42 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 05:57:42 [notice] 1#1: start worker processes
+2025/02/18 05:57:42 [notice] 1#1: start worker process 21
+2025/02/18 05:57:42 [notice] 1#1: start worker process 22
+2025/02/18 06:01:09 [warn] 22#22: *13 a client request body is buffered to a temporary file /var/cache/nginx/client_temp/0000000001, client: 104.219.196.2, server: gamesctrls.com, request: "POST /admin/products/controller/9/change/ HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/admin/products/controller/9/change/"
+2025/02/18 06:01:16 [warn] 22#22: *13 a client request body is buffered to a temporary file /var/cache/nginx/client_temp/0000000002, client: 104.219.196.2, server: gamesctrls.com, request: "POST /admin/products/controller/9/change/ HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/admin/products/controller/9/change/"
+2025/02/18 06:01:24 [error] 21#21: *14 open() "/var/www/static/images/default-controller.jpg" failed (2: No such file or directory), client: 104.219.196.2, server: gamesctrls.com, request: "GET /static/images/default-controller.jpg HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/"
+2025/02/18 06:28:27 [error] 22#22: *42 open() "/var/www/static/images/default-controller.jpg" failed (2: No such file or directory), client: 104.219.196.2, server: gamesctrls.com, request: "GET /static/images/default-controller.jpg HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/"
+2025/02/18 06:29:50 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 06:29:50 [notice] 22#22: gracefully shutting down
+2025/02/18 06:29:50 [notice] 22#22: exiting
+2025/02/18 06:29:50 [notice] 22#22: exit
+2025/02/18 06:29:50 [notice] 21#21: gracefully shutting down
+2025/02/18 06:29:50 [notice] 21#21: exiting
+2025/02/18 06:29:50 [notice] 21#21: exit
+2025/02/18 06:29:50 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 06:29:50 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 06:29:50 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 06:29:50 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/02/18 06:29:50 [notice] 1#1: worker process 22 exited with code 0
+2025/02/18 06:29:50 [notice] 1#1: exit
+2025/02/18 06:30:04 [notice] 1#1: using the "epoll" event method
+2025/02/18 06:30:04 [notice] 1#1: nginx/1.27.4
+2025/02/18 06:30:04 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 06:30:04 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 06:30:04 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 06:30:04 [notice] 1#1: start worker processes
+2025/02/18 06:30:04 [notice] 1#1: start worker process 21
+2025/02/18 06:30:04 [notice] 1#1: start worker process 22
+2025/02/18 06:30:06 [error] 22#22: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 104.219.196.2, server: gamesctrls.com, request: "GET / HTTP/1.1", upstream: "http://172.26.0.3:8000/", host: "gamesctrls.com", referrer: "https://gamesctrls.com/admin/"
+2025/02/18 06:30:30 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 06:30:30 [notice] 22#22: gracefully shutting down
+2025/02/18 06:30:30 [notice] 22#22: exiting
+2025/02/18 06:30:30 [notice] 22#22: exit
+2025/02/18 06:30:30 [notice] 21#21: gracefully shutting down
+2025/02/18 06:30:30 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/02/18 06:30:30 [notice] 1#1: worker process 22 exited with code 0
+2025/02/18 06:30:30 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 06:30:57 [notice] 1#1: using the "epoll" event method
+2025/02/18 06:30:57 [notice] 1#1: nginx/1.27.4
+2025/02/18 06:30:57 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 06:30:57 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 06:30:57 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 06:30:57 [notice] 1#1: start worker processes
+2025/02/18 06:30:57 [notice] 1#1: start worker process 21
+2025/02/18 06:30:57 [notice] 1#1: start worker process 22
+2025/02/18 06:31:08 [error] 21#21: *2 open() "/var/www/static/images/default-controller.jpg" failed (2: No such file or directory), client: 104.219.196.2, server: gamesctrls.com, request: "GET /static/images/default-controller.jpg HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/"
+2025/02/18 06:32:33 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 06:32:33 [notice] 22#22: gracefully shutting down
+2025/02/18 06:32:33 [notice] 21#21: gracefully shutting down
+2025/02/18 06:32:33 [notice] 22#22: exiting
+2025/02/18 06:32:33 [notice] 21#21: exiting
+2025/02/18 06:32:33 [notice] 22#22: exit
+2025/02/18 06:32:33 [notice] 21#21: exit
+2025/02/18 06:32:33 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/02/18 06:32:33 [notice] 1#1: worker process 22 exited with code 0
+2025/02/18 06:32:33 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 06:32:33 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 06:32:33 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 06:32:33 [notice] 1#1: exit
+2025/02/18 06:32:51 [notice] 1#1: using the "epoll" event method
+2025/02/18 06:32:51 [notice] 1#1: nginx/1.27.4
+2025/02/18 06:32:51 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 06:32:51 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 06:32:51 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 06:32:51 [notice] 1#1: start worker processes
+2025/02/18 06:32:51 [notice] 1#1: start worker process 21
+2025/02/18 06:32:51 [notice] 1#1: start worker process 22
+2025/02/18 06:33:02 [error] 21#21: *1 open() "/var/www/static/images/default-controller.jpg" failed (2: No such file or directory), client: 104.219.196.2, server: gamesctrls.com, request: "GET /static/images/default-controller.jpg HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/"
+2025/02/18 06:38:23 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 06:38:23 [notice] 22#22: gracefully shutting down
+2025/02/18 06:38:23 [notice] 22#22: exiting
+2025/02/18 06:38:23 [notice] 22#22: exit
+2025/02/18 06:38:23 [notice] 21#21: gracefully shutting down
+2025/02/18 06:38:23 [notice] 21#21: exiting
+2025/02/18 06:38:23 [notice] 21#21: exit
+2025/02/18 06:38:23 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/02/18 06:38:23 [notice] 1#1: worker process 22 exited with code 0
+2025/02/18 06:38:23 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 06:38:23 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 06:38:23 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 06:38:23 [notice] 1#1: exit
+2025/02/18 06:38:59 [notice] 1#1: using the "epoll" event method
+2025/02/18 06:38:59 [notice] 1#1: nginx/1.27.4
+2025/02/18 06:38:59 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 06:38:59 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 06:38:59 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 06:38:59 [notice] 1#1: start worker processes
+2025/02/18 06:38:59 [notice] 1#1: start worker process 20
+2025/02/18 06:38:59 [notice] 1#1: start worker process 21
+2025/02/18 06:41:53 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 06:41:53 [notice] 20#20: gracefully shutting down
+2025/02/18 06:41:53 [notice] 20#20: exiting
+2025/02/18 06:41:53 [notice] 20#20: exit
+2025/02/18 06:41:53 [notice] 21#21: gracefully shutting down
+2025/02/18 06:41:53 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2025/02/18 06:41:53 [notice] 1#1: worker process 20 exited with code 0
+2025/02/18 06:41:53 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 06:42:04 [notice] 1#1: using the "epoll" event method
+2025/02/18 06:42:04 [notice] 1#1: nginx/1.27.4
+2025/02/18 06:42:04 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 06:42:04 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 06:42:04 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 06:42:04 [notice] 1#1: start worker processes
+2025/02/18 06:42:04 [notice] 1#1: start worker process 20
+2025/02/18 06:42:04 [notice] 1#1: start worker process 21
+2025/02/18 06:42:12 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 06:42:12 [notice] 21#21: gracefully shutting down
+2025/02/18 06:42:12 [notice] 21#21: exiting
+2025/02/18 06:42:12 [notice] 21#21: exit
+2025/02/18 06:42:12 [notice] 20#20: gracefully shutting down
+2025/02/18 06:42:12 [notice] 20#20: exiting
+2025/02/18 06:42:12 [notice] 20#20: exit
+2025/02/18 06:42:12 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2025/02/18 06:42:12 [notice] 1#1: worker process 20 exited with code 0
+2025/02/18 06:42:12 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 06:42:12 [notice] 1#1: exit
+2025/02/18 06:42:12 [notice] 1#1: using the "epoll" event method
+2025/02/18 06:42:12 [notice] 1#1: nginx/1.27.4
+2025/02/18 06:42:12 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 06:42:12 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 06:42:12 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 06:42:12 [notice] 1#1: start worker processes
+2025/02/18 06:42:12 [notice] 1#1: start worker process 21
+2025/02/18 06:42:12 [notice] 1#1: start worker process 22
+2025/02/18 06:44:05 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 06:44:05 [notice] 22#22: gracefully shutting down
+2025/02/18 06:44:05 [notice] 21#21: gracefully shutting down
+2025/02/18 06:44:05 [notice] 21#21: exiting
+2025/02/18 06:44:05 [notice] 21#21: exit
+2025/02/18 06:44:06 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 06:44:06 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 06:44:06 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 06:44:16 [notice] 1#1: using the "epoll" event method
+2025/02/18 06:44:16 [notice] 1#1: nginx/1.27.4
+2025/02/18 06:44:16 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 06:44:16 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 06:44:16 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 06:44:16 [notice] 1#1: start worker processes
+2025/02/18 06:44:16 [notice] 1#1: start worker process 21
+2025/02/18 06:44:16 [notice] 1#1: start worker process 22
+2025/02/18 06:50:32 [warn] 21#21: *19 a client request body is buffered to a temporary file /var/cache/nginx/client_temp/0000000001, client: 104.219.196.2, server: gamesctrls.com, request: "POST /admin/products/controller/9/change/ HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/admin/products/controller/9/change/"
+2025/02/18 06:51:46 [crit] 21#21: *34 SSL_do_handshake() failed (SSL: error:0A0000C6:SSL routines::packet length too long error:0A000139:SSL routines::record layer failure) while SSL handshaking, client: 45.95.169.130, server: 0.0.0.0:443
+2025/02/18 06:53:09 [error] 22#22: *41 connect() failed (111: Connection refused) while connecting to upstream, client: 104.219.196.2, server: gamesctrls.com, request: "GET / HTTP/1.1", upstream: "http://172.29.0.3:8000/", host: "gamesctrls.com", referrer: "https://gamesctrls.com/admin/"
+2025/02/18 06:53:11 [error] 22#22: *41 connect() failed (111: Connection refused) while connecting to upstream, client: 104.219.196.2, server: gamesctrls.com, request: "GET / HTTP/1.1", upstream: "http://172.29.0.3:8000/", host: "gamesctrls.com", referrer: "https://gamesctrls.com/admin/"
+2025/02/18 06:53:19 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 06:53:19 [notice] 22#22: gracefully shutting down
+2025/02/18 06:53:19 [notice] 21#21: gracefully shutting down
+2025/02/18 06:53:19 [notice] 22#22: exiting
+2025/02/18 06:53:19 [notice] 22#22: exit
+2025/02/18 06:53:19 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/02/18 06:53:19 [notice] 1#1: worker process 22 exited with code 0
+2025/02/18 06:53:19 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 06:54:03 [notice] 1#1: using the "epoll" event method
+2025/02/18 06:54:03 [notice] 1#1: nginx/1.27.4
+2025/02/18 06:54:03 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 06:54:03 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 06:54:03 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 06:54:03 [notice] 1#1: start worker processes
+2025/02/18 06:54:03 [notice] 1#1: start worker process 21
+2025/02/18 06:54:03 [notice] 1#1: start worker process 22
+2025/02/18 06:54:07 [error] 22#22: *2 connect() failed (111: Connection refused) while connecting to upstream, client: 104.219.196.2, server: gamesctrls.com, request: "GET / HTTP/1.1", upstream: "http://172.30.0.3:8000/", host: "gamesctrls.com", referrer: "https://gamesctrls.com/admin/"
+2025/02/18 07:00:20 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 07:00:20 [notice] 21#21: gracefully shutting down
+2025/02/18 07:00:20 [notice] 21#21: exiting
+2025/02/18 07:00:20 [notice] 22#22: gracefully shutting down
+2025/02/18 07:00:20 [notice] 22#22: exiting
+2025/02/18 07:00:20 [notice] 21#21: exit
+2025/02/18 07:00:20 [notice] 22#22: exit
+2025/02/18 07:00:20 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 07:00:20 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 07:00:20 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 07:00:20 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/02/18 07:00:20 [notice] 1#1: worker process 22 exited with code 0
+2025/02/18 07:00:20 [notice] 1#1: exit
+2025/02/18 07:00:54 [notice] 1#1: using the "epoll" event method
+2025/02/18 07:00:54 [notice] 1#1: nginx/1.27.4
+2025/02/18 07:00:54 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 07:00:54 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 07:00:54 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 07:00:54 [notice] 1#1: start worker processes
+2025/02/18 07:00:54 [notice] 1#1: start worker process 21
+2025/02/18 07:00:54 [notice] 1#1: start worker process 22
+2025/02/18 07:02:39 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 07:02:39 [notice] 21#21: gracefully shutting down
+2025/02/18 07:02:39 [notice] 21#21: exiting
+2025/02/18 07:02:39 [notice] 21#21: exit
+2025/02/18 07:02:39 [notice] 22#22: gracefully shutting down
+2025/02/18 07:02:39 [notice] 22#22: exiting
+2025/02/18 07:02:39 [notice] 22#22: exit
+2025/02/18 07:02:39 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 07:02:39 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 07:02:39 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 07:02:39 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/02/18 07:02:39 [notice] 1#1: worker process 22 exited with code 0
+2025/02/18 07:02:39 [notice] 1#1: exit
+2025/02/18 07:03:13 [notice] 1#1: using the "epoll" event method
+2025/02/18 07:03:13 [notice] 1#1: nginx/1.27.4
+2025/02/18 07:03:13 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 07:03:13 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 07:03:13 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 07:03:13 [notice] 1#1: start worker processes
+2025/02/18 07:03:13 [notice] 1#1: start worker process 21
+2025/02/18 07:03:13 [notice] 1#1: start worker process 22
