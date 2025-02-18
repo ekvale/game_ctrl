@@ -1,0 +1,371 @@
+2025/02/18 00:16:26 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 00:16:27 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 00:16:27 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 00:16:28 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 00:16:29 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 00:16:32 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 00:16:35 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 00:16:42 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 00:16:55 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 00:17:21 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 00:18:36 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 00:18:37 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 00:18:38 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 00:18:38 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 00:18:40 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 00:18:42 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 00:18:45 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 00:18:52 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 00:19:05 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 00:19:54 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 00:19:54 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 00:19:55 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 00:19:56 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 00:19:57 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 00:19:59 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 00:20:03 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 00:20:10 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 00:20:23 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 00:20:49 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 00:21:41 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 00:22:46 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 00:22:47 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 00:22:48 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 00:22:48 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 00:22:50 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 00:22:52 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 00:22:55 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 00:23:02 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 00:23:16 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 00:23:42 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 00:24:33 [notice] 1#1: using the "epoll" event method
+2025/02/18 00:24:33 [notice] 1#1: nginx/1.27.4
+2025/02/18 00:24:33 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 00:24:33 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 00:24:33 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 00:24:33 [notice] 1#1: start worker processes
+2025/02/18 00:24:33 [notice] 1#1: start worker process 20
+2025/02/18 00:24:33 [notice] 1#1: start worker process 21
+2025/02/18 00:24:47 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 00:24:47 [notice] 20#20: gracefully shutting down
+2025/02/18 00:24:47 [notice] 21#21: gracefully shutting down
+2025/02/18 00:24:47 [notice] 20#20: exiting
+2025/02/18 00:24:47 [notice] 21#21: exiting
+2025/02/18 00:24:47 [notice] 20#20: exit
+2025/02/18 00:24:47 [notice] 21#21: exit
+2025/02/18 00:24:47 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2025/02/18 00:24:47 [notice] 1#1: worker process 20 exited with code 0
+2025/02/18 00:24:47 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 00:24:47 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 00:24:47 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 00:24:47 [notice] 1#1: exit
+2025/02/18 00:25:26 [notice] 1#1: using the "epoll" event method
+2025/02/18 00:25:26 [notice] 1#1: nginx/1.27.4
+2025/02/18 00:25:26 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 00:25:26 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 00:25:26 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 00:25:26 [notice] 1#1: start worker processes
+2025/02/18 00:25:26 [notice] 1#1: start worker process 20
+2025/02/18 00:25:26 [notice] 1#1: start worker process 21
+2025/02/18 00:25:53 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 00:25:53 [notice] 21#21: gracefully shutting down
+2025/02/18 00:25:53 [notice] 21#21: exiting
+2025/02/18 00:25:53 [notice] 21#21: exit
+2025/02/18 00:25:53 [notice] 20#20: gracefully shutting down
+2025/02/18 00:25:53 [notice] 20#20: exiting
+2025/02/18 00:25:53 [notice] 20#20: exit
+2025/02/18 00:25:53 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 00:25:53 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 00:25:53 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 00:25:53 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2025/02/18 00:25:53 [notice] 1#1: worker process 20 exited with code 0
+2025/02/18 00:25:53 [notice] 1#1: exit
+2025/02/18 00:26:26 [notice] 1#1: using the "epoll" event method
+2025/02/18 00:26:26 [notice] 1#1: nginx/1.27.4
+2025/02/18 00:26:26 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 00:26:26 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 00:26:26 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 00:26:26 [notice] 1#1: start worker processes
+2025/02/18 00:26:26 [notice] 1#1: start worker process 20
+2025/02/18 00:26:26 [notice] 1#1: start worker process 21
+2025/02/18 00:30:55 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 00:30:55 [notice] 20#20: gracefully shutting down
+2025/02/18 00:30:55 [notice] 20#20: exiting
+2025/02/18 00:30:55 [notice] 20#20: exit
+2025/02/18 00:30:55 [notice] 21#21: gracefully shutting down
+2025/02/18 00:30:55 [notice] 21#21: exiting
+2025/02/18 00:30:55 [notice] 21#21: exit
+2025/02/18 00:30:55 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2025/02/18 00:30:55 [notice] 1#1: worker process 20 exited with code 0
+2025/02/18 00:30:55 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 00:30:55 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 00:30:55 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 00:30:55 [notice] 1#1: exit
+2025/02/18 00:31:26 [notice] 1#1: using the "epoll" event method
+2025/02/18 00:31:26 [notice] 1#1: nginx/1.27.4
+2025/02/18 00:31:26 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 00:31:26 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 00:31:26 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 00:31:26 [notice] 1#1: start worker processes
+2025/02/18 00:31:26 [notice] 1#1: start worker process 20
+2025/02/18 00:31:26 [notice] 1#1: start worker process 21
+2025/02/18 00:34:25 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 00:34:25 [notice] 20#20: gracefully shutting down
+2025/02/18 00:34:25 [notice] 20#20: exiting
+2025/02/18 00:34:25 [notice] 21#21: gracefully shutting down
+2025/02/18 00:34:25 [notice] 21#21: exiting
+2025/02/18 00:34:25 [notice] 21#21: exit
+2025/02/18 00:34:25 [notice] 20#20: exit
+2025/02/18 00:34:25 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 00:34:25 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 00:34:25 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 00:34:25 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2025/02/18 00:34:25 [notice] 1#1: worker process 20 exited with code 0
+2025/02/18 00:34:25 [notice] 1#1: exit
+2025/02/18 00:34:58 [notice] 1#1: using the "epoll" event method
+2025/02/18 00:34:58 [notice] 1#1: nginx/1.27.4
+2025/02/18 00:34:58 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 00:34:58 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 00:34:58 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 00:34:58 [notice] 1#1: start worker processes
+2025/02/18 00:34:58 [notice] 1#1: start worker process 21
+2025/02/18 00:34:58 [notice] 1#1: start worker process 22
+2025/02/18 00:37:20 [info] 21#21: *1 client 192.168.176.1 closed keepalive connection
+2025/02/18 00:38:03 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 00:38:03 [notice] 21#21: gracefully shutting down
+2025/02/18 00:38:03 [notice] 21#21: exiting
+2025/02/18 00:38:03 [notice] 21#21: exit
+2025/02/18 00:38:03 [notice] 22#22: gracefully shutting down
+2025/02/18 00:38:03 [notice] 22#22: exiting
+2025/02/18 00:38:03 [notice] 22#22: exit
+2025/02/18 00:38:03 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 00:38:03 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 00:38:03 [notice] 1#1: worker process 22 exited with code 0
+2025/02/18 00:38:03 [notice] 1#1: exit
+2025/02/18 00:38:35 [notice] 1#1: using the "epoll" event method
+2025/02/18 00:38:35 [notice] 1#1: nginx/1.27.4
+2025/02/18 00:38:35 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 00:38:35 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 00:38:35 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 00:38:35 [notice] 1#1: start worker processes
+2025/02/18 00:38:35 [notice] 1#1: start worker process 21
+2025/02/18 00:38:35 [notice] 1#1: start worker process 22
+2025/02/18 00:38:40 [info] 22#22: *1 client 192.168.192.1 closed keepalive connection
+2025/02/18 00:39:01 [info] 21#21: *2 client 192.168.192.1 closed keepalive connection
+2025/02/18 00:40:18 [info] 22#22: *3 client 192.168.192.1 closed keepalive connection
+2025/02/18 00:41:42 [info] 22#22: *5 client 192.168.192.1 closed keepalive connection
+2025/02/18 00:42:08 [info] 22#22: *7 client 192.168.192.1 closed keepalive connection
+2025/02/18 00:44:23 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 00:44:23 [notice] 21#21: gracefully shutting down
+2025/02/18 00:44:23 [notice] 22#22: gracefully shutting down
+2025/02/18 00:44:23 [notice] 22#22: exiting
+2025/02/18 00:44:23 [notice] 21#21: exiting
+2025/02/18 00:44:23 [notice] 21#21: exit
+2025/02/18 00:44:23 [notice] 22#22: exit
+2025/02/18 00:44:23 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/02/18 00:44:23 [notice] 1#1: worker process 22 exited with code 0
+2025/02/18 00:44:23 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 00:44:23 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 00:44:23 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 00:44:23 [notice] 1#1: exit
+2025/02/18 00:44:57 [notice] 1#1: using the "epoll" event method
+2025/02/18 00:44:57 [notice] 1#1: nginx/1.27.4
+2025/02/18 00:44:57 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 00:44:57 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 00:44:57 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 00:44:57 [notice] 1#1: start worker processes
+2025/02/18 00:44:57 [notice] 1#1: start worker process 21
+2025/02/18 00:44:57 [notice] 1#1: start worker process 22
+2025/02/18 00:45:14 [info] 22#22: *1 client 192.168.208.1 closed keepalive connection
+2025/02/18 00:45:14 [info] 21#21: *3 client 192.168.208.1 closed keepalive connection
+2025/02/18 00:45:44 [info] 22#22: *5 client 192.168.208.1 closed keepalive connection
+2025/02/18 00:49:20 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 00:49:20 [notice] 21#21: gracefully shutting down
+2025/02/18 00:49:20 [notice] 22#22: gracefully shutting down
+2025/02/18 00:49:20 [notice] 21#21: exiting
+2025/02/18 00:49:20 [notice] 22#22: exiting
+2025/02/18 00:49:20 [notice] 22#22: exit
+2025/02/18 00:49:20 [notice] 21#21: exit
+2025/02/18 00:49:20 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 00:49:20 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 00:49:20 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 00:49:20 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/02/18 00:49:20 [notice] 1#1: worker process 22 exited with code 0
+2025/02/18 00:49:20 [notice] 1#1: exit
+2025/02/18 00:49:54 [notice] 1#1: using the "epoll" event method
+2025/02/18 00:49:54 [notice] 1#1: nginx/1.27.4
+2025/02/18 00:49:54 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 00:49:54 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 00:49:54 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 00:49:54 [notice] 1#1: start worker processes
+2025/02/18 00:49:54 [notice] 1#1: start worker process 21
+2025/02/18 00:49:54 [notice] 1#1: start worker process 22
+2025/02/18 00:50:22 [info] 22#22: *1 client 137.184.8.118 closed keepalive connection
+2025/02/18 00:53:55 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 00:53:55 [notice] 21#21: gracefully shutting down
+2025/02/18 00:53:55 [notice] 22#22: gracefully shutting down
+2025/02/18 00:53:55 [notice] 21#21: exiting
+2025/02/18 00:53:55 [notice] 22#22: exiting
+2025/02/18 00:53:55 [notice] 22#22: exit
+2025/02/18 00:53:55 [notice] 21#21: exit
+2025/02/18 00:53:55 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/02/18 00:53:55 [notice] 1#1: worker process 22 exited with code 0
+2025/02/18 00:53:55 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 00:53:55 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 00:53:55 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 00:53:55 [notice] 1#1: exit
+2025/02/18 00:54:25 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 00:54:26 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 00:54:26 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 00:54:27 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 00:54:28 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 00:54:30 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 00:54:34 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 00:54:41 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 00:54:54 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 00:55:20 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 00:56:08 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 00:56:09 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 00:56:09 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 00:56:10 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 00:56:12 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 00:56:14 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 00:56:17 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 00:56:24 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 00:56:37 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 00:57:03 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 00:57:55 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 00:58:55 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 00:59:56 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 01:00:56 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 01:01:56 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/gamesctrls.com/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/gamesctrls.com/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2025/02/18 01:02:25 [notice] 1#1: using the "epoll" event method
+2025/02/18 01:02:25 [notice] 1#1: nginx/1.27.4
+2025/02/18 01:02:25 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 01:02:25 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 01:02:25 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 01:02:25 [notice] 1#1: start worker processes
+2025/02/18 01:02:25 [notice] 1#1: start worker process 21
+2025/02/18 01:02:25 [notice] 1#1: start worker process 22
+2025/02/18 01:13:06 [error] 22#22: *66 open() "/var/www/static/index/js/lk/order.js" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/index/js/lk/order.js HTTP/1.1", host: "gamesctrls.com", referrer: "http://gamesctrls.com/static/index/js/lk/order.js"
+2025/02/18 01:13:07 [error] 22#22: *82 open() "/var/www/static/wap/css/trade-history.css" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/wap/css/trade-history.css HTTP/1.1", host: "gamesctrls.com", referrer: "http://gamesctrls.com/static/wap/css/trade-history.css"
+2025/02/18 01:13:07 [error] 22#22: *83 open() "/var/www/static/wap/js/order.js" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/wap/js/order.js HTTP/1.1", host: "gamesctrls.com", referrer: "http://gamesctrls.com/static/wap/js/order.js"
+2025/02/18 01:13:07 [error] 22#22: *66 open() "/var/www/static/index/css/trade-history.css" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/index/css/trade-history.css HTTP/1.1", host: "gamesctrls.com", referrer: "http://gamesctrls.com/static/index/css/trade-history.css"
+2025/02/18 01:13:16 [error] 22#22: *143 open() "/var/www/static/js/user.js" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/js/user.js HTTP/1.1", host: "gamesctrls.com", referrer: "http://gamesctrls.com/static/js/user.js"
+2025/02/18 01:13:18 [error] 22#22: *143 open() "/var/www/static/guide/ab.css" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/guide/ab.css HTTP/1.1", host: "gamesctrls.com", referrer: "http://gamesctrls.com/static/guide/ab.css"
+2025/02/18 01:13:18 [error] 22#22: *143 open() "/var/www/static/js/common.js" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/js/common.js HTTP/1.1", host: "gamesctrls.com", referrer: "http://gamesctrls.com/static/js/common.js"
+2025/02/18 01:13:19 [error] 22#22: *81 open() "/var/www/static/css/reset.css" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/css/reset.css HTTP/1.1", host: "gamesctrls.com", referrer: "http://gamesctrls.com/static/css/reset.css"
+2025/02/18 01:13:20 [error] 22#22: *82 open() "/var/www/static/css/index.css" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/css/index.css HTTP/1.1", host: "gamesctrls.com", referrer: "http://gamesctrls.com/static/css/index.css"
+2025/02/18 01:13:20 [error] 22#22: *82 open() "/var/www/static/diff_worker.js" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/diff_worker.js HTTP/1.1", host: "gamesctrls.com", referrer: "http://gamesctrls.com/static/diff_worker.js"
+2025/02/18 01:13:20 [error] 22#22: *88 open() "/var/www/static/css/mobile.css" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/css/mobile.css HTTP/1.1", host: "gamesctrls.com", referrer: "http://gamesctrls.com/static/css/mobile.css"
+2025/02/18 01:13:20 [error] 22#22: *82 open() "/var/www/static/js/download.js" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/js/download.js HTTP/1.1", host: "gamesctrls.com", referrer: "http://gamesctrls.com/static/js/download.js"
+2025/02/18 01:13:20 [error] 22#22: *83 open() "/var/www/static/css/common.css" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/css/common.css HTTP/1.1", host: "gamesctrls.com", referrer: "http://gamesctrls.com/static/css/common.css"
+2025/02/18 01:13:20 [error] 22#22: *82 open() "/var/www/static/picture/gz.png" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/picture/gz.png HTTP/1.1", host: "gamesctrls.com", referrer: "http://gamesctrls.com/static/picture/gz.png"
+2025/02/18 01:13:21 [error] 22#22: *83 open() "/var/www/static/css/public.css" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/css/public.css HTTP/1.1", host: "gamesctrls.com", referrer: "http://gamesctrls.com/static/css/public.css"
+2025/02/18 01:13:21 [error] 22#22: *83 open() "/var/www/static/home/css/css.css" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/home/css/css.css HTTP/1.1", host: "gamesctrls.com", referrer: "http://gamesctrls.com/static/home/css/css.css"
+2025/02/18 01:13:21 [error] 22#22: *93 open() "/var/www/static/images/jymx.png" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/images/jymx.png HTTP/1.1", host: "gamesctrls.com", referrer: "http://gamesctrls.com/static/images/jymx.png"
+2025/02/18 01:13:21 [error] 22#22: *81 open() "/var/www/static/home/js/rooms.js" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/home/js/rooms.js HTTP/1.1", host: "gamesctrls.com", referrer: "http://gamesctrls.com/static/home/js/rooms.js"
+2025/02/18 01:13:22 [error] 22#22: *81 open() "/var/www/static/data/configjs.js" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/data/configjs.js HTTP/1.1", host: "gamesctrls.com", referrer: "http://gamesctrls.com/static/data/configjs.js"
+2025/02/18 01:13:22 [error] 22#22: *88 open() "/var/www/static/mobile/user.html" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/mobile/user.html HTTP/1.1", host: "gamesctrls.com", referrer: "http://gamesctrls.com/static/mobile/user.html"
+2025/02/18 01:13:22 [error] 22#22: *88 open() "/var/www/static/wap/js/common.js" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/wap/js/common.js HTTP/1.1", host: "gamesctrls.com", referrer: "http://gamesctrls.com/static/wap/js/common.js"
+2025/02/18 01:13:22 [error] 22#22: *88 open() "/var/www/static/new/css/style.css" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/new/css/style.css HTTP/1.1", host: "gamesctrls.com", referrer: "http://gamesctrls.com/static/new/css/style.css"
+2025/02/18 01:13:22 [error] 22#22: *81 open() "/var/www/static/voice/default.wav" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/voice/default.wav HTTP/1.1", host: "gamesctrls.com", referrer: "http://gamesctrls.com/static/voice/default.wav"
+2025/02/18 01:13:22 [error] 22#22: *82 open() "/var/www/static/js/chat-config.js" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/js/chat-config.js HTTP/1.1", host: "gamesctrls.com", referrer: "http://gamesctrls.com/static/js/chat-config.js"
+2025/02/18 01:13:23 [error] 22#22: *93 open() "/var/www/static/home/imgs/pico.png" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/home/imgs/pico.png HTTP/1.1", host: "gamesctrls.com", referrer: "http://gamesctrls.com/static/home/imgs/pico.png"
+2025/02/18 01:13:23 [error] 22#22: *81 open() "/var/www/static/wap/css/common.css" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/wap/css/common.css HTTP/1.1", host: "gamesctrls.com", referrer: "http://gamesctrls.com/static/wap/css/common.css"
+2025/02/18 01:13:23 [error] 22#22: *88 open() "/var/www/static/index/js/common.js" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/index/js/common.js HTTP/1.1", host: "gamesctrls.com", referrer: "http://gamesctrls.com/static/index/js/common.js"
+2025/02/18 01:13:23 [error] 22#22: *88 open() "/var/www/static/common/js/common.js" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/common/js/common.js HTTP/1.1", host: "gamesctrls.com", referrer: "http://gamesctrls.com/static/common/js/common.js"
+2025/02/18 01:13:24 [error] 22#22: *83 open() "/var/www/static/wap/css/tipmask.css" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/wap/css/tipmask.css HTTP/1.1", host: "gamesctrls.com", referrer: "http://gamesctrls.com/static/wap/css/tipmask.css"
+2025/02/18 01:13:24 [error] 22#22: *88 open() "/var/www/static/index/css/index.css" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/index/css/index.css HTTP/1.1", host: "gamesctrls.com", referrer: "http://gamesctrls.com/static/index/css/index.css"
+2025/02/18 01:13:24 [error] 22#22: *88 open() "/var/www/static/data/thirdgames.json" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/data/thirdgames.json HTTP/1.1", host: "gamesctrls.com", referrer: "http://gamesctrls.com/static/data/thirdgames.json"
+2025/02/18 01:13:24 [error] 22#22: *66 open() "/var/www/static/admincp/js/common.js" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/admincp/js/common.js HTTP/1.1", host: "gamesctrls.com", referrer: "http://gamesctrls.com/static/admincp/js/common.js"
+2025/02/18 01:13:24 [error] 22#22: *66 open() "/var/www/static/py/un/logo.uni6on.png" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/py/un/logo.uni6on.png HTTP/1.1", host: "gamesctrls.com", referrer: "http://gamesctrls.com/static/py/un/logo.uni6on.png"
+2025/02/18 01:13:25 [error] 22#22: *143 open() "/var/www/static/staticccs/tengxunlogo.png" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/staticccs/tengxunlogo.png HTTP/1.1", host: "gamesctrls.com", referrer: "http://gamesctrls.com/static/staticccs/tengxunlogo.png"
+2025/02/18 01:13:25 [error] 22#22: *143 open() "/var/www/static/images/config/grzx/usd.png" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/images/config/grzx/usd.png HTTP/1.1", host: "gamesctrls.com", referrer: "http://gamesctrls.com/static/images/config/grzx/usd.png"
+2025/02/18 01:13:26 [error] 22#22: *66 open() "/var/www/static/images/auth/background.png" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/images/auth/background.png HTTP/1.1", host: "gamesctrls.com", referrer: "http://gamesctrls.com/static/images/auth/background.png"
+2025/02/18 01:13:26 [error] 22#22: *93 open() "/var/www/static/home/css/feiqi-ee5401a8e6.css" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/home/css/feiqi-ee5401a8e6.css HTTP/1.1", host: "gamesctrls.com", referrer: "http://gamesctrls.com/static/home/css/feiqi-ee5401a8e6.css"
+2025/02/18 01:13:26 [error] 22#22: *93 open() "/var/www/static/images/config/common/cpjy.png" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/images/config/common/cpjy.png HTTP/1.1", host: "gamesctrls.com", referrer: "http://gamesctrls.com/static/images/config/common/cpjy.png"
+2025/02/18 01:13:26 [error] 22#22: *88 open() "/var/www/static/customer/js/xiaotian.cli.v2.js" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/customer/js/xiaotian.cli.v2.js HTTP/1.1", host: "gamesctrls.com", referrer: "http://gamesctrls.com/static/customer/js/xiaotian.cli.v2.js"
+2025/02/18 01:13:26 [error] 22#22: *83 open() "/var/www/static/img/new-lottery-title.921682f7.png" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/img/new-lottery-title.921682f7.png HTTP/1.1", host: "gamesctrls.com", referrer: "http://gamesctrls.com/static/img/new-lottery-title.921682f7.png"
+2025/02/18 01:13:30 [error] 22#22: *83 open() "/var/www/static/index/js/lk/order.js" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/index/js/lk/order.js HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/static/index/js/lk/order.js"
+2025/02/18 01:13:30 [error] 22#22: *143 open() "/var/www/static/wap/js/order.js" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/wap/js/order.js HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/static/wap/js/order.js"
+2025/02/18 01:13:30 [error] 22#22: *93 open() "/var/www/static/wap/css/trade-history.css" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/wap/css/trade-history.css HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/static/wap/css/trade-history.css"
+2025/02/18 01:13:30 [error] 22#22: *88 open() "/var/www/static/index/css/trade-history.css" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/index/css/trade-history.css HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/static/index/css/trade-history.css"
+2025/02/18 01:13:34 [error] 22#22: *143 open() "/var/www/static/js/user.js" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/js/user.js HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/static/js/user.js"
+2025/02/18 01:13:35 [error] 22#22: *81 open() "/var/www/static/guide/ab.css" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/guide/ab.css HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/static/guide/ab.css"
+2025/02/18 01:13:35 [error] 22#22: *83 open() "/var/www/static/js/common.js" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/js/common.js HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/static/js/common.js"
+2025/02/18 01:13:35 [error] 22#22: *143 open() "/var/www/static/css/reset.css" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/css/reset.css HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/static/css/reset.css"
+2025/02/18 01:13:35 [error] 22#22: *423 open() "/var/www/static/css/index.css" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/css/index.css HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/static/css/index.css"
+2025/02/18 01:13:36 [error] 22#22: *83 open() "/var/www/static/diff_worker.js" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/diff_worker.js HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/static/diff_worker.js"
+2025/02/18 01:13:36 [error] 22#22: *143 open() "/var/www/static/css/mobile.css" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/css/mobile.css HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/static/css/mobile.css"
+2025/02/18 01:13:36 [error] 22#22: *88 open() "/var/www/static/css/public.css" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/css/public.css HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/static/css/public.css"
+2025/02/18 01:13:36 [error] 22#22: *83 open() "/var/www/static/js/download.js" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/js/download.js HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/static/js/download.js"
+2025/02/18 01:13:36 [error] 22#22: *66 open() "/var/www/static/css/common.css" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/css/common.css HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/static/css/common.css"
+2025/02/18 01:13:36 [error] 22#22: *82 open() "/var/www/static/picture/gz.png" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/picture/gz.png HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/static/picture/gz.png"
+2025/02/18 01:13:36 [error] 22#22: *88 open() "/var/www/static/images/jymx.png" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/images/jymx.png HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/static/images/jymx.png"
+2025/02/18 01:13:36 [error] 22#22: *423 open() "/var/www/static/home/css/css.css" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/home/css/css.css HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/static/home/css/css.css"
+2025/02/18 01:13:36 [error] 22#22: *82 open() "/var/www/static/home/js/rooms.js" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/home/js/rooms.js HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/static/home/js/rooms.js"
+2025/02/18 01:13:36 [error] 22#22: *88 open() "/var/www/static/wap/js/common.js" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/wap/js/common.js HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/static/wap/js/common.js"
+2025/02/18 01:13:36 [error] 22#22: *93 open() "/var/www/static/data/configjs.js" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/data/configjs.js HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/static/data/configjs.js"
+2025/02/18 01:13:36 [error] 22#22: *66 open() "/var/www/static/mobile/user.html" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/mobile/user.html HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/static/mobile/user.html"
+2025/02/18 01:13:36 [error] 22#22: *143 open() "/var/www/static/new/css/style.css" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/new/css/style.css HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/static/new/css/style.css"
+2025/02/18 01:13:37 [error] 22#22: *423 open() "/var/www/static/voice/default.wav" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/voice/default.wav HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/static/voice/default.wav"
+2025/02/18 01:13:37 [error] 22#22: *88 open() "/var/www/static/js/chat-config.js" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/js/chat-config.js HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/static/js/chat-config.js"
+2025/02/18 01:13:37 [error] 22#22: *82 open() "/var/www/static/home/imgs/pico.png" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/home/imgs/pico.png HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/static/home/imgs/pico.png"
+2025/02/18 01:13:37 [error] 22#22: *81 open() "/var/www/static/wap/css/common.css" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/wap/css/common.css HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/static/wap/css/common.css"
+2025/02/18 01:13:37 [error] 22#22: *83 open() "/var/www/static/index/js/common.js" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/index/js/common.js HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/static/index/js/common.js"
+2025/02/18 01:13:37 [error] 22#22: *82 open() "/var/www/static/common/js/common.js" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/common/js/common.js HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/static/common/js/common.js"
+2025/02/18 01:13:37 [error] 22#22: *83 open() "/var/www/static/index/css/index.css" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/index/css/index.css HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/static/index/css/index.css"
+2025/02/18 01:13:37 [error] 22#22: *82 open() "/var/www/static/wap/css/tipmask.css" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/wap/css/tipmask.css HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/static/wap/css/tipmask.css"
+2025/02/18 01:13:37 [error] 22#22: *66 open() "/var/www/static/data/thirdgames.json" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/data/thirdgames.json HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/static/data/thirdgames.json"
+2025/02/18 01:13:37 [error] 22#22: *423 open() "/var/www/static/admincp/js/common.js" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/admincp/js/common.js HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/static/admincp/js/common.js"
+2025/02/18 01:13:37 [error] 22#22: *81 open() "/var/www/static/py/un/logo.uni6on.png" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/py/un/logo.uni6on.png HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/static/py/un/logo.uni6on.png"
+2025/02/18 01:13:38 [error] 22#22: *82 open() "/var/www/static/staticccs/tengxunlogo.png" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/staticccs/tengxunlogo.png HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/static/staticccs/tengxunlogo.png"
+2025/02/18 01:13:38 [error] 22#22: *66 open() "/var/www/static/images/config/grzx/usd.png" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/images/config/grzx/usd.png HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/static/images/config/grzx/usd.png"
+2025/02/18 01:13:38 [error] 22#22: *93 open() "/var/www/static/images/auth/background.png" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/images/auth/background.png HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/static/images/auth/background.png"
+2025/02/18 01:13:38 [error] 22#22: *423 open() "/var/www/static/home/css/feiqi-ee5401a8e6.css" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/home/css/feiqi-ee5401a8e6.css HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/static/home/css/feiqi-ee5401a8e6.css"
+2025/02/18 01:13:38 [error] 22#22: *66 open() "/var/www/static/images/config/common/cpjy.png" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/images/config/common/cpjy.png HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/static/images/config/common/cpjy.png"
+2025/02/18 01:13:38 [error] 22#22: *83 open() "/var/www/static/customer/js/xiaotian.cli.v2.js" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/customer/js/xiaotian.cli.v2.js HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/static/customer/js/xiaotian.cli.v2.js"
+2025/02/18 01:13:38 [error] 22#22: *423 open() "/var/www/static/img/new-lottery-title.921682f7.png" failed (2: No such file or directory), client: 118.193.43.70, server: gamesctrls.com, request: "GET /static/img/new-lottery-title.921682f7.png HTTP/1.1", host: "gamesctrls.com", referrer: "https://gamesctrls.com/static/img/new-lottery-title.921682f7.png"
+2025/02/18 01:16:50 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 01:16:50 [notice] 21#21: gracefully shutting down
+2025/02/18 01:16:50 [notice] 22#22: gracefully shutting down
+2025/02/18 01:16:50 [notice] 21#21: exiting
+2025/02/18 01:16:50 [notice] 22#22: exiting
+2025/02/18 01:16:50 [notice] 21#21: exit
+2025/02/18 01:16:50 [notice] 22#22: exit
+2025/02/18 01:16:50 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 01:16:50 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 01:16:50 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 01:16:50 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/02/18 01:16:50 [notice] 1#1: worker process 22 exited with code 0
+2025/02/18 01:16:50 [notice] 1#1: exit
+2025/02/18 01:17:27 [notice] 1#1: using the "epoll" event method
+2025/02/18 01:17:27 [notice] 1#1: nginx/1.27.4
+2025/02/18 01:17:27 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 01:17:27 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 01:17:27 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 01:17:27 [notice] 1#1: start worker processes
+2025/02/18 01:17:27 [notice] 1#1: start worker process 21
+2025/02/18 01:17:27 [notice] 1#1: start worker process 22
+2025/02/18 01:18:48 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/18 01:18:48 [notice] 21#21: gracefully shutting down
+2025/02/18 01:18:48 [notice] 22#22: gracefully shutting down
+2025/02/18 01:18:48 [notice] 21#21: exiting
+2025/02/18 01:18:48 [notice] 22#22: exiting
+2025/02/18 01:18:48 [notice] 21#21: exit
+2025/02/18 01:18:48 [notice] 22#22: exit
+2025/02/18 01:18:48 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/02/18 01:18:48 [notice] 1#1: worker process 21 exited with code 0
+2025/02/18 01:18:48 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/18 01:18:48 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/02/18 01:18:48 [notice] 1#1: worker process 22 exited with code 0
+2025/02/18 01:18:48 [notice] 1#1: exit
+2025/02/18 01:18:49 [notice] 1#1: using the "epoll" event method
+2025/02/18 01:18:49 [notice] 1#1: nginx/1.27.4
+2025/02/18 01:18:49 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/02/18 01:18:49 [notice] 1#1: OS: Linux 6.11.0-14-generic
+2025/02/18 01:18:49 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2025/02/18 01:18:49 [notice] 1#1: start worker processes
+2025/02/18 01:18:49 [notice] 1#1: start worker process 21
+2025/02/18 01:18:49 [notice] 1#1: start worker process 22
