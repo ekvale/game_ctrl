@@ -8,35 +8,38 @@ class Command(BaseCommand):
     help = 'Creates sample data for the game controllers store'
 
     def handle(self, *args, **kwargs):
+        self.stdout.write('Creating sample data...')
+        
         # Create Category
         arcade_category, created = Category.objects.get_or_create(
             name='Arcade Controllers',
             slug='arcade-controllers',
             description='Professional arcade-style gaming controllers'
         )
+        self.stdout.write(f'{"Created" if created else "Found"} category: {arcade_category.name}')
 
         # Sample controllers data
         controllers_data = [
             {
-                'name': 'Pro Fighter X',
-                'description': 'Tournament-grade arcade controller featuring Sanwa buttons and joystick. Perfect for fighting games with its precise 8-way microswitch joystick and rapid-response buttons.',
+                'name': 'Pro Fighter X8',
+                'description': 'Tournament-grade arcade controller featuring premium Sanwa parts. Perfect for fighting games with its precise 8-way microswitch joystick and rapid-response buttons.',
                 'price': 199.99,
                 'featured': True,
                 'image_name': 'controller1.jpg'
             },
             {
-                'name': 'Custom LED Master',
-                'description': 'Customizable arcade controller with RGB LED buttons. Features programmable light patterns and premium Japanese arcade parts.',
+                'name': 'Classic Arcade Plus',
+                'description': 'Customizable arcade controller with RGB LED buttons. Features programmable light patterns and authentic arcade feel.',
                 'price': 249.99,
                 'featured': True,
-                'image_name': None
+                'image_name': 'controller2.jpg'
             },
             {
-                'name': 'Retro Classic',
-                'description': 'Classic-styled arcade controller with authentic feel. Perfect for retro gaming and modern classics.',
-                'price': 159.99,
+                'name': 'Tournament Edition Pro',
+                'description': 'Professional-grade controller with aluminum case and premium components. Built for competitive gaming.',
+                'price': 299.99,
                 'featured': True,
-                'image_name': None
+                'image_name': 'controller3.jpg'
             }
         ]
 
@@ -53,10 +56,15 @@ class Command(BaseCommand):
 
             if created and image_name:
                 # Set the image if it exists
-                image_path = os.path.join(settings.STATIC_ROOT, 'images', image_name)
+                image_path = os.path.join(settings.BASE_DIR, 'static', 'images', image_name)
                 if os.path.exists(image_path):
                     with open(image_path, 'rb') as image_file:
                         controller.image.save(image_name, File(image_file), save=True)
+                    self.stdout.write(f'Added image {image_name} to {controller.name}')
+                else:
+                    self.stdout.write(self.style.WARNING(f'Image not found: {image_path}'))
 
-            status = 'Created' if created else 'Already exists'
-            self.stdout.write(self.style.SUCCESS(f'{status}: {controller.name}')) 
+            status = 'Created' if created else 'Found'
+            self.stdout.write(f'{status} controller: {controller.name}')
+
+        self.stdout.write(self.style.SUCCESS('Sample data created successfully')) 
