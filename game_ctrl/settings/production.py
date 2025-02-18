@@ -87,7 +87,7 @@ WHITENOISE_DEBUG = True
 
 # Media files configuration
 MEDIA_URL = '/media/'
-MEDIA_ROOT = '/var/www/media'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Create directories
 os.makedirs(STATIC_ROOT, exist_ok=True)
