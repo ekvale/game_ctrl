@@ -25,13 +25,19 @@ if not SECRET_KEY:
 # Debug settings
 DEBUG = False
 
-# Allowed Hosts - include development hosts temporarily
-ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '').split(',')
+# Allowed Hosts
+ALLOWED_HOSTS = [
+    'gamesctrls.com',
+    'www.gamesctrls.com',
+    'localhost',
+    '127.0.0.1',
+]
 
-# CSRF Trusted Origins
+# CSRF settings
 CSRF_TRUSTED_ORIGINS = [
     'https://gamesctrls.com',
     'https://www.gamesctrls.com',
+    'http://localhost:8080',
 ]
 
 # Security settings - disable SSL temporarily for local testing
