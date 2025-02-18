@@ -34,9 +34,9 @@ class MonitoringAdmin(admin.ModelAdmin):
 
 @admin.register(Controller)
 class ControllerAdmin(admin.ModelAdmin):
-    list_display = ['name', 'price', 'featured', 'created_at']
-    list_filter = ['featured', 'category']
-    list_editable = ['price', 'featured']
+    list_display = ['name', 'price', 'is_featured', 'created_at']
+    list_filter = ['is_featured', 'category']
+    list_editable = ['price', 'is_featured']
     search_fields = ['name', 'description']
     date_hierarchy = 'created_at'
     ordering = ['-created_at'] 

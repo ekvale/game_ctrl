@@ -28,21 +28,21 @@ class Command(BaseCommand):
                 'name': 'Pro Fighter X8',
                 'description': 'Tournament-grade arcade controller featuring premium Sanwa parts. Perfect for fighting games with its precise 8-way microswitch joystick and rapid-response buttons.',
                 'price': 199.99,
-                'featured': True,
+                'is_featured': True,
                 'image_name': 'controller1.jpg'
             },
             {
                 'name': 'Classic Arcade Plus',
                 'description': 'Customizable arcade controller with RGB LED buttons. Features programmable light patterns and authentic arcade feel.',
                 'price': 249.99,
-                'featured': True,
+                'is_featured': True,
                 'image_name': 'controller2.jpg'
             },
             {
                 'name': 'Tournament Edition Pro',
                 'description': 'Professional-grade controller with aluminum case and premium components. Built for competitive gaming.',
                 'price': 299.99,
-                'featured': True,
+                'is_featured': True,
                 'image_name': 'controller3.jpg'
             }
         ]
