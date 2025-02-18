@@ -28,6 +28,8 @@ body {
     border-radius: 8px;
     overflow: hidden;
     transition: all 0.3s ease;
+    border: 5px solid red !important;
+    background-color: yellow !important;
 }
 
 .product-card:hover {
