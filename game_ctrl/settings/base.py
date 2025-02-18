@@ -108,6 +108,7 @@ STATICFILES_DIRS = [
 
 # Media files
 MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # WhiteNoise Configuration
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
