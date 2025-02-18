@@ -31,11 +31,11 @@ services:
         python manage.py migrate &&
         gunicorn game_ctrl.wsgi:application --bind 0.0.0.0:8000 --workers 3"
     volumes:
+      - ./media:/app/media
       - ./static:/app/static
       - static_volume:/var/www/static
       - media_volume:/var/www/media
       - log_volume:/var/log/django
-      - ./media:/app/media:rw
     expose:
       - 8000
 
@@ -48,6 +48,7 @@ services:
       - media_volume:/var/www/media:ro
       - ./nginx/logs:/var/log/nginx
       - /etc/letsencrypt:/etc/letsencrypt:ro
+      - ./media:/var/www/media
     ports:
       - "80:80"
       - "443:443"
