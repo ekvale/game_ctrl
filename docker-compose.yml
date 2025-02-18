@@ -33,6 +33,7 @@ services:
     volumes:
       - ./media:/app/media
       - ./static:/app/static
+      - ./static/video:/app/static/video
       - static_volume:/var/www/static
       - media_volume:/var/www/media
       - log_volume:/var/log/django

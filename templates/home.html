@@ -5,15 +5,26 @@
 
 {% block content %}
 <!-- Hero Section -->
-<section class="hero-section text-center">
-    <div class="container">
-        <h1 class="display-4">Level Up Your Gaming Experience</h1>
-        <p class="lead">Custom arcade-style controllers designed for precision and performance</p>
-        <a href="#featured-controllers" class="btn btn-light">
-            <i class="bi bi-controller"></i> Explore Controllers
-        </a>
+<div class="relative overflow-hidden">
+    <video 
+        class="w-full h-[600px] object-cover"
+        autoplay 
+        loop 
+        muted 
+        playsinline
+    >
+        <source src="{% static 'video/marketing/hero.mp4' %}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    
+    <!-- Optional overlay text -->
+    <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40">
+        <div class="text-center text-white">
+            <h1 class="text-4xl font-bold mb-4">Premium Game Controllers</h1>
+            <p class="text-xl">Precision. Power. Performance.</p>
+        </div>
     </div>
-</section>
+</div>
 
 <!-- Featured Controllers -->
 <section id="featured-controllers" class="py-5">
