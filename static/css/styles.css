@@ -442,4 +442,10 @@ input[type="number"] {
 
 .quantity-input {
     width: unset;
+}
+
+/* Test style */
+.product-card {
+    border: 5px solid red !important;
+    background: yellow !important;
 } 
