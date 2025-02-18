@@ -1,3 +1,15 @@
+/* Test style - should be visible */
+body::before {
+    content: 'CSS LOADED' !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    background: red !important;
+    color: white !important;
+    padding: 10px !important;
+    z-index: 9999 !important;
+}
+
 /* Base styles */
 body {
     background-color: #f8f9fa;
@@ -232,4 +244,11 @@ body {
     .navbar .nav-link {
         padding: 0.5rem 0 !important;
     }
+}
+
+/* More specific selector */
+.container .row .col-md-4 .game-card {
+    border: 5px solid red !important;
+    background: yellow !important;
+    /* ... rest of the styles ... */
 } 

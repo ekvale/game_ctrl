@@ -78,7 +78,7 @@ STATICFILES_DIRS = [
 ]
 
 # WhiteNoise Configuration
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.StaticFilesStorage'
 WHITENOISE_ROOT = STATIC_ROOT
 
 # Enable WhiteNoise debugging
