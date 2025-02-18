@@ -31,7 +31,7 @@ services:
         python manage.py migrate &&
         gunicorn game_ctrl.wsgi:application --bind 0.0.0.0:8000 --workers 3"
     volumes:
-      - .:/app
+      - ./static:/app/static
       - static_volume:/var/www/static
       - media_volume:/var/www/media
       - log_volume:/var/log/django

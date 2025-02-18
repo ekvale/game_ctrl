@@ -8,21 +8,21 @@
 <section class="hero-section text-center">
     <div class="container">
         <h1 class="display-4">Level Up Your Gaming Experience</h1>
-        <p class="lead">Custom arcade-style controllers designed for precision and performance</p>
-        <a href="#featured-controllers" class="btn btn-light">
+        <p class="lead mb-4">Custom arcade-style controllers designed for precision and performance</p>
+        <a href="#featured-controllers" class="btn btn-light btn-lg">
             <i class="bi bi-controller"></i> Explore Controllers
         </a>
     </div>
 </section>
 
 <!-- Featured Controllers -->
-<section id="featured-controllers" class="py-5">
+<section id="featured-controllers" class="py-5 bg-light">
     <div class="container">
         <h2 class="text-center mb-4">Featured Controllers</h2>
-        <div class="row">
+        <div class="row g-4">
             {% for controller in featured_controllers %}
-            <div class="col-md-4 mb-4">
-                <div class="card">
+            <div class="col-md-4">
+                <div class="card h-100">
                     {% if controller.image %}
                         <img src="{{ controller.image.url }}" class="card-img-top" alt="{{ controller.name }}">
                     {% else %}
@@ -31,29 +31,31 @@
                     <div class="card-body">
                         <h5 class="card-title">{{ controller.name }}</h5>
                         <p class="card-text">{{ controller.description|truncatewords:20 }}</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <p class="card-text mb-0"><strong>${{ controller.price }}</strong></p>
-                            <div class="d-flex gap-2">
-                                <a href="{{ controller.get_absolute_url }}" class="btn btn-outline-primary">
+                        <div class="mt-auto">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p class="h5 mb-0">${{ controller.price }}</p>
+                                <a href="{{ controller.get_absolute_url }}" class="btn btn-outline-primary btn-sm">
                                     <i class="bi bi-info-circle"></i> Details
                                 </a>
-                                {% if user.is_authenticated %}
-                                    <form action="{% url 'cart:add_to_cart' %}" method="post">
-                                        {% csrf_token %}
-                                        <input type="hidden" name="controller_id" value="{{ controller.id }}">
-                                        <div class="d-flex gap-2">
-                                            <input type="number" name="quantity" value="1" min="1" max="10">
+                            </div>
+                            {% if user.is_authenticated %}
+                                <form action="{% url 'cart:add_to_cart' %}" method="post" class="mt-3">
+                                    {% csrf_token %}
+                                    <input type="hidden" name="controller_id" value="{{ controller.id }}">
+                                    <div class="d-flex gap-2 justify-content-between">
+                                        <div class="input-group">
+                                            <input type="number" name="quantity" value="1" min="1" max="10" class="form-control">
                                             <button type="submit" class="btn btn-primary">
-                                                <i class="bi bi-cart-plus"></i> Add
+                                                <i class="bi bi-cart-plus"></i> Add to Cart
                                             </button>
                                         </div>
-                                    </form>
-                                {% else %}
-                                    <a href="{% url 'login' %}?next={{ request.path }}" class="btn btn-primary">
-                                        <i class="bi bi-cart-plus"></i> Add to Cart
-                                    </a>
-                                {% endif %}
-                            </div>
+                                    </div>
+                                </form>
+                            {% else %}
+                                <a href="{% url 'login' %}?next={{ request.path }}" class="btn btn-primary w-100 mt-3">
+                                    <i class="bi bi-cart-plus"></i> Add to Cart
+                                </a>
+                            {% endif %}
                         </div>
                     </div>
                 </div>
