@@ -27,9 +27,11 @@ RUN groupadd -r app && useradd -r -g app app
 # Create directories with proper permissions
 RUN mkdir -p /var/www/static /var/www/media /var/log/django && \
     mkdir -p /app/static && \
-    chown -R app:app /var/www/static /var/www/media /var/log/django /app/static && \
+    mkdir -p /app/media/controllers && \
+    chown -R app:app /var/www/static /var/www/media /var/log/django /app/static /app/media && \
     chmod -R 755 /var/www/static /var/www/media && \
-    chmod -R 777 /var/log/django
+    chmod -R 777 /var/log/django && \
+    chmod -R 755 /app/media
 
 # Copy requirements first
 COPY --chown=app:app requirements/ requirements/

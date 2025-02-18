@@ -10,13 +10,17 @@ class Command(BaseCommand):
     def handle(self, *args, **kwargs):
         self.stdout.write('Creating sample data...')
         
+        # First, clear existing data
+        Controller.objects.all().delete()
+        Category.objects.all().delete()
+        
         # Create Category
-        arcade_category, created = Category.objects.get_or_create(
+        arcade_category = Category.objects.create(
             name='Arcade Controllers',
             slug='arcade-controllers',
             description='Professional arcade-style gaming controllers'
         )
-        self.stdout.write(f'{"Created" if created else "Found"} category: {arcade_category.name}')
+        self.stdout.write(f'Created category: {arcade_category.name}')
 
         # Sample controllers data
         controllers_data = [
