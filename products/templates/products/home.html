@@ -9,7 +9,7 @@
         <p>{{ controller.description }}</p>
         <p>Price: ${{ controller.price }}</p>
         <a href="{{ controller.get_absolute_url }}">View Details</a>
-        <form action="{% url 'cart:cart_add' %}" method="post">
+        <form action="{% url 'cart:add_to_cart' %}" method="post">
             {% csrf_token %}
             <input type="hidden" name="controller_id" value="{{ controller.id }}">
             <input type="number" name="quantity" value="1" min="1" max="20">
