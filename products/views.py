@@ -26,7 +26,7 @@ def home(request):
         except Cart.DoesNotExist:
             pass
             
-    return render(request, 'products/home.html', context)
+    return render(request, 'home.html', context)
 
 def category_detail(request, slug):
     """Category detail view"""
