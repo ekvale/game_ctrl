@@ -319,17 +319,17 @@ input[type="number"] {
 /* Product Card */
 .product-card.card {
     background: #ffffff !important;
-    border-radius: 12px !important;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+    border-radius: 8px !important;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08) !important;
     overflow: hidden !important;
-    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+    transition: all 0.3s ease !important;
     height: 100% !important;
-    border: 1px solid #e2e8f0 !important;
+    border: none !important;
 }
 
 .product-card.card:hover {
-    transform: translateY(-5px) !important;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15) !important;
+    transform: translateY(-4px) !important;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12) !important;
 }
 
 .product-card .card-body {
@@ -339,42 +339,49 @@ input[type="number"] {
 }
 
 .product-card .card-title {
-    font-size: 1.25rem !important;
+    font-size: 1.2rem !important;
     font-weight: 600 !important;
-    color: #2d3748 !important;
-    margin-bottom: 1rem !important;
+    color: #1a202c !important;
+    margin-bottom: 0.75rem !important;
+    line-height: 1.4 !important;
 }
 
 .product-card .card-text {
-    color: #718096 !important;
-    font-size: 0.9rem !important;
-    line-height: 1.5 !important;
-    margin-bottom: 1.5rem !important;
+    color: #4a5568 !important;
+    font-size: 0.95rem !important;
+    line-height: 1.6 !important;
+    margin-bottom: 1.25rem !important;
+}
+
+.product-card .d-flex.justify-content-between {
+    margin-top: auto !important;
+    align-items: center !important;
+    gap: 1.5rem !important;
 }
 
 .product-card .text-primary {
-    font-size: 1.5rem !important;
+    font-size: 1.4rem !important;
     font-weight: 700 !important;
-    color: #3182ce !important;
+    color: #2b6cb0 !important;
 }
 
 .product-card .btn {
+    padding: 0.6rem 1.2rem !important;
+    font-size: 0.9rem !important;
+    font-weight: 500 !important;
+    border-radius: 6px !important;
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
     gap: 0.5rem !important;
-    padding: 0.5rem 1rem !important;
-    font-size: 0.9rem !important;
-    font-weight: 500 !important;
-    border-radius: 6px !important;
-    cursor: pointer !important;
-    min-width: 120px !important;
+    transition: all 0.2s ease !important;
+    min-width: 110px !important;
 }
 
 .product-card .btn-outline-primary {
     background-color: transparent !important;
     color: #3182ce !important;
-    border: 2px solid #3182ce !important;
+    border: 1.5px solid #3182ce !important;
 }
 
 .product-card .btn-outline-primary:hover {
@@ -385,45 +392,47 @@ input[type="number"] {
 .product-card form {
     display: inline-flex !important;
     align-items: center !important;
-    gap: 0.5rem !important;
+    gap: 0.75rem !important;
 }
 
 .product-card input[type="number"] {
-    width: 70px !important;
+    width: 60px !important;
     height: 38px !important;
     padding: 0.5rem !important;
-    border: 2px solid #e2e8f0 !important;
+    border: 1.5px solid #e2e8f0 !important;
     border-radius: 6px !important;
     text-align: center !important;
-    font-size: 0.9rem !important;
-    color: #4a5568 !important;
+    font-size: 0.95rem !important;
+    color: #2d3748 !important;
     background: #fff !important;
+    transition: border-color 0.2s ease !important;
+}
+
+.product-card input[type="number"]:focus {
+    outline: none !important;
+    border-color: #3182ce !important;
+    box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.1) !important;
 }
 
 .product-card button[type="submit"] {
+    padding: 0.6rem 1.2rem !important;
+    font-size: 0.9rem !important;
+    font-weight: 500 !important;
+    border-radius: 6px !important;
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
     gap: 0.5rem !important;
-    padding: 0.5rem 1rem !important;
-    font-size: 0.9rem !important;
-    font-weight: 500 !important;
-    border-radius: 6px !important;
-    cursor: pointer !important;
-    min-width: 120px !important;
     background-color: #3182ce !important;
     color: white !important;
-    border: 2px solid #3182ce !important;
+    border: none !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease !important;
+    min-width: 110px !important;
 }
 
 .product-card button[type="submit"]:hover {
     background-color: #2c5282 !important;
-    border-color: #2c5282 !important;
-}
-
-/* Fix spacing */
-.product-card .d-flex.justify-content-between {
-    gap: 1rem !important;
 }
 
 /* Remove spinners from number input */
