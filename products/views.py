@@ -4,7 +4,7 @@ from cart.models import Cart
 
 def home(request):
     """Homepage view with featured controllers"""
-    featured_controllers = Controller.objects.filter(featured=True)
+    featured_controllers = Controller.objects.filter(is_featured=True, available=True)
     categories = Category.objects.all()
     
     context = {
