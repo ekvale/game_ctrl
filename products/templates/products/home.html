@@ -71,6 +71,9 @@
             {% for controller in featured_controllers %}
             <div class="col-md-4 mb-4">
                 <div class="product-card card">
+                    {% if controller.image %}
+                        <img src="{{ controller.image.url }}" class="card-img-top p-3" alt="{{ controller.name }}">
+                    {% endif %}
                     <div class="card-body">
                         <h5 class="card-title">{{ controller.name }}</h5>
                         <p class="card-text">{{ controller.description|truncatewords:20 }}</p>
@@ -84,10 +87,12 @@
                                     <form action="{% url 'cart:add_to_cart' %}" method="post">
                                         {% csrf_token %}
                                         <input type="hidden" name="controller_id" value="{{ controller.id }}">
-                                        <input type="number" name="quantity" value="1" min="1" max="10">
-                                        <button type="submit">
-                                            <i class="bi bi-cart-plus"></i> Add
-                                        </button>
+                                        <div class="d-flex gap-2">
+                                            <input type="number" name="quantity" value="1" min="1" max="10">
+                                            <button type="submit" class="btn btn-primary">
+                                                <i class="bi bi-cart-plus"></i> Add
+                                            </button>
+                                        </div>
                                     </form>
                                 {% else %}
                                     <a href="{% url 'login' %}?next={{ request.path }}" class="btn btn-primary">
@@ -114,10 +119,12 @@
         <div class="row">
             {% for category in categories %}
             <div class="col-md-4 mb-4">
-                <div class="category-card card h-100 shadow-sm">
+                <div class="category-card card">
                     <div class="card-body">
                         <h5 class="card-title">{{ category.name }}</h5>
-                        <a href="{{ category.get_absolute_url }}" class="btn btn-outline-primary">Browse</a>
+                        <a href="{{ category.get_absolute_url }}" class="btn btn-outline-primary">
+                            <i class="bi bi-grid-fill"></i> Browse
+                        </a>
                     </div>
                 </div>
             </div>
