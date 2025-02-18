@@ -4,14 +4,10 @@ from django.core.validators import MinValueValidator
 from django.utils.text import slugify
 
 
-class Product(models.Model):
-    name = models.CharField(max_length=255)
-    price = models.DecimalField(max_digits=10, decimal_places=2)
-
-
 class Category(models.Model):
     name = models.CharField(max_length=200)
     slug = models.SlugField(max_length=200, unique=True)
+    description = models.TextField(blank=True)
     
     class Meta:
         ordering = ['name']
@@ -43,6 +39,4 @@ class Controller(models.Model):
         return reverse('products:controller_detail', args=[str(self.id)])
 
     def save(self, *args, **kwargs):
-        if not self.slug:
-            self.slug = slugify(self.name)
         super().save(*args, **kwargs) 
