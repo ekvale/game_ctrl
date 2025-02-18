@@ -1,44 +1,20 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>Your Cart</h1>
-{% if cart|length > 0 %}
-    <table class="cart">
-        <thead>
-            <tr>
-                <th>Controller</th>
-                <th>Quantity</th>
-                <th>Unit Price</th>
-                <th>Total Price</th>
-                <th>Remove</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% for item in cart %}
-                <tr>
-                    <td>{{ item.controller.name }}</td>
-                    <td>{{ item.quantity }}</td>
-                    <td>${{ item.price }}</td>
-                    <td>${{ item.total_price }}</td>
-                    <td>
-                        <form action="{% url 'cart:cart_remove' item.controller.id %}" method="post">
-                            {% csrf_token %}
-                            <input type="submit" value="Remove">
-                        </form>
-                    </td>
-                </tr>
-            {% endfor %}
-            <tr>
-                <td colspan="3">Total</td>
-                <td>${{ cart.get_total_price }}</td>
-                <td></td>
-            </tr>
-        </tbody>
-    </table>
-    <p>
-        <a href="{% url 'products:home' %}">Continue Shopping</a>
-    </p>
+<h2>Your Cart</h2>
+{% if cart and cart.items.all %}
+    {% for item in cart.items.all %}
+    <div class="cart-item">
+        <h3>{{ item.controller.name }}</h3>
+        <p>Quantity: {{ item.quantity }}</p>
+        <p>Price: ${{ item.controller.price }}</p>
+        <form action="{% url 'cart:cart_remove' item.controller.id %}" method="post">
+            {% csrf_token %}
+            <button type="submit">Remove</button>
+        </form>
+    </div>
+    {% endfor %}
 {% else %}
-    <p>Your cart is empty. <a href="{% url 'products:home' %}">Continue Shopping</a></p>
+    <p>Your cart is empty</p>
 {% endif %}
 {% endblock %} 

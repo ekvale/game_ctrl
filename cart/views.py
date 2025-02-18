@@ -85,13 +85,16 @@ def validate_request_origin(request):
 @ratelimit(key='user', rate='30/m', method=['GET'])
 def cart_detail(request):
     """Cart detail view"""
-    cart = Cart(request)
-    logger.info(
-        'Cart viewed by user %s (ID: %s)', 
-        sanitize_input(request.user.username), 
-        request.user.id
-    )
-    return render(request, 'cart/detail.html', {'cart': cart})
+    try:
+        cart = Cart.objects.get(user=request.user)
+        logger.info(
+            'Cart viewed by user %s (ID: %s)', 
+            sanitize_input(request.user.username), 
+            request.user.id
+        )
+        return render(request, 'cart/detail.html', {'cart': cart})
+    except Cart.DoesNotExist:
+        return render(request, 'cart/detail.html', {'cart': None})
 
 @login_required
 @require_http_methods(["POST"])
@@ -99,9 +102,6 @@ def cart_detail(request):
 def add_to_cart(request):
     """Add item to cart"""
     try:
-        # Validate request origin
-        validate_request_origin(request)
-        
         # Sanitize and validate inputs
         controller_id = sanitize_input(request.POST.get('controller_id'))
         if not controller_id or not controller_id.isdigit():
@@ -128,6 +128,14 @@ def add_to_cart(request):
             validate_cart_limits(cart, new_quantity - cart_item.quantity)
             cart_item.quantity = new_quantity
             cart_item.save()
+            
+        logger.info(
+            'Item added to cart: user=%s (ID: %s), controller=%s, quantity=%s', 
+            sanitize_input(request.user.username), 
+            request.user.id,
+            controller.id,
+            quantity
+        )
             
     except ValidationError as e:
         logger.warning(
@@ -207,8 +215,23 @@ def cart_add(request):
     cart.add(controller=controller, quantity=quantity)
     return redirect('cart:cart_detail')
 
+@login_required
 def cart_remove(request, controller_id):
-    cart = Cart(request)
-    controller = get_object_or_404(Controller, id=controller_id)
-    cart.remove(controller)
+    try:
+        cart = Cart.objects.get(user=request.user)
+        controller = get_object_or_404(Controller, id=controller_id)
+        CartItem.objects.filter(cart=cart, controller=controller).delete()
+        logger.info(
+            'Item removed from cart: user=%s (ID: %s), controller=%s', 
+            sanitize_input(request.user.username), 
+            request.user.id,
+            controller_id
+        )
+    except Exception as e:
+        logger.error(
+            'Error removing item from cart: user=%s (ID: %s), error=%s', 
+            sanitize_input(request.user.username), 
+            request.user.id,
+            sanitize_input(str(e))
+        )
     return redirect('cart:cart_detail') 
