@@ -33,11 +33,10 @@ class MonitoringAdmin(admin.ModelAdmin):
         return response
 
 @admin.register(Controller)
-class ControllerAdmin(MonitoringAdmin):
-    list_display = ['name', 'slug', 'price', 'available', 'created_at', 'updated_at']
-    list_filter = ['available', 'created_at', 'updated_at']
-    list_editable = ['price', 'available']
-    prepopulated_fields = {'slug': ('name',)}
+class ControllerAdmin(admin.ModelAdmin):
+    list_display = ['name', 'price', 'featured', 'created_at']
+    list_filter = ['featured', 'category']
+    list_editable = ['price', 'featured']
     search_fields = ['name', 'description']
     date_hierarchy = 'created_at'
-    ordering = ['name'] 
+    ordering = ['-created_at'] 

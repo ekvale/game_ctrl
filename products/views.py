@@ -4,7 +4,7 @@ from cart.models import Cart
 
 def home(request):
     """Homepage view with featured controllers"""
-    featured_controllers = Controller.objects.filter(is_featured=True, available=True)
+    featured_controllers = Controller.objects.filter(featured=True)
     categories = Category.objects.all()
     
     context = {
@@ -32,9 +32,9 @@ def category_detail(request, slug):
         'controllers': controllers,
     })
 
-def controller_detail(request, slug):
+def controller_detail(request, id):
     """Controller detail view"""
-    controller = get_object_or_404(Controller, slug=slug)
+    controller = get_object_or_404(Controller, id=id)
 
     return render(request, 'products/controller_detail.html', {
         'controller': controller,
