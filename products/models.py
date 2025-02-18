@@ -7,7 +7,6 @@ from django.utils.text import slugify
 class Category(models.Model):
     name = models.CharField(max_length=200)
     slug = models.SlugField(max_length=200, unique=True)
-    description = models.TextField(blank=True, default='')
     
     class Meta:
         ordering = ['name']
