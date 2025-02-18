@@ -207,15 +207,12 @@ def update_cart(request):
     return redirect('cart:cart_detail')
 
 @require_POST
-def cart_add(request, controller_id):
+def cart_add(request):
     cart = Cart(request)
+    controller_id = request.POST.get('controller_id')
     controller = get_object_or_404(Controller, id=controller_id)
-    form = CartAddProductForm(request.POST)
-    if form.is_valid():
-        cd = form.cleaned_data
-        cart.add(controller=controller,
-                quantity=cd['quantity'],
-                override_quantity=cd['override'])
+    quantity = int(request.POST.get('quantity', 1))
+    cart.add(controller=controller, quantity=quantity)
     return redirect('cart:cart_detail')
 
 def cart_remove(request, controller_id):
