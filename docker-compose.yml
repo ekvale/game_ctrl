@@ -45,6 +45,7 @@ services:
       - ./nginx:/etc/nginx/conf.d:ro
       - static_volume:/var/www/static:ro
       - media_volume:/var/www/media:ro
+      - ./nginx/logs:/var/log/nginx
     ports:
       - "8080:80"
     depends_on:
