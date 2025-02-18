@@ -46,7 +46,7 @@ services:
       - static_volume:/var/www/static:ro
       - media_volume:/var/www/media:ro
       - ./nginx/logs:/var/log/nginx
-      - certbot_conf:/etc/letsencrypt:ro
+      - /etc/letsencrypt:/etc/letsencrypt:ro
       - certbot_www:/var/www/certbot:ro
     ports:
       - "80:80"
