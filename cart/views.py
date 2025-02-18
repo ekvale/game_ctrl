@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.decorators import login_required
-from django.views.decorators.http import require_http_methods
+from django.views.decorators.http import require_http_methods, require_POST
 from django.views.decorators.cache import never_cache
 from django.core.exceptions import ValidationError
 from django.utils.html import escape
@@ -11,6 +11,8 @@ from .models import Cart, CartItem
 from products.models import Controller
 from django.conf import settings
 from django.db.models import Sum
+from .cart import Cart
+from .forms import CartAddProductForm
 
 logger = logging.getLogger('game_ctrl.cart')
 
@@ -83,17 +85,13 @@ def validate_request_origin(request):
 @ratelimit(key='user', rate='30/m', method=['GET'])
 def cart_detail(request):
     """Cart detail view"""
-    cart = Cart.objects.get_or_create(user=request.user)[0]
+    cart = Cart(request)
     logger.info(
         'Cart viewed by user %s (ID: %s)', 
         sanitize_input(request.user.username), 
         request.user.id
     )
-    context = {
-        'cart': cart,
-        'cart_items': cart.items.all()
-    }
-    return render(request, 'cart/cart_detail.html', context)
+    return render(request, 'cart/detail.html', {'cart': cart})
 
 @login_required
 @require_http_methods(["POST"])
@@ -206,4 +204,22 @@ def update_cart(request):
             sanitize_input(str(e))
         )
         
+    return redirect('cart:cart_detail')
+
+@require_POST
+def cart_add(request, controller_id):
+    cart = Cart(request)
+    controller = get_object_or_404(Controller, id=controller_id)
+    form = CartAddProductForm(request.POST)
+    if form.is_valid():
+        cd = form.cleaned_data
+        cart.add(controller=controller,
+                quantity=cd['quantity'],
+                override_quantity=cd['override'])
+    return redirect('cart:cart_detail')
+
+def cart_remove(request, controller_id):
+    cart = Cart(request)
+    controller = get_object_or_404(Controller, id=controller_id)
+    cart.remove(controller)
     return redirect('cart:cart_detail') 

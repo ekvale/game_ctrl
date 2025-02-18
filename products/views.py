@@ -3,11 +3,14 @@ from .models import Category, Controller
 
 def home(request):
     """Homepage view with featured controllers"""
-    featured_controllers = Controller.objects.filter(is_featured=True)[:6]
+    featured_controllers = Controller.objects.filter(is_featured=True, available=True)
+    categories = Category.objects.all()
     
-    return render(request, 'products/home.html', {
+    context = {
         'featured_controllers': featured_controllers,
-    })
+        'categories': categories,
+    }
+    return render(request, 'products/home.html', context)
 
 def category_detail(request, slug):
     """Category detail view"""

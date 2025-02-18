@@ -2,21 +2,29 @@
 
 {% block content %}
 <h1>Featured Controllers</h1>
-<div class="featured-controllers">
+<div class="controllers">
     {% for controller in featured_controllers %}
-        <div class="controller-card">
-            <h2>{{ controller.name }}</h2>
-            <p>{{ controller.price }}</p>
-        </div>
+    <div class="controller">
+        <h2>{{ controller.name }}</h2>
+        <p>{{ controller.description }}</p>
+        <p>Price: ${{ controller.price }}</p>
+        <a href="{{ controller.get_absolute_url }}">View Details</a>
+        <form action="{% url 'cart:cart_add' %}" method="post">
+            {% csrf_token %}
+            <input type="hidden" name="controller_id" value="{{ controller.id }}">
+            <input type="number" name="quantity" value="1" min="1">
+            <input type="submit" value="Add to Cart">
+        </form>
+    </div>
     {% endfor %}
 </div>
 
 <h2>Categories</h2>
 <div class="categories">
     {% for category in categories %}
-        <div class="category-card">
-            <h3>{{ category.name }}</h3>
-        </div>
+    <div class="category">
+        <a href="{{ category.get_absolute_url }}">{{ category.name }}</a>
+    </div>
     {% endfor %}
 </div>
 {% endblock %} 

@@ -21,8 +21,8 @@ urlpatterns = [
     
     # Main URLs
     path('', home, name='home'),
-    path('products/', include('products.urls')),  # Changed from empty string
-    path('cart/', include('cart.urls')),
+    path('products/', include('products.urls', namespace='products')),
+    path('cart/', include('cart.urls', namespace='cart')),
 
     # Authentication
     path('login/', auth_views.LoginView.as_view(template_name='registration/login.html'), name='login'),
