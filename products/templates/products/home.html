@@ -70,42 +70,40 @@
         <div class="row">
             {% for controller in featured_controllers %}
             <div class="col-md-4 mb-4">
-                <div class="product-card card">
+                <div class="product-card">
                     {% if controller.image %}
                     <img src="{{ controller.image.url }}" 
                          class="card-img-top" 
                          alt="{{ controller.name }}">
                     {% endif %}
-                    <div class="card-body d-flex flex-column">
+                    <div class="card-body">
                         <h5 class="card-title">{{ controller.name }}</h5>
-                        <p class="card-text mb-4">{{ controller.description|truncatewords:20 }}</p>
+                        <p class="card-text">{{ controller.description|truncatewords:20 }}</p>
                         
-                        <!-- Price and Actions -->
-                        <div class="mt-auto">
-                            <div class="text-center mb-3">
-                                <span class="price">${{ controller.price }}</span>
-                            </div>
-                            <div class="d-flex gap-2 justify-content-center">
-                                <a href="{{ controller.get_absolute_url }}" 
-                                   class="btn btn-outline-primary">
-                                    <i class="bi bi-info-circle"></i> Details
+                        <div class="price-section">
+                            <span class="price">${{ controller.price }}</span>
+                        </div>
+                        
+                        <div class="action-section">
+                            <a href="{{ controller.get_absolute_url }}" 
+                               class="btn btn-outline-primary">
+                                <i class="bi bi-info-circle"></i> Details
+                            </a>
+                            {% if user.is_authenticated %}
+                                <form action="{% url 'cart:add_to_cart' %}" method="post" class="d-flex gap-2">
+                                    {% csrf_token %}
+                                    <input type="hidden" name="controller_id" value="{{ controller.id }}">
+                                    <input type="number" name="quantity" value="1" min="1" max="10" 
+                                           class="form-control quantity-input">
+                                    <button type="submit" class="btn btn-primary">
+                                        <i class="bi bi-cart-plus"></i> Add
+                                    </button>
+                                </form>
+                            {% else %}
+                                <a href="{% url 'login' %}?next={{ request.path }}" class="btn btn-primary">
+                                    <i class="bi bi-cart-plus"></i> Add to Cart
                                 </a>
-                                {% if user.is_authenticated %}
-                                    <form action="{% url 'cart:add_to_cart' %}" method="post" class="d-flex gap-2">
-                                        {% csrf_token %}
-                                        <input type="hidden" name="controller_id" value="{{ controller.id }}">
-                                        <input type="number" name="quantity" value="1" min="1" max="10" 
-                                               class="form-control" style="width: 70px;">
-                                        <button type="submit" class="btn btn-primary">
-                                            <i class="bi bi-cart-plus"></i> Add
-                                        </button>
-                                    </form>
-                                {% else %}
-                                    <a href="{% url 'login' %}?next={{ request.path }}" class="btn btn-primary">
-                                        <i class="bi bi-cart-plus"></i> Add to Cart
-                                    </a>
-                                {% endif %}
-                            </div>
+                            {% endif %}
                         </div>
                     </div>
                 </div>
