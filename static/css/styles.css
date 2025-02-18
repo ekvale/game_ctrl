@@ -61,10 +61,17 @@ body {
     margin-bottom: 2rem;
 }
 
+.hero-section .display-4 {
+    font-weight: 700;
+}
+
 .hero-section .btn-light {
     padding: 0.8rem 2rem;
     font-size: 1.1rem;
     font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
     transition: all 0.2s ease;
 }
 
@@ -73,7 +80,7 @@ body {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/* Product Card */
+/* Product Cards */
 .product-card.card {
     background: #ffffff;
     border-radius: 8px;
