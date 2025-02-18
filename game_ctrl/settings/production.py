@@ -65,6 +65,14 @@ STATICFILES_DIRS = [
     BASE_DIR / 'static',
 ]
 
+# WhiteNoise Configuration
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
+WHITENOISE_ROOT = STATIC_ROOT
+
+# Enable WhiteNoise debugging
+WHITENOISE_AUTOREFRESH = True
+WHITENOISE_DEBUG = True
+
 # Media files configuration
 MEDIA_URL = '/media/'
 MEDIA_ROOT = '/var/www/media'

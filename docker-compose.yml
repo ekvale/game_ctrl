@@ -38,6 +38,19 @@ services:
     ports:
       - "8000:8000"
 
+  nginx:
+    image: nginx:alpine
+    restart: always
+    volumes:
+      - ./nginx:/etc/nginx/conf.d:ro
+      - static_volume:/var/www/static:ro
+      - media_volume:/var/www/media:ro
+    ports:
+      - "80:80"
+    depends_on:
+      web:
+        condition: service_started
+
 volumes:
   postgres_data:
   static_volume:
