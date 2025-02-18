@@ -40,10 +40,11 @@ services:
 
   nginx:
     image: nginx:alpine
+    restart: always
     volumes:
-      - ./nginx:/etc/nginx/conf.d
-      - static_volume:/var/www/static
-      - media_volume:/var/www/media
+      - ./nginx:/etc/nginx/conf.d:ro
+      - static_volume:/var/www/static:ro
+      - media_volume:/var/www/media:ro
     ports:
       - "80:80"
       - "443:443"
